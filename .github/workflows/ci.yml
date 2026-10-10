@@ -1,0 +1,24 @@
+name: Build and test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Build CLI
+        run: dotnet build src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release
+      - name: Unit tests (simulated hardware)
+        run: dotnet test tests/Gs66Control.Tests/Gs66Control.Tests.csproj --configuration Release
+      - name: Simulation smoke test
+        run: dotnet run --project src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release -- simulate
