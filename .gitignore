@@ -1,0 +1,18 @@
+# .NET
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+.vs/
+.idea/
+.vscode/
+
+# local captures may contain machine identifiers
+gs66-diagnostic*.json
+captures/
+*.dmp
+
+# OS
+.DS_Store
+Thumbs.db
