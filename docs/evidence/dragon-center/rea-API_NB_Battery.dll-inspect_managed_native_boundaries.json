@@ -1,0 +1,558 @@
+{
+  "evidence_id": "ev_18cca9800f017f288035aaf3a043368c12a65aea9010d762723e81ea7f657fd8",
+  "subject": {
+    "name": "API_NB_Battery.dll",
+    "digest": {
+      "sha256": "db88c39b264beafd8fd409a344316a1ea867316e43fda7ff39c8cc77d778af9e"
+    },
+    "format": "pe",
+    "architecture": "x86",
+    "local_path": "/private/tmp/gs66-research/nbfoundation/pf/MSI/One Dragon Center/Battery/API_NB_Battery.dll"
+  },
+  "provider": {
+    "id": "rea-dotnet-static",
+    "name": "REA managed static analysis provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_managed_native_boundaries",
+  "parameters": {
+    "path": "/tmp/gs66-research/nbfoundation/pf/MSI/One Dragon Center/Battery/API_NB_Battery.dll"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/private/tmp/gs66-research/nbfoundation/pf/MSI/One Dragon Center/Battery/API_NB_Battery.dll",
+      "sha256": "db88c39b264beafd8fd409a344316a1ea867316e43fda7ff39c8cc77d778af9e",
+      "byte_length": 49904,
+      "format": "pe"
+    },
+    "module": {
+      "name": "API_NB_Battery.dll",
+      "generation": 0,
+      "mvid": "d73dddcf-565c-45ab-8a1e-3ec6c9e40e5e",
+      "enc_id": null,
+      "enc_base_id": null,
+      "token": "0x00000001",
+      "row_offset": 12100
+    },
+    "metadata": {
+      "status": "complete",
+      "version": "v4.0.30319",
+      "table_row_counts": {
+        "Module": 1,
+        "TypeRef": 83,
+        "TypeDef": 14,
+        "Field": 84,
+        "MethodDef": 159,
+        "Param": 98,
+        "InterfaceImpl": 1,
+        "MemberRef": 128,
+        "Constant": 9,
+        "CustomAttribute": 121,
+        "FieldMarshal": 9,
+        "StandAloneSig": 26,
+        "PropertyMap": 5,
+        "Property": 32,
+        "MethodSemantics": 64,
+        "ModuleRef": 1,
+        "TypeSpec": 3,
+        "ImplMap": 12,
+        "FieldRVA": 2,
+        "Assembly": 1,
+        "AssemblyRef": 9,
+        "NestedClass": 2,
+        "MethodSpec": 4
+      }
+    },
+    "identity_scope": {
+      "token_identity": "build-local",
+      "requires_artifact_sha256": "db88c39b264beafd8fd409a344316a1ea867316e43fda7ff39c8cc77d778af9e",
+      "requires_mvid": "d73dddcf-565c-45ab-8a1e-3ec6c9e40e5e"
+    },
+    "cli_native": {
+      "il_only": true,
+      "requires_32bit": false,
+      "strong_name_signed": false,
+      "native_entry_point": false,
+      "ready_to_run_signature": false,
+      "managed_native_header_rva": 0,
+      "managed_native_header_size": 0
+    },
+    "module_refs": [
+      {
+        "token": "0x1a000001",
+        "row_offset": 18358,
+        "name": ".\\API_SSD Doctor.dll"
+      }
+    ],
+    "pinvoke_imports": [
+      {
+        "token": "0x1c000001",
+        "row_offset": 18366,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000001",
+        "member_kind": "method",
+        "member_name": "InitDLL",
+        "import_name": "InitDLL",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000002",
+        "row_offset": 18374,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000002",
+        "member_kind": "method",
+        "member_name": "ReleaseDLL",
+        "import_name": "ReleaseDLL",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000003",
+        "row_offset": 18382,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000003",
+        "member_kind": "method",
+        "member_name": "GetDiskCount",
+        "import_name": "GetDiskCount",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000004",
+        "row_offset": 18390,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000004",
+        "member_kind": "method",
+        "member_name": "GetModel",
+        "import_name": "GetModel",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000005",
+        "row_offset": 18398,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000005",
+        "member_kind": "method",
+        "member_name": "GetTemperature",
+        "import_name": "GetTemperature",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000006",
+        "row_offset": 18406,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000006",
+        "member_kind": "method",
+        "member_name": "GetLifeCycle",
+        "import_name": "GetLifeCycle",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000007",
+        "row_offset": 18414,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000007",
+        "member_kind": "method",
+        "member_name": "GetTotalDiskSize",
+        "import_name": "GetTotalDiskSize",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000008",
+        "row_offset": 18422,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000008",
+        "member_kind": "method",
+        "member_name": "GetFreeDiskSize",
+        "import_name": "GetFreeDiskSize",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c000009",
+        "row_offset": 18430,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x06000009",
+        "member_kind": "method",
+        "member_name": "GetDriveMap",
+        "import_name": "GetDriveMap",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c00000a",
+        "row_offset": 18438,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x0600000a",
+        "member_kind": "method",
+        "member_name": "Stordiag_Init",
+        "import_name": "Stordiag_Init",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c00000b",
+        "row_offset": 18446,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x0600000b",
+        "member_kind": "method",
+        "member_name": "GetHealthyStatus",
+        "import_name": "GetHealthyStatus",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      },
+      {
+        "token": "0x1c00000c",
+        "row_offset": 18454,
+        "mapping_flags": 256,
+        "mapping_flags_hex": "0x0100",
+        "member_token": "0x0600000c",
+        "member_kind": "method",
+        "member_name": "GetInterface",
+        "import_name": "GetInterface",
+        "import_scope_token": "0x1a000001",
+        "import_scope_name": ".\\API_SSD Doctor.dll",
+        "no_mangle": false,
+        "char_set": "not-specified",
+        "call_convention": "winapi",
+        "supports_last_error": false,
+        "best_fit": "assembly-default",
+        "throw_on_unmappable_char": "assembly-default",
+        "verification": "managed-declaration-only"
+      }
+    ],
+    "native_implementations": [
+      {
+        "token": "0x06000001",
+        "row_offset": 13308,
+        "name": "InitDLL",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000002",
+        "row_offset": 13322,
+        "name": "ReleaseDLL",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000003",
+        "row_offset": 13336,
+        "name": "GetDiskCount",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000004",
+        "row_offset": 13350,
+        "name": "GetModel",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000005",
+        "row_offset": 13364,
+        "name": "GetTemperature",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000006",
+        "row_offset": 13378,
+        "name": "GetLifeCycle",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000007",
+        "row_offset": 13392,
+        "name": "GetTotalDiskSize",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000008",
+        "row_offset": 13406,
+        "name": "GetFreeDiskSize",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x06000009",
+        "row_offset": 13420,
+        "name": "GetDriveMap",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x0600000a",
+        "row_offset": 13434,
+        "name": "Stordiag_Init",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x0600000b",
+        "row_offset": 13448,
+        "name": "GetHealthyStatus",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      },
+      {
+        "token": "0x0600000c",
+        "row_offset": 13462,
+        "name": "GetInterface",
+        "rva": 0,
+        "flags": 8342,
+        "impl_flags": 128,
+        "code_type": "il",
+        "managed_kind": "managed",
+        "pinvoke_declared": true,
+        "boundary_kind": "pinvoke",
+        "body_interpretation": "not-file-backed"
+      }
+    ],
+    "summary": {
+      "module_ref_count": 1,
+      "pinvoke_import_count": 12,
+      "native_implementation_count": 12,
+      "ready_to_run": false,
+      "mixed_mode_or_native_header": false
+    },
+    "coverage": {
+      "state": "complete",
+      "issues": []
+    },
+    "limitations": [
+      "P/Invoke rows prove managed import declarations only; this inspection does not verify that a native library, export, thunk, or provider-qualified function exists.",
+      "Managed metadata tokens are build-local coordinates and are only meaningful with the reported artifact SHA-256 and MVID.",
+      "ReadyToRun, NativeAOT, C++/CLI, and IL2CPP native semantics require separately selected native-provider evidence; this tool does not translate managed tokens into native addresses."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "P/Invoke rows prove managed import declarations only; this inspection does not verify that a native library, export, thunk, or provider-qualified function exists.",
+    "Managed metadata tokens are build-local coordinates and are only meaningful with the reported artifact SHA-256 and MVID.",
+    "ReadyToRun, NativeAOT, C++/CLI, and IL2CPP native semantics require separately selected native-provider evidence; this tool does not translate managed tokens into native addresses."
+  ],
+  "locations": [
+    {
+      "kind": "file-offset",
+      "offset": 12100
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18366
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18374
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18382
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18390
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18398
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18406
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18414
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18422
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18430
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18438
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18446
+    },
+    {
+      "kind": "file-offset",
+      "offset": 18454
+    }
+  ],
+  "evidence_links": []
+}

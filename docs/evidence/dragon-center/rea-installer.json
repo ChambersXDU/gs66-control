@@ -1,0 +1,87 @@
+{
+  "evidence_id": "ev_5c63c4f8887baf33a3dd34ac3663f6cb5e10c38c553b5a6105a1a42274c2fcbd",
+  "subject": {
+    "name": "Dragon Center_2.0.158.0.exe",
+    "digest": {
+      "sha256": "f91ca53ff5f6434a24529aa13ed3ddf8eb5de41064313ee84948587cbbd8b113"
+    },
+    "format": "pe",
+    "architecture": "x86",
+    "local_path": "/private/tmp/gs66-research/package/Dragon Center_2.0.158.0.exe"
+  },
+  "provider": {
+    "id": "rea-dotnet-static",
+    "name": "REA managed static analysis provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_managed_artifact",
+  "parameters": {
+    "path": "/tmp/gs66-research/package/Dragon Center_2.0.158.0.exe"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/private/tmp/gs66-research/package/Dragon Center_2.0.158.0.exe",
+      "sha256": "f91ca53ff5f6434a24529aa13ed3ddf8eb5de41064313ee84948587cbbd8b113",
+      "byte_length": 471350624,
+      "format": "pe"
+    },
+    "pe": {
+      "machine": 332,
+      "machine_hex": "0x014c",
+      "architecture": "x86",
+      "optional_header": "pe32",
+      "section_count": 8,
+      "characteristics": 33167,
+      "cli": null
+    },
+    "classification": {
+      "status": "not-managed",
+      "container": "pe",
+      "runtime_family": "unknown",
+      "implementation": "not-managed",
+      "managed_architecture": "unknown",
+      "evidence": [
+        {
+          "code": "cli-directory-absent",
+          "detail": "The PE has no CLI data directory; managed metadata and CIL are unavailable.",
+          "file_offset": null
+        }
+      ]
+    },
+    "metadata": {
+      "status": "absent",
+      "version": null,
+      "stream_names": [],
+      "table_row_counts": {}
+    },
+    "module": null,
+    "assembly": null,
+    "target_frameworks": [],
+    "references": [],
+    "resources": [],
+    "attributes": [],
+    "coverage": {
+      "state": "unavailable",
+      "issues": []
+    },
+    "limitations": [
+      "The PE has no CLI data directory; managed metadata and CIL are unavailable."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The PE has no CLI data directory; managed metadata and CIL are unavailable."
+  ],
+  "locations": [
+    {
+      "kind": "file-offset",
+      "offset": 0
+    }
+  ],
+  "evidence_links": []
+}

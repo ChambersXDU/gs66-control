@@ -1,0 +1,311 @@
+{
+  "evidence_id": "ev_2831503c8076bfdc6103b55987ba69a2cc70228e54f37ba2afcab8ad63262511",
+  "subject": {
+    "name": "Dragon-Center.zip",
+    "digest": {
+      "sha256": "cbf1d93d8ee5fbdc09d544df63284dd1ed100c899a0d440af5c22cc192ec9133"
+    },
+    "format": "zip",
+    "architecture": null,
+    "local_path": "/private/tmp/gs66-research/Dragon-Center.zip"
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_artifact",
+  "parameters": {
+    "integrity_policy": "fail"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "inspection_id": "ai_c45ffc06f4045fbdf3b186363d9051890f435342d2b6ba73c9d4cdc3086da0e0",
+    "subject": {
+      "manifest_id": "agm_320effaa67e8f5b128e9e07203c7ea6c51d16cb87ecff793359c9cd39a11e91a",
+      "root_artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+      "root_sha256": "cbf1d93d8ee5fbdc09d544df63284dd1ed100c899a0d440af5c22cc192ec9133",
+      "root_format": "zip"
+    },
+    "substeps": [
+      {
+        "substep_id": "ais_57bc1ff54e8f1b1195a904146a379ade212d707c4a934f3a915ce35a9d262dcd",
+        "operation": "inventory_artifact",
+        "status": "completed",
+        "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9",
+        "evidence": {
+          "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9",
+          "subject": {
+            "name": "Dragon-Center.zip",
+            "digest": {
+              "sha256": "cbf1d93d8ee5fbdc09d544df63284dd1ed100c899a0d440af5c22cc192ec9133"
+            },
+            "format": "zip",
+            "architecture": null,
+            "local_path": "/private/tmp/gs66-research/Dragon-Center.zip"
+          },
+          "provider": {
+            "id": "rea-artifact-graph",
+            "name": "REA safe artifact graph provider",
+            "version": "1"
+          },
+          "analysis_profile": null,
+          "predicate_type": "rea.analysis",
+          "operation": "inventory_artifact",
+          "parameters": {
+            "integrity_policy": "fail"
+          },
+          "raw_result": null,
+          "normalized_result": {
+            "manifest": {
+              "manifest_id": "agm_320effaa67e8f5b128e9e07203c7ea6c51d16cb87ecff793359c9cd39a11e91a",
+              "root_artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+              "root_sha256": "cbf1d93d8ee5fbdc09d544df63284dd1ed100c899a0d440af5c22cc192ec9133",
+              "root_format": "zip",
+              "graph_sha256": "a92e8fe2c7cab933bdbd372f61682ef525cac8200e481b139468984166fc7afe",
+              "node_count": 2,
+              "occurrence_count": 2,
+              "edge_count": 1
+            },
+            "nodes": [
+              {
+                "artifact_id": "art_cb867c4a84ad5315ae02385cef2741dd314c506f7da9f5f2cc8aab87a8117564",
+                "format": "pe",
+                "sha256": "f91ca53ff5f6434a24529aa13ed3ddf8eb5de41064313ee84948587cbbd8b113",
+                "size": 471350624,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+                "format": "zip",
+                "sha256": "cbf1d93d8ee5fbdc09d544df63284dd1ed100c899a0d440af5c22cc192ec9133",
+                "size": 471382311,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "materialized",
+                "limitations": []
+              }
+            ],
+            "occurrences": [
+              {
+                "occurrence_id": "occ_9808b6c23cc893f6429dc52fe85ebd631772459bb60d5d27abd6d53bd7abac48",
+                "artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+                "parent_occurrence_id": null,
+                "logical_path": ".",
+                "entry_kind": "file",
+                "artifact_kind": "container",
+                "artifact_format": "zip",
+                "declared_size": 471382311,
+                "compressed_size": null,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_c7f3ff0fd40bdc0fd14277771445fc81224503ec0464f388400d8eb8a83f4a32",
+                "artifact_id": "art_cb867c4a84ad5315ae02385cef2741dd314c506f7da9f5f2cc8aab87a8117564",
+                "parent_occurrence_id": "occ_9808b6c23cc893f6429dc52fe85ebd631772459bb60d5d27abd6d53bd7abac48",
+                "logical_path": "Dragon Center_2.0.158.0.exe",
+                "entry_kind": "file",
+                "artifact_kind": "executable",
+                "artifact_format": "pe",
+                "declared_size": 471350624,
+                "compressed_size": 471382087,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              }
+            ],
+            "edges": [
+              {
+                "edge_id": "edge_715b7989428475a758f5c861a9d9df3f55a022890633721a92fe833eae7b4d49",
+                "ordinal": 0,
+                "parent_artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+                "child_artifact_id": "art_cb867c4a84ad5315ae02385cef2741dd314c506f7da9f5f2cc8aab87a8117564",
+                "relation": "contains",
+                "occurrence_id": "occ_c7f3ff0fd40bdc0fd14277771445fc81224503ec0464f388400d8eb8a83f4a32",
+                "logical_path": "Dragon Center_2.0.158.0.exe",
+                "producer": null
+              }
+            ],
+            "provenance": [],
+            "integrity_contradictions": [],
+            "limitations": []
+          },
+          "confidence": "observed",
+          "authority": "shipped-artifact",
+          "environment": null,
+          "limitations": [],
+          "locations": [
+            {
+              "kind": "artifact-path",
+              "path": "."
+            },
+            {
+              "kind": "artifact-path",
+              "path": "Dragon Center_2.0.158.0.exe"
+            }
+          ],
+          "evidence_links": []
+        }
+      }
+    ],
+    "observations": [
+      {
+        "observation_id": "aio_6522737309c4b99d77dc1d3d1fa7f9d3dbb138b895e132ef9ae26c5dc885abe7",
+        "kind": "root-manifest",
+        "subject": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+        "value": {
+          "manifest_id": "agm_320effaa67e8f5b128e9e07203c7ea6c51d16cb87ecff793359c9cd39a11e91a",
+          "root_artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+          "root_sha256": "cbf1d93d8ee5fbdc09d544df63284dd1ed100c899a0d440af5c22cc192ec9133",
+          "root_format": "zip",
+          "graph_sha256": "a92e8fe2c7cab933bdbd372f61682ef525cac8200e481b139468984166fc7afe",
+          "node_count": 2,
+          "occurrence_count": 2,
+          "edge_count": 1
+        },
+        "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+      },
+      {
+        "observation_id": "aio_10c1b515d69e61d3448324705d0b53b3763d5fdc72cff0d5e1367bdf3c9fb19e",
+        "kind": "artifact",
+        "subject": "art_cb867c4a84ad5315ae02385cef2741dd314c506f7da9f5f2cc8aab87a8117564",
+        "value": {
+          "artifact_id": "art_cb867c4a84ad5315ae02385cef2741dd314c506f7da9f5f2cc8aab87a8117564",
+          "format": "pe",
+          "sha256": "f91ca53ff5f6434a24529aa13ed3ddf8eb5de41064313ee84948587cbbd8b113",
+          "size": 471350624,
+          "media_type": null,
+          "architecture": null,
+          "content_state": "embedded",
+          "limitations": []
+        },
+        "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+      },
+      {
+        "observation_id": "aio_c89fdbe9e78e681341c362fa746c92d5411625cb6927356309e1e796da911b6e",
+        "kind": "artifact",
+        "subject": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+        "value": {
+          "artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+          "format": "zip",
+          "sha256": "cbf1d93d8ee5fbdc09d544df63284dd1ed100c899a0d440af5c22cc192ec9133",
+          "size": 471382311,
+          "media_type": null,
+          "architecture": null,
+          "content_state": "materialized",
+          "limitations": []
+        },
+        "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+      },
+      {
+        "observation_id": "aio_5a79d0f0f95a14c3c73bcf81574de64688b0a4336f7975035ede967b4376dc40",
+        "kind": "occurrence",
+        "subject": "occ_9808b6c23cc893f6429dc52fe85ebd631772459bb60d5d27abd6d53bd7abac48",
+        "value": {
+          "occurrence_id": "occ_9808b6c23cc893f6429dc52fe85ebd631772459bb60d5d27abd6d53bd7abac48",
+          "artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+          "parent_occurrence_id": null,
+          "logical_path": ".",
+          "entry_kind": "file",
+          "artifact_kind": "container",
+          "artifact_format": "zip",
+          "declared_size": 471382311,
+          "compressed_size": null,
+          "executable": false,
+          "encrypted": false,
+          "hash_status": "verified",
+          "source_location": null,
+          "limitations": []
+        },
+        "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+      },
+      {
+        "observation_id": "aio_24030209e8e4bc64007d04159f446a1d8f72a0e2fda5be7dea554f54293e031b",
+        "kind": "occurrence",
+        "subject": "occ_c7f3ff0fd40bdc0fd14277771445fc81224503ec0464f388400d8eb8a83f4a32",
+        "value": {
+          "occurrence_id": "occ_c7f3ff0fd40bdc0fd14277771445fc81224503ec0464f388400d8eb8a83f4a32",
+          "artifact_id": "art_cb867c4a84ad5315ae02385cef2741dd314c506f7da9f5f2cc8aab87a8117564",
+          "parent_occurrence_id": "occ_9808b6c23cc893f6429dc52fe85ebd631772459bb60d5d27abd6d53bd7abac48",
+          "logical_path": "Dragon Center_2.0.158.0.exe",
+          "entry_kind": "file",
+          "artifact_kind": "executable",
+          "artifact_format": "pe",
+          "declared_size": 471350624,
+          "compressed_size": 471382087,
+          "executable": true,
+          "encrypted": false,
+          "hash_status": "verified",
+          "source_location": null,
+          "limitations": []
+        },
+        "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+      }
+    ],
+    "derived_relationships": [
+      {
+        "relationship_id": "air_39503007cf4b764bad2d3adbae27ea348ed72e4b6f637347fb7ff5b3564090c5",
+        "relation": "contains",
+        "source_artifact_id": "art_eee9b60677eca8d2eb8201b3c6fb3aa3eedd4f10f3c38ed0095a1c2c4151d28e",
+        "target_artifact_id": "art_cb867c4a84ad5315ae02385cef2741dd314c506f7da9f5f2cc8aab87a8117564",
+        "occurrence_id": "occ_c7f3ff0fd40bdc0fd14277771445fc81224503ec0464f388400d8eb8a83f4a32",
+        "logical_path": "Dragon Center_2.0.158.0.exe",
+        "evidence_id": "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+      }
+    ],
+    "hypotheses": [],
+    "contradictions": [],
+    "unexplored_branches": [],
+    "next_probes": [],
+    "coverage": {
+      "status": "complete-within-substeps",
+      "substeps_completed": 1,
+      "observations_retained": 5,
+      "observations_omitted": 0,
+      "relationships_retained": 1,
+      "relationships_omitted": 0,
+      "hypotheses_retained": 0,
+      "hypotheses_omitted": 0,
+      "unexplored_branches_retained": 0,
+      "unexplored_branches_omitted": 0,
+      "next_probes_retained": 0,
+      "next_probes_omitted": 0
+    },
+    "evidence_links": [
+      "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+    ],
+    "limitations": [
+      "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics."
+  ],
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "."
+    },
+    {
+      "kind": "artifact-path",
+      "path": "Dragon Center_2.0.158.0.exe"
+    }
+  ],
+  "evidence_links": [
+    "ev_d4c20e6ec308a06e0a988bd69397c64bdf8ad478249213c867253f0f8a9307d9"
+  ]
+}

@@ -4,6 +4,8 @@
 
 **当前只有脚手架与只读诊断能力。** 尚不能读取原始 EC 数据，也不能读取风扇转速或修改风扇、CPU/GPU 功耗。不要将模拟数据当作实测结果。
 
+Dragon Center 的离线静态研究已整理至 [逆向研究报告](docs/dragon-center-re.md)，包含官方安装包版本与哈希、UI 到后台及硬件访问边界的调用链、GS66 控制能力矩阵和后续只读验证方案。对应的 [证据索引](docs/evidence/dragon-center/README.md) 保存文件清单、REA/ILSpy/Ghidra 分析片段；当前官方通用包尚未确认为 2020 年预装版本，研究结论也不代表 GS66 实机验证成功。
+
 ## 结构
 
 - `src/Gs66Control.Core`：跨平台数据模型、硬件探针接口、模拟后端。
@@ -11,6 +13,8 @@
 - `src/Gs66Control.Cli`：命令行入口；暂时不做界面。
 - `tests/Gs66Control.Tests`：无需硬件的单元测试。
 - `docs/SAFETY.md`：硬件写入的安全门槛。
+- `docs/dragon-center-re.md`：Dragon Center 静态逆向研究与证据索引。
+- `scripts/inventory-dragon-center.py`：离线提取文件清单，不执行目标程序。
 - `AGENTS.md`：交给编程智能体时应遵守的开发约束。
 
 ## 开始开发

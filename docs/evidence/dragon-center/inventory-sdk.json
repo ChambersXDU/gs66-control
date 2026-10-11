@@ -1,0 +1,4339 @@
+{
+  "schema": 1,
+  "mode": "offline-static-no-target-execution",
+  "files": [
+    {
+      "path": "app/API_Kernel.dll",
+      "bytes": 207600,
+      "sha256": "67a10cacc51800d0061d5ac2ae96030b5b6b7cec150389699619fcd03a61b72f",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x10000000",
+      "entry_rva": "0xebc4",
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "symbols": [
+            "GetProcessHeap",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocalTime",
+            "OutputDebugStringW",
+            "CreateDirectoryW",
+            "CreateFileW",
+            "GetLastError",
+            "GetFileSize",
+            "CloseHandle",
+            "DeleteFileW",
+            "WriteFile",
+            "GetFileAttributesW",
+            "ReadFile",
+            "FlushFileBuffers",
+            "HeapAlloc",
+            "Sleep",
+            "WaitNamedPipeW",
+            "SetNamedPipeHandleState",
+            "OpenFileMappingW",
+            "MapViewOfFile",
+            "UnmapViewOfFile",
+            "IsBadReadPtr",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "InitializeCriticalSectionEx",
+            "RaiseException",
+            "DecodePointer",
+            "DeleteCriticalSection",
+            "IsDebuggerPresent",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "GetStdHandle",
+            "HeapFree",
+            "HeapReAlloc",
+            "HeapSize",
+            "HeapDestroy",
+            "FindResourceExW",
+            "FindResourceW",
+            "LoadResource",
+            "LockResource",
+            "SizeofResource",
+            "WriteConsoleW",
+            "GetStringTypeW",
+            "SetFilePointerEx",
+            "GetFileSizeEx",
+            "GetFileType",
+            "LCMapStringW",
+            "SetStdHandle",
+            "GetModuleHandleExW",
+            "ExitProcess",
+            "GetConsoleMode",
+            "GetConsoleCP",
+            "LoadLibraryExW",
+            "FreeEnvironmentStringsW",
+            "GetEnvironmentStringsW",
+            "GetCommandLineW",
+            "GetCommandLineA",
+            "GetCPInfo",
+            "GetOEMCP",
+            "GetACP",
+            "IsValidCodePage",
+            "FindNextFileW",
+            "FindFirstFileExW",
+            "FindClose",
+            "LocalFree",
+            "InitializeCriticalSectionAndSpinCount",
+            "SetEvent",
+            "ResetEvent",
+            "WaitForSingleObjectEx",
+            "CreateEventW",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "GetCurrentProcess",
+            "TerminateProcess",
+            "IsProcessorFeaturePresent",
+            "GetStartupInfoW",
+            "QueryPerformanceCounter",
+            "GetCurrentProcessId",
+            "GetCurrentThreadId",
+            "GetSystemTimeAsFileTime",
+            "InitializeSListHead",
+            "RtlUnwind",
+            "InterlockedFlushSList",
+            "SetLastError",
+            "EncodePointer",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "TlsFree",
+            "FreeLibrary"
+          ]
+        },
+        {
+          "dll": "ADVAPI32.dll",
+          "symbols": [
+            "ConvertSidToStringSidW",
+            "RegDeleteKeyW",
+            "RegDeleteValueW",
+            "RegSetValueExW",
+            "RegCreateKeyExW",
+            "RegCloseKey",
+            "RegOpenKeyExW"
+          ]
+        },
+        {
+          "dll": "ole32.dll",
+          "symbols": [
+            "CoInitialize",
+            "CoInitializeEx",
+            "CoCreateInstance",
+            "CoUninitialize",
+            "CLSIDFromString"
+          ]
+        },
+        {
+          "dll": "OLEAUT32.dll",
+          "symbols": [
+            "SysAllocStringLen",
+            "VariantClear",
+            "VariantInit",
+            "SysAllocString",
+            "SysFreeString"
+          ]
+        },
+        {
+          "dll": "NETAPI32.dll",
+          "symbols": [
+            "NetApiBufferFree",
+            "NetLocalGroupGetMembers",
+            "NetLocalGroupEnum"
+          ]
+        },
+        {
+          "dll": "POWRPROF.dll",
+          "symbols": [
+            "PowerWriteDCValueIndex",
+            "PowerEnumerate",
+            "PowerWriteACValueIndex",
+            "PowerSetActiveScheme",
+            "PowerGetActiveScheme",
+            "PowerDeleteScheme",
+            "PowerDuplicateScheme",
+            "PowerReadFriendlyName",
+            "PowerReadDCDefaultIndex",
+            "PowerReadACDefaultIndex"
+          ]
+        },
+        {
+          "dll": "SETUPAPI.dll",
+          "symbols": [
+            "SetupDiEnumDeviceInfo",
+            "SetupDiGetDevicePropertyW",
+            "SetupDiDestroyDeviceInfoList",
+            "SetupDiGetClassDevsW"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DestoryAPI",
+          "ordinal": 1,
+          "rva": "0x7bb0"
+        },
+        {
+          "name": "GetPowerPlan",
+          "ordinal": 3,
+          "rva": "0xbdb0"
+        },
+        {
+          "name": "GetPowerPlan_GUID",
+          "ordinal": 4,
+          "rva": "0xbeb0"
+        },
+        {
+          "name": "InitAPI",
+          "ordinal": 6,
+          "rva": "0x7c40"
+        },
+        {
+          "name": "Init_SMBIOSData",
+          "ordinal": 8,
+          "rva": "0xbc70"
+        },
+        {
+          "name": "IsDeviceExist",
+          "ordinal": 9,
+          "rva": "0x7ed0"
+        },
+        {
+          "name": "SetPowerPlan",
+          "ordinal": 14,
+          "rva": "0xbea0"
+        },
+        {
+          "name": "SetPowerPlan_GUID",
+          "ordinal": 15,
+          "rva": "0xbec0"
+        },
+        {
+          "name": "SetPowerPlan_GUID_V2",
+          "ordinal": 16,
+          "rva": "0xbee0"
+        },
+        {
+          "name": "_GetPlatformInfo@4",
+          "ordinal": 2,
+          "rva": "0x8200"
+        },
+        {
+          "name": "_Get_DC_Data@4",
+          "ordinal": 5,
+          "rva": "0xbfe0"
+        },
+        {
+          "name": "_Init_CC_Engine_Data@4",
+          "ordinal": 7,
+          "rva": "0x4340"
+        },
+        {
+          "name": "_Map_CC_Engine_Data@0",
+          "ordinal": 10,
+          "rva": "0x4390"
+        },
+        {
+          "name": "_Refresh_CC_Engine_Data@4",
+          "ordinal": 11,
+          "rva": "0x43d0"
+        },
+        {
+          "name": "_Release_CC_Engine_Data@0",
+          "ordinal": 12,
+          "rva": "0x4420"
+        },
+        {
+          "name": "_SendCommand@4",
+          "ordinal": 13,
+          "rva": "0xbcb0"
+        },
+        {
+          "name": "_SetProcessorIdleState@4",
+          "ordinal": 17,
+          "rva": "0xbda0"
+        },
+        {
+          "name": "_Task_Run@12",
+          "ordinal": 18,
+          "rva": "0xbd60"
+        }
+      ],
+      "version_resources": {
+        "CompanyName": "Micro-Star Int'l Co., Ltd.",
+        "FileDescription": "API_Kernel",
+        "FileVersion": "2.0.0.21",
+        "InternalName": "API_Kernel.dll",
+        "LegalCopyright": "Copyright ©  2018 Micro-Star INT'L CO., LTD. All Right Reserved.",
+        "OriginalFilename": "API_Kernel.dll",
+        "ProductName": "API_Kernel",
+        "ProductVersion": "2.0.0.21"
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "app/CS_CommonAPI.dll",
+      "bytes": 107624,
+      "sha256": "498740a6695a3aee6df5d89877d094e0ee35b52b057dd882eaf6cd430873c881",
+      "kind": "managed-PE",
+      "machine": "0x14c",
+      "image_base": "0x10000000",
+      "entry_rva": "0x17ad2",
+      "imports": [
+        {
+          "dll": "mscoree.dll",
+          "symbols": [
+            "_CorDllMain"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "MSI Common API",
+        "CompanyName": "Micro-Star Int'l Co., Ltd.",
+        "FileDescription": "MSI Common API",
+        "FileVersion": "2.0.0.40",
+        "InternalName": "CS_CommonAPI.dll",
+        "LegalCopyright": "Copyright ©  2019 Micro-Star INT'L CO., LTD.",
+        "LegalTrademarks": "",
+        "OriginalFilename": "CS_CommonAPI.dll",
+        "ProductName": "MSI Common API",
+        "ProductVersion": "2.0.0.40",
+        "Assembly Version": "2.0.0.40"
+      },
+      "cli_directory": {
+        "rva": "0x2008",
+        "bytes": 72
+      },
+      "assemblies": [
+        {
+          "name": "CS_CommonAPI",
+          "version": "2.0.0.40"
+        }
+      ],
+      "assembly_references": [
+        {
+          "name": "mscorlib",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Core",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Runtime.Serialization",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "PresentationCore",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Drawing",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "PresentationFramework",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Management",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "WindowsBase",
+          "version": "4.0.0.0"
+        }
+      ],
+      "clr_flags": "0x1"
+    },
+    {
+      "path": "app/Data/Define_Base.M",
+      "bytes": 16831,
+      "sha256": "8ee1de21912268eb12c0490378701bf4c155d93f6767eb8e8741a4109ee11dc4",
+      "kind": "data"
+    },
+    {
+      "path": "app/Data/Define_Base.N",
+      "bytes": 13855,
+      "sha256": "bd6215315b92d9dc7780e0a7b9d15b67e402ba83ebbe8dcfe07ad25be767cfcc",
+      "kind": "data"
+    },
+    {
+      "path": "app/MSI.CentralServer.exe",
+      "bytes": 166552,
+      "sha256": "7b525c3f6804184d43662749daf271ff6bfd0db5b1db56ebd82bf794dc4a9786",
+      "kind": "managed-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x26286",
+      "imports": [
+        {
+          "dll": "mscoree.dll",
+          "symbols": [
+            "_CorExeMain"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "MSI.CentralServer",
+        "CompanyName": "Micro-Star Int'l Co., Ltd.",
+        "FileDescription": "MSI.CentralServer",
+        "FileVersion": "2.0.0.35",
+        "InternalName": "MSI.CentralServer.exe",
+        "LegalCopyright": "Copyright ©  2019 Micro-Star INT'L CO., LTD.",
+        "LegalTrademarks": "",
+        "OriginalFilename": "MSI.CentralServer.exe",
+        "ProductName": "MSI.CentralServer",
+        "ProductVersion": "2.0.0.35",
+        "Assembly Version": "2.0.0.35"
+      },
+      "cli_directory": {
+        "rva": "0x2008",
+        "bytes": 72
+      },
+      "assemblies": [
+        {
+          "name": "MSI.CentralServer",
+          "version": "2.0.0.35"
+        }
+      ],
+      "assembly_references": [
+        {
+          "name": "mscorlib",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "CS_CommonAPI",
+          "version": "2.0.0.39"
+        },
+        {
+          "name": "System.ServiceProcess",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Runtime.Serialization",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Management",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Core",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "NB_Support",
+          "version": "1.0.2110.1301"
+        }
+      ],
+      "clr_flags": "0x20003"
+    },
+    {
+      "path": "app/MSI.NotifyServer.exe",
+      "bytes": 104552,
+      "sha256": "9af691e9e40eb2a815a3dc7b86336d624b50f082dcb89a11dab5ff7d892eca57",
+      "kind": "managed-PE",
+      "machine": "0x8664",
+      "image_base": "0x140000000",
+      "entry_rva": "0x0",
+      "imports": [],
+      "exports": [],
+      "version_resources": {
+        "Comments": "MSI.NotifyServer",
+        "CompanyName": "Micro-Star Int'l Co., Ltd.",
+        "FileDescription": "MSI.NotifyServer",
+        "FileVersion": "2.0.0.35",
+        "InternalName": "MSI.NotifyServer.exe",
+        "LegalCopyright": "Copyright ©  2019 Micro-Star INT'L CO., LTD.",
+        "LegalTrademarks": "",
+        "OriginalFilename": "MSI.NotifyServer.exe",
+        "ProductName": "MSI.NotifyServer",
+        "ProductVersion": "2.0.0.35",
+        "Assembly Version": "2.0.0.35"
+      },
+      "cli_directory": {
+        "rva": "0x2000",
+        "bytes": 72
+      },
+      "assemblies": [
+        {
+          "name": "MSI.NotifyServer",
+          "version": "2.0.0.35"
+        }
+      ],
+      "assembly_references": [
+        {
+          "name": "mscorlib",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "PresentationFramework",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Windows.Forms",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "Windows",
+          "version": "255.255.255.255"
+        },
+        {
+          "name": "CS_CommonAPI",
+          "version": "2.0.0.40"
+        }
+      ],
+      "clr_flags": "0x1"
+    },
+    {
+      "path": "app/MSI_Central_Service.exe",
+      "bytes": 147696,
+      "sha256": "f2b6406e7476f711d2e6caf93f7be0cbc69d5eebee87c3878dbd9fceab618bcc",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x5420",
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "symbols": [
+            "Sleep",
+            "CreateThread",
+            "HeapDestroy",
+            "HeapSize",
+            "HeapReAlloc",
+            "HeapFree",
+            "HeapAlloc",
+            "GetProcessHeap",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "SizeofResource",
+            "LockResource",
+            "LoadResource",
+            "FindResourceW",
+            "FindResourceExW",
+            "InitializeCriticalSectionEx",
+            "Process32Next",
+            "DecodePointer",
+            "DeleteCriticalSection",
+            "IsDebuggerPresent",
+            "OutputDebugStringW",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "CreateFileW",
+            "SetFilePointerEx",
+            "GetFileSizeEx",
+            "GetConsoleMode",
+            "GetConsoleCP",
+            "FlushFileBuffers",
+            "GetStringTypeW",
+            "SetStdHandle",
+            "Process32First",
+            "CreateToolhelp32Snapshot",
+            "WaitForSingleObject",
+            "GetProcessId",
+            "FindClose",
+            "FindFirstFileA",
+            "WriteFile",
+            "GetLocalTime",
+            "DeleteFileA",
+            "CloseHandle",
+            "GetFileSize",
+            "GetLastError",
+            "CreateFileA",
+            "CreateDirectoryA",
+            "GetModuleFileNameA",
+            "RaiseException",
+            "GetModuleHandleA",
+            "SetEnvironmentVariableW",
+            "FreeEnvironmentStringsW",
+            "GetEnvironmentStringsW",
+            "GetCPInfo",
+            "WriteConsoleW",
+            "GetOEMCP",
+            "GetACP",
+            "IsValidCodePage",
+            "FindNextFileW",
+            "FindFirstFileExW",
+            "InitializeCriticalSectionAndSpinCount",
+            "SetEvent",
+            "ResetEvent",
+            "WaitForSingleObjectEx",
+            "CreateEventW",
+            "GetModuleHandleW",
+            "GetProcAddress",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "GetCurrentProcess",
+            "TerminateProcess",
+            "IsProcessorFeaturePresent",
+            "GetStartupInfoW",
+            "QueryPerformanceCounter",
+            "GetCurrentProcessId",
+            "GetCurrentThreadId",
+            "GetSystemTimeAsFileTime",
+            "InitializeSListHead",
+            "RtlUnwind",
+            "SetLastError",
+            "EncodePointer",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "TlsFree",
+            "FreeLibrary",
+            "LoadLibraryExW",
+            "ExitProcess",
+            "GetModuleHandleExW",
+            "GetModuleFileNameW",
+            "GetStdHandle",
+            "GetCommandLineA",
+            "GetCommandLineW",
+            "CompareStringW",
+            "LCMapStringW",
+            "GetFileType"
+          ]
+        },
+        {
+          "dll": "USER32.dll",
+          "symbols": [
+            "GetMessageA",
+            "PeekMessageA",
+            "DispatchMessageA",
+            "DefWindowProcA",
+            "TranslateMessage",
+            "CreateWindowExA",
+            "RegisterClassA"
+          ]
+        },
+        {
+          "dll": "ADVAPI32.dll",
+          "symbols": [
+            "SetServiceStatus",
+            "RegisterServiceCtrlHandlerExA",
+            "StartServiceA",
+            "DeleteService",
+            "QueryServiceStatus",
+            "ControlService",
+            "CloseServiceHandle",
+            "ChangeServiceConfig2A",
+            "OpenServiceA",
+            "CreateServiceA",
+            "OpenSCManagerA",
+            "StartServiceCtrlDispatcherA",
+            "RegSetValueExA",
+            "RegCreateKeyExA",
+            "RegCloseKey",
+            "RegOpenKeyExA"
+          ]
+        },
+        {
+          "dll": "ole32.dll",
+          "symbols": [
+            "CoInitialize",
+            "CoInitializeSecurity",
+            "CoCreateInstance"
+          ]
+        },
+        {
+          "dll": "SHELL32.dll",
+          "symbols": [
+            "ShellExecuteExA"
+          ]
+        },
+        {
+          "dll": "OLEAUT32.dll",
+          "symbols": [
+            "VariantClear",
+            "VariantInit",
+            "SysFreeString",
+            "SysAllocString",
+            "SysAllocStringLen"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "CompanyName": "Micro-Star Int'l Co., Ltd.",
+        "FileDescription": "MSI Central Service",
+        "FileVersion": "1.0.0.49",
+        "InternalName": "MSI Central Service.exe",
+        "LegalCopyright": "Copyright ©  2019 Micro-Star INT'L CO., LTD.",
+        "OriginalFilename": "MSI Central Service.exe",
+        "ProductName": "MSI Central Service",
+        "ProductVersion": "1.0.0.49"
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "app/NB_Support.dll",
+      "bytes": 25000,
+      "sha256": "2720f4c9ee1331d35962f5bc35d589dbc3fac1a8eb5a782589fc224de34567f7",
+      "kind": "managed-PE",
+      "machine": "0x14c",
+      "image_base": "0x10000000",
+      "entry_rva": "0x5ec2",
+      "imports": [
+        {
+          "dll": "mscoree.dll",
+          "symbols": [
+            "_CorDllMain"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "",
+        "CompanyName": "",
+        "FileDescription": "NB Support Methods",
+        "FileVersion": "1.0.2110.1301",
+        "InternalName": "NB_Support.dll",
+        "LegalCopyright": "Copyright ©  2021 Micro-Star INT'L CO., LTD.",
+        "LegalTrademarks": "",
+        "OriginalFilename": "NB_Support.dll",
+        "ProductName": "NB_Support",
+        "ProductVersion": "1.0.2110.1301",
+        "Assembly Version": "1.0.2110.1301"
+      },
+      "cli_directory": {
+        "rva": "0x2008",
+        "bytes": 72
+      },
+      "assemblies": [
+        {
+          "name": "NB_Support",
+          "version": "1.0.2110.1301"
+        }
+      ],
+      "assembly_references": [
+        {
+          "name": "mscorlib",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Management",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Core",
+          "version": "4.0.0.0"
+        }
+      ],
+      "clr_flags": "0x1"
+    },
+    {
+      "path": "app/SDK.ico",
+      "bytes": 242616,
+      "sha256": "e0af2e3fa24e058c01aa48004bf37c1edd91a71baa24f013b35fdfa51c7ba956",
+      "kind": "data"
+    },
+    {
+      "path": "tmp/PrePackage/Base Module_1.0.0.48.exe",
+      "bytes": 809328,
+      "sha256": "271fe32711a99cdd11839e7fcc5bc97616f719b3a29d4333bc8f5eb8359cff66",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Base Module Setup                                           ",
+        "FileVersion": "1.0.0.48            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Base Module                                                 ",
+        "ProductVersion": "1.0.0.48            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Device_1.0.0.44.exe",
+      "bytes": 59082248,
+      "sha256": "9a03fc2a519d97b99b0b635d943a87dce431dc6899a5d5348f837910d1963855",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Device Setup                                                ",
+        "FileVersion": "1.0.0.44            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Device                                                      ",
+        "ProductVersion": "1.0.0.44            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Engine Lib_1.0.0.22.exe",
+      "bytes": 52622552,
+      "sha256": "e48db09ecd2ac708f52132dd236f55a06eaf9aacfeafedc2dd38ac0217b56f00",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Engine_Lib Setup                                            ",
+        "FileVersion": "1.0.0.22            ",
+        "LegalCopyright": "Copyright © 2020 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Engine_Lib                                                  ",
+        "ProductVersion": "1.0.0.22            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Engine_1.0.0.89.exe",
+      "bytes": 1334080,
+      "sha256": "66064a9056b52a746a4145d38304e1dc18c75ad84a7d365897ea19f4843c4324",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Engine Setup                                                ",
+        "FileVersion": "1.0.0.89            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Engine                                                      ",
+        "ProductVersion": "1.0.0.89            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Export/Setup.exe",
+      "bytes": 33797808,
+      "sha256": "54860b1481f0b64e63629bef93f85a16884d625910fdd2b14bc946e0b565f3b8",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "MSI NBFoundation Service Setup                              ",
+        "FileVersion": "1.0.2411.1201       ",
+        "LegalCopyright": "Copyright © 2024 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "MSI NBFoundation Service                                    ",
+        "ProductVersion": "1.0.2411.1201       "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Export/UninstallProcedure.exe",
+      "bytes": 429296,
+      "sha256": "4f9a19cda1e8c176c556f1605ef0333293be5be81625effbda811ffc1c1373e1",
+      "kind": "managed-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x5936e",
+      "imports": [
+        {
+          "dll": "mscoree.dll",
+          "symbols": [
+            "_CorExeMain"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "",
+        "CompanyName": "",
+        "FileDescription": "UninstallProcedure",
+        "FileVersion": "1.0.2310.2301",
+        "InternalName": "UninstallProcedure.exe",
+        "LegalCopyright": "Copyright ©  2023",
+        "LegalTrademarks": "",
+        "OriginalFilename": "UninstallProcedure.exe",
+        "ProductName": "UninstallProcedure",
+        "ProductVersion": "1.0.2310.2301",
+        "Assembly Version": "1.0.2310.2301"
+      },
+      "cli_directory": {
+        "rva": "0x2008",
+        "bytes": 72
+      },
+      "assemblies": [
+        {
+          "name": "UninstallProcedure",
+          "version": "1.0.2310.2301"
+        }
+      ],
+      "assembly_references": [
+        {
+          "name": "mscorlib",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "PresentationFramework",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Xaml",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "PresentationCore",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "Microsoft.Win32.TaskScheduler",
+          "version": "1.9.4.17032"
+        },
+        {
+          "name": "System.Xml",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.ServiceProcess",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Management",
+          "version": "4.0.0.0"
+        }
+      ],
+      "clr_flags": "0x1"
+    },
+    {
+      "path": "tmp/PrePackage/Export/install.iss",
+      "bytes": 512,
+      "sha256": "485e7f54dfd4f77046e4dfe8475bf0b908ad9ba8ac7c427330d709abcff85d3d",
+      "kind": "data"
+    },
+    {
+      "path": "tmp/PrePackage/Export/uninstall.iss",
+      "bytes": 453,
+      "sha256": "8949ed3128a764a0cdc870c6fe3c698ac3e915f76a6f81b7108d0cee660f95b4",
+      "kind": "data"
+    },
+    {
+      "path": "tmp/PrePackage/Export/upgrade.iss",
+      "bytes": 318,
+      "sha256": "5fa89f40195f7a33655d47e96d140b43171d62a8b21a86d4bc6d13fa8d7100b0",
+      "kind": "data"
+    },
+    {
+      "path": "tmp/PrePackage/Export/xtu-setup-exe.exe",
+      "bytes": 29634448,
+      "sha256": "dd3a2e6fc62990a99d8eb5ecb1d8b44c66f83c38b0a9bde937e076b4f2be1462",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x2e2a6",
+      "imports": [
+        {
+          "dll": "ADVAPI32.dll",
+          "symbols": [
+            "RegCloseKey",
+            "RegOpenKeyExW",
+            "OpenProcessToken",
+            "AdjustTokenPrivileges",
+            "LookupPrivilegeValueW",
+            "InitiateSystemShutdownExW",
+            "GetUserNameW",
+            "RegQueryValueExW",
+            "RegDeleteValueW",
+            "CloseEventLog",
+            "OpenEventLogW",
+            "ReportEventW",
+            "ConvertStringSecurityDescriptorToSecurityDescriptorW",
+            "DecryptFileW",
+            "CreateWellKnownSid",
+            "InitializeAcl",
+            "SetEntriesInAclW",
+            "ChangeServiceConfigW",
+            "CloseServiceHandle",
+            "ControlService",
+            "OpenSCManagerW",
+            "OpenServiceW",
+            "QueryServiceStatus",
+            "SetNamedSecurityInfoW",
+            "CheckTokenMembership",
+            "AllocateAndInitializeSid",
+            "SetEntriesInAclA",
+            "SetSecurityDescriptorGroup",
+            "SetSecurityDescriptorOwner",
+            "SetSecurityDescriptorDacl",
+            "InitializeSecurityDescriptor",
+            "RegSetValueExW",
+            "RegQueryInfoKeyW",
+            "RegEnumValueW",
+            "RegEnumKeyExW",
+            "RegDeleteKeyW",
+            "RegCreateKeyExW",
+            "GetTokenInformation",
+            "CryptDestroyHash",
+            "CryptHashData",
+            "CryptCreateHash",
+            "CryptGetHashParam",
+            "CryptReleaseContext",
+            "CryptAcquireContextW",
+            "QueryServiceConfigW"
+          ]
+        },
+        {
+          "dll": "USER32.dll",
+          "symbols": [
+            "PeekMessageW",
+            "PostMessageW",
+            "IsWindow",
+            "WaitForInputIdle",
+            "PostQuitMessage",
+            "GetMessageW",
+            "TranslateMessage",
+            "MsgWaitForMultipleObjects",
+            "PostThreadMessageW",
+            "GetMonitorInfoW",
+            "MonitorFromPoint",
+            "IsDialogMessageW",
+            "LoadCursorW",
+            "LoadBitmapW",
+            "SetWindowLongW",
+            "GetWindowLongW",
+            "GetCursorPos",
+            "MessageBoxW",
+            "CreateWindowExW",
+            "UnregisterClassW",
+            "RegisterClassW",
+            "DefWindowProcW",
+            "DispatchMessageW"
+          ]
+        },
+        {
+          "dll": "OLEAUT32.dll",
+          "symbols": [
+            "VariantInit",
+            "SysAllocString",
+            "VariantClear",
+            "SysFreeString"
+          ]
+        },
+        {
+          "dll": "GDI32.dll",
+          "symbols": [
+            "DeleteDC",
+            "DeleteObject",
+            "SelectObject",
+            "StretchBlt",
+            "GetObjectW",
+            "CreateCompatibleDC"
+          ]
+        },
+        {
+          "dll": "SHELL32.dll",
+          "symbols": [
+            "CommandLineToArgvW",
+            "SHGetFolderPathW",
+            "ShellExecuteExW"
+          ]
+        },
+        {
+          "dll": "ole32.dll",
+          "symbols": [
+            "CoUninitialize",
+            "CoInitializeEx",
+            "CoInitialize",
+            "StringFromGUID2",
+            "CoCreateInstance",
+            "CoTaskMemFree",
+            "CLSIDFromProgID",
+            "CoInitializeSecurity"
+          ]
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "symbols": [
+            "GetCommandLineA",
+            "GetCPInfo",
+            "GetOEMCP",
+            "CloseHandle",
+            "CreateFileW",
+            "GetProcAddress",
+            "LocalFree",
+            "HeapSetInformation",
+            "GetLastError",
+            "GetModuleHandleW",
+            "FormatMessageW",
+            "lstrlenA",
+            "lstrlenW",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "LCMapStringW",
+            "Sleep",
+            "GetLocalTime",
+            "GetModuleFileNameW",
+            "ExpandEnvironmentStringsW",
+            "GetTempPathW",
+            "GetTempFileNameW",
+            "CreateDirectoryW",
+            "GetFullPathNameW",
+            "CompareStringW",
+            "GetCurrentProcessId",
+            "WriteFile",
+            "SetFilePointer",
+            "LoadLibraryW",
+            "GetSystemDirectoryW",
+            "CreateFileA",
+            "HeapAlloc",
+            "HeapReAlloc",
+            "HeapFree",
+            "HeapSize",
+            "GetProcessHeap",
+            "FindClose",
+            "GetCommandLineW",
+            "GetCurrentDirectoryW",
+            "RemoveDirectoryW",
+            "SetFileAttributesW",
+            "GetFileAttributesW",
+            "DeleteFileW",
+            "FindFirstFileW",
+            "FindNextFileW",
+            "MoveFileExW",
+            "GetCurrentProcess",
+            "GetCurrentThreadId",
+            "InitializeCriticalSection",
+            "DeleteCriticalSection",
+            "ReleaseMutex",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "TlsFree",
+            "CreateProcessW",
+            "GetVersionExW",
+            "VerSetConditionMask",
+            "FreeLibrary",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "GetSystemTime",
+            "GetNativeSystemInfo",
+            "GetModuleHandleExW",
+            "GetWindowsDirectoryW",
+            "GetSystemWow64DirectoryW",
+            "GetEnvironmentStringsW",
+            "VerifyVersionInfoW",
+            "GetVolumePathNameW",
+            "GetDateFormatW",
+            "GetUserDefaultUILanguage",
+            "GetSystemDefaultLangID",
+            "GetUserDefaultLangID",
+            "GetStringTypeW",
+            "ReadFile",
+            "SetFilePointerEx",
+            "DuplicateHandle",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "LoadLibraryExW",
+            "CreateEventW",
+            "ProcessIdToSessionId",
+            "OpenProcess",
+            "GetProcessId",
+            "WaitForSingleObject",
+            "ConnectNamedPipe",
+            "SetNamedPipeHandleState",
+            "CreateNamedPipeW",
+            "CreateThread",
+            "GetExitCodeThread",
+            "SetEvent",
+            "WaitForMultipleObjects",
+            "InterlockedIncrement",
+            "InterlockedDecrement",
+            "ResetEvent",
+            "SetEndOfFile",
+            "SetFileTime",
+            "LocalFileTimeToFileTime",
+            "DosDateTimeToFileTime",
+            "CompareStringA",
+            "GetExitCodeProcess",
+            "SetThreadExecutionState",
+            "CopyFileExW",
+            "MapViewOfFile",
+            "UnmapViewOfFile",
+            "CreateMutexW",
+            "CreateFileMappingW",
+            "GetThreadLocale",
+            "IsValidCodePage",
+            "FindFirstFileExW",
+            "FreeEnvironmentStringsW",
+            "SetStdHandle",
+            "GetConsoleCP",
+            "GetConsoleMode",
+            "FlushFileBuffers",
+            "DecodePointer",
+            "WriteConsoleW",
+            "GetModuleHandleA",
+            "GlobalAlloc",
+            "GlobalFree",
+            "GetFileSizeEx",
+            "CopyFileW",
+            "VirtualAlloc",
+            "VirtualFree",
+            "SystemTimeToTzSpecificLocalTime",
+            "GetTimeZoneInformation",
+            "SystemTimeToFileTime",
+            "GetSystemInfo",
+            "VirtualProtect",
+            "VirtualQuery",
+            "GetComputerNameW",
+            "SetCurrentDirectoryW",
+            "GetFileType",
+            "GetACP",
+            "ExitProcess",
+            "GetStdHandle",
+            "InitializeCriticalSectionAndSpinCount",
+            "SetLastError",
+            "RtlUnwind",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "TerminateProcess",
+            "IsProcessorFeaturePresent",
+            "QueryPerformanceCounter",
+            "GetSystemTimeAsFileTime",
+            "InitializeSListHead",
+            "IsDebuggerPresent",
+            "GetStartupInfoW",
+            "RaiseException",
+            "LoadLibraryExA"
+          ]
+        },
+        {
+          "dll": "RPCRT4.dll",
+          "symbols": [
+            "UuidCreate"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "CompanyName": "Intel Corporation",
+        "FileDescription": "Intel(R) Extreme Tuning Utility",
+        "FileVersion": "6.5.2.38",
+        "InternalName": "setup",
+        "LegalCopyright": "Copyright (c) Intel Corporation. All rights reserved.",
+        "OriginalFilename": "XTUUISetup.exe",
+        "ProductName": "Intel(R) Extreme Tuning Utility",
+        "ProductVersion": "6.5.2.38"
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Game Summary_1.0.0.43.exe",
+      "bytes": 2158768,
+      "sha256": "c8da4e8a9a585267de405e363bd27993ab1f69a5918b734aa1122dc8fa8c71e5",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0xafe60",
+      "imports": [
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "GetExitCodeProcess",
+            "CloseHandle",
+            "LocalFree",
+            "SizeofResource",
+            "VirtualProtect",
+            "QueryPerformanceFrequency",
+            "VirtualFree",
+            "GetFullPathNameW",
+            "GetProcessHeap",
+            "ExitProcess",
+            "HeapAlloc",
+            "GetCPInfoExW",
+            "RtlUnwind",
+            "SetFilePointerEx",
+            "GetCPInfo",
+            "GetStdHandle",
+            "GetModuleHandleW",
+            "FreeLibrary",
+            "HeapDestroy",
+            "ReadFile",
+            "CreateProcessW",
+            "GetLastError",
+            "GetModuleFileNameW",
+            "SetLastError",
+            "FindResourceW",
+            "CreateThread",
+            "CompareStringW",
+            "GetFileSizeEx",
+            "LoadLibraryA",
+            "ResetEvent",
+            "GetVolumeInformationW",
+            "GetVersion",
+            "GetDriveTypeW",
+            "RaiseException",
+            "FormatMessageW",
+            "SwitchToThread",
+            "GetExitCodeThread",
+            "GetCurrentThread",
+            "LoadLibraryExW",
+            "LockResource",
+            "GetCurrentThreadId",
+            "UnhandledExceptionFilter",
+            "VirtualQuery",
+            "VirtualQueryEx",
+            "Sleep",
+            "EnterCriticalSection",
+            "LoadResource",
+            "SuspendThread",
+            "GetTickCount",
+            "GetStartupInfoW",
+            "GetFileAttributesW",
+            "InitializeCriticalSection",
+            "GetSystemWindowsDirectoryW",
+            "GetThreadPriority",
+            "SetThreadPriority",
+            "GetCurrentProcess",
+            "VirtualAlloc",
+            "GetCommandLineW",
+            "GetSystemInfo",
+            "GetTempPathW",
+            "LeaveCriticalSection",
+            "GetProcAddress",
+            "ResumeThread",
+            "GetVersionExW",
+            "VerifyVersionInfoW",
+            "HeapCreate",
+            "LCMapStringW",
+            "VerSetConditionMask",
+            "GetDiskFreeSpaceW",
+            "FindFirstFileW",
+            "GetUserDefaultUILanguage",
+            "lstrlenW",
+            "SetEndOfFile",
+            "QueryPerformanceCounter",
+            "HeapFree",
+            "WideCharToMultiByte",
+            "FindClose",
+            "MultiByteToWideChar",
+            "LoadLibraryW",
+            "SetEvent",
+            "CreateFileW",
+            "GetLocaleInfoW",
+            "GetSystemDirectoryW",
+            "DeleteFileW",
+            "GetLocalTime",
+            "WaitForSingleObject",
+            "WriteFile",
+            "ExitThread",
+            "DeleteCriticalSection",
+            "TlsGetValue",
+            "GetDateFormatW",
+            "IsValidLocale",
+            "TlsSetValue",
+            "CreateDirectoryW",
+            "GetSystemDefaultUILanguage",
+            "EnumCalendarInfoW",
+            "LocalAlloc",
+            "GetUserDefaultLangID",
+            "RemoveDirectoryW",
+            "CreateEventW",
+            "SetThreadLocale",
+            "GetThreadLocale"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "CharLowerBuffW",
+            "CallWindowProcW",
+            "CharUpperW",
+            "PeekMessageW",
+            "GetSystemMetrics",
+            "SetWindowLongW",
+            "MessageBoxW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CharNextW",
+            "MsgWaitForMultipleObjects",
+            "LoadStringW",
+            "ExitWindowsEx",
+            "DispatchMessageW"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPutElement",
+            "VariantInit",
+            "VariantClear",
+            "SysFreeString",
+            "SafeArrayAccessData",
+            "SysReAllocStringLen",
+            "SafeArrayCreate",
+            "SafeArrayGetElement",
+            "SysAllocStringLen",
+            "SafeArrayUnaccessData",
+            "SafeArrayPtrOfIndex",
+            "VariantCopy",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "VariantChangeType"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "ConvertStringSecurityDescriptorToSecurityDescriptorW",
+            "OpenThreadToken",
+            "AdjustTokenPrivileges",
+            "LookupPrivilegeValueW",
+            "RegOpenKeyExW",
+            "OpenProcessToken",
+            "FreeSid",
+            "AllocateAndInitializeSid",
+            "EqualSid",
+            "RegQueryValueExW",
+            "GetTokenInformation",
+            "ConvertSidToStringSidW",
+            "RegCloseKey"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "__dbk_fcall_wrapper",
+          "ordinal": 2,
+          "rva": "0xe578"
+        },
+        {
+          "name": "dbkFCallWrapperAddr",
+          "ordinal": 1,
+          "rva": "0xb863c"
+        }
+      ],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Game_Summary Setup                                          ",
+        "FileVersion": "1.0.0.43            ",
+        "LegalCopyright": "Copyright © 2020 Micro-Star INT'L CO., LTD.                                                         ",
+        "OriginalFileName": "                                                  ",
+        "ProductName": "Game_Summary                                                ",
+        "ProductVersion": "1.0.0.43                                          "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Graphics Fan Tool_1.0.0.02.exe",
+      "bytes": 713768,
+      "sha256": "dfa5d7b6e22effb3b44fed80e4837a93fd3dfc506e707379f48ec87716b4b066",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Graphics Fan Tool Setup                                     ",
+        "FileVersion": "1.0.0.02            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Graphics Fan Tool                                           ",
+        "ProductVersion": "1.0.0.02            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Lan Manager_1.0.0.68.exe",
+      "bytes": 8036920,
+      "sha256": "13a6fb8f1a043ee3ffb617c031473ed56ae98819059b4000699fe659a25e0d3e",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "LanManager Setup                                            ",
+        "FileVersion": "1.0.0.68            ",
+        "LegalCopyright": "Copyright © 2020 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "LanManager                                                  ",
+        "ProductVersion": "1.0.0.68            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/MSI_NBFoundation_Service.exe",
+      "bytes": 974872,
+      "sha256": "5c52905c8b349b9883c84351e2fdcfb45ad49d264a03f731b0ea2c4ca83276c0",
+      "kind": "managed-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0xde4de",
+      "imports": [
+        {
+          "dll": "mscoree.dll",
+          "symbols": [
+            "_CorExeMain"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "",
+        "CompanyName": "Micro-Star International Co., Ltd.",
+        "FileDescription": "Setup",
+        "FileVersion": "1.0.2411.1201",
+        "InternalName": "MSI_NBFoundation_Service.exe",
+        "LegalCopyright": "Copyright ©  2024",
+        "LegalTrademarks": "",
+        "OriginalFilename": "MSI_NBFoundation_Service.exe",
+        "ProductName": "Setup",
+        "ProductVersion": "1.0.2411.1201",
+        "Assembly Version": "1.0.2411.1201"
+      },
+      "cli_directory": {
+        "rva": "0x2008",
+        "bytes": 72
+      },
+      "assemblies": [
+        {
+          "name": "MSI_NBFoundation_Service",
+          "version": "1.0.2411.1201"
+        }
+      ],
+      "assembly_references": [
+        {
+          "name": "mscorlib",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "PresentationFramework",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Xaml",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Windows.Forms",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Management",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "PresentationCore",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.ServiceProcess",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "Microsoft.Win32.TaskScheduler",
+          "version": "1.9.4.17032"
+        },
+        {
+          "name": "System.Xml",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Drawing",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "System.Core",
+          "version": "4.0.0.0"
+        },
+        {
+          "name": "CS_CommonAPI",
+          "version": "2.0.0.26"
+        },
+        {
+          "name": "WindowsBase",
+          "version": "4.0.0.0"
+        }
+      ],
+      "clr_flags": "0x1"
+    },
+    {
+      "path": "tmp/PrePackage/My Device_1.0.0.11.exe",
+      "bytes": 1748776,
+      "sha256": "7e3423d2e2b1f48294c0fb908139ad8adaf8f60c718a60c3ae65b8387a27b910",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "My Device Setup                                             ",
+        "FileVersion": "1.0.0.11            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "My Device                                                   ",
+        "ProductVersion": "1.0.0.11            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Mystic Light_1.0.1.45.exe",
+      "bytes": 49650368,
+      "sha256": "6c6d939cecdeae885f3935bcde4ca92182b8d980dcb3c2868d92c7e224beb151",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Mystic_Light Setup                                          ",
+        "FileVersion": "1.0.1.45            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Mystic_Light                                                ",
+        "ProductVersion": "1.0.1.45            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Nahimic_1.0.0.06.exe",
+      "bytes": 834944,
+      "sha256": "1978516b95b73b9003b722953b8440cdb9203c886d27f9d811bebe39cc1844d7",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Nahimic Setup                                               ",
+        "FileVersion": "1.0.0.06            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Nahimic                                                     ",
+        "ProductVersion": "1.0.0.06            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Sound Tune_1.0.0.47.exe",
+      "bytes": 30835272,
+      "sha256": "15ec20f57eb99c5e97e45cadb78ae2de5abb093681bfcd5ff16b6f47f79dd13d",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Sound Tune Setup                                            ",
+        "FileVersion": "1.0.0.47            ",
+        "LegalCopyright": "Copyright © 2020 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Sound Tune                                                  ",
+        "ProductVersion": "1.0.0.47            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/Support_1.0.0.71.exe",
+      "bytes": 16661048,
+      "sha256": "fd57c9fea724319f882cb9392637bef199657b35d8a169e8c8cf3992fc0f8b73",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "Support Setup                                               ",
+        "FileVersion": "1.0.0.71            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "Support                                                     ",
+        "ProductVersion": "1.0.0.71            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    },
+    {
+      "path": "tmp/PrePackage/True Color_2.0.0.20.exe",
+      "bytes": 799848,
+      "sha256": "559fe40499a0b0bab540d831311b82ac8fa42b793b1331b4668f8204af191faa",
+      "kind": "native-PE",
+      "machine": "0x14c",
+      "image_base": "0x400000",
+      "entry_rva": "0x16478",
+      "imports": [
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SysFreeString",
+            "SysReAllocStringLen",
+            "SysAllocStringLen"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "GetKeyboardType",
+            "LoadStringW",
+            "MessageBoxA",
+            "CharNextW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "GetACP",
+            "Sleep",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetSystemInfo",
+            "GetTickCount",
+            "QueryPerformanceCounter",
+            "GetVersion",
+            "GetCurrentThreadId",
+            "VirtualQuery",
+            "WideCharToMultiByte",
+            "MultiByteToWideChar",
+            "lstrlenW",
+            "lstrcpynW",
+            "LoadLibraryExW",
+            "GetThreadLocale",
+            "GetStartupInfoA",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetCommandLineW",
+            "FreeLibrary",
+            "FindFirstFileW",
+            "FindClose",
+            "ExitProcess",
+            "WriteFile",
+            "UnhandledExceptionFilter",
+            "RtlUnwind",
+            "RaiseException",
+            "GetStdHandle",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "TlsSetValue",
+            "TlsGetValue",
+            "LocalAlloc",
+            "GetModuleHandleW"
+          ]
+        },
+        {
+          "dll": "user32.dll",
+          "symbols": [
+            "CreateWindowExW",
+            "TranslateMessage",
+            "SetWindowLongW",
+            "PeekMessageW",
+            "MsgWaitForMultipleObjects",
+            "MessageBoxW",
+            "LoadStringW",
+            "GetSystemMetrics",
+            "ExitWindowsEx",
+            "DispatchMessageW",
+            "DestroyWindow",
+            "CharUpperBuffW",
+            "CallWindowProcW"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "WriteFile",
+            "WideCharToMultiByte",
+            "WaitForSingleObject",
+            "VirtualQuery",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualAlloc",
+            "SizeofResource",
+            "SignalObjectAndWait",
+            "SetLastError",
+            "SetFilePointer",
+            "SetEvent",
+            "SetErrorMode",
+            "SetEndOfFile",
+            "ResetEvent",
+            "RemoveDirectoryW",
+            "ReadFile",
+            "MultiByteToWideChar",
+            "LockResource",
+            "LoadResource",
+            "LoadLibraryW",
+            "LeaveCriticalSection",
+            "InitializeCriticalSection",
+            "GetWindowsDirectoryW",
+            "GetVersionExW",
+            "GetUserDefaultLangID",
+            "GetThreadLocale",
+            "GetSystemInfo",
+            "GetStdHandle",
+            "GetProcAddress",
+            "GetModuleHandleW",
+            "GetModuleFileNameW",
+            "GetLocaleInfoW",
+            "GetLocalTime",
+            "GetLastError",
+            "GetFullPathNameW",
+            "GetFileSize",
+            "GetFileAttributesW",
+            "GetExitCodeProcess",
+            "GetEnvironmentVariableW",
+            "GetDiskFreeSpaceW",
+            "GetDateFormatW",
+            "GetCurrentProcess",
+            "GetCommandLineW",
+            "GetCPInfo",
+            "InterlockedExchange",
+            "InterlockedCompareExchange",
+            "FreeLibrary",
+            "FormatMessageW",
+            "FindResourceW",
+            "EnumCalendarInfoW",
+            "EnterCriticalSection",
+            "DeleteFileW",
+            "DeleteCriticalSection",
+            "CreateProcessW",
+            "CreateFileW",
+            "CreateEventW",
+            "CreateDirectoryW",
+            "CompareStringW",
+            "CloseHandle"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "RegQueryValueExW",
+            "RegOpenKeyExW",
+            "RegCloseKey",
+            "OpenProcessToken",
+            "LookupPrivilegeValueW"
+          ]
+        },
+        {
+          "dll": "comctl32.dll",
+          "symbols": [
+            "InitCommonControls"
+          ]
+        },
+        {
+          "dll": "kernel32.dll",
+          "symbols": [
+            "Sleep"
+          ]
+        },
+        {
+          "dll": "advapi32.dll",
+          "symbols": [
+            "AdjustTokenPrivileges"
+          ]
+        },
+        {
+          "dll": "oleaut32.dll",
+          "symbols": [
+            "SafeArrayPtrOfIndex",
+            "SafeArrayGetUBound",
+            "SafeArrayGetLBound",
+            "SafeArrayCreate",
+            "VariantChangeType",
+            "VariantCopy",
+            "VariantClear",
+            "VariantInit"
+          ]
+        }
+      ],
+      "exports": [],
+      "version_resources": {
+        "Comments": "This installation was built with Inno Setup.",
+        "CompanyName": "MSI                                                         ",
+        "FileDescription": "True Color Setup                                            ",
+        "FileVersion": "2.0.0.20            ",
+        "LegalCopyright": "Copyright © 2019 Micro-Star INT'L CO., LTD.                                                         ",
+        "ProductName": "True Color                                                  ",
+        "ProductVersion": "2.0.0.20            "
+      },
+      "cli_directory": {
+        "rva": "0x0",
+        "bytes": 0
+      }
+    }
+  ]
+}

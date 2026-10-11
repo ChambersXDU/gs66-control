@@ -1,0 +1,1213 @@
+{
+  "schema": "focused-native-evidence-v1",
+  "purpose": "GInf.dll GPU module loading and NVAPI resolver boundary; static evidence only",
+  "subject": {
+    "name": "GInf.dll",
+    "sha256": "92555c7f8f92953862ce5d6d6883193a758e1ba7085a0956012cbe5c5aa25857",
+    "format": "PE32+ x86-64",
+    "source": "/tmp/gs66-research/nbfoundation/pf/MSI/One Dragon Center/GInf.dll"
+  },
+  "provider": {
+    "id": "ghidra",
+    "version": "12.1.4",
+    "via": "REA 6.3.0 MCP"
+  },
+  "functions": [
+    {
+      "role": "load_dispatch",
+      "operation": "analyze_function",
+      "parameters": {
+        "procedure": "0x180001030"
+      },
+      "procedure": {
+        "address": "0x180001030",
+        "name": "FUN_180001030",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001030",
+              "end": "0x180001189"
+            }
+          ],
+          "total_bytes": 346,
+          "span_bytes": 346,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "int __fastcall FUN_180001030(HMODULE param_1, int param_2, int param_3)",
+        "locals": []
+      },
+      "pseudocode": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nint FUN_180001030(HMODULE param_1,int param_2,int param_3)\n\n{\n  int iVar1;\n  \n  if (param_2 != 0) {\n    if ((param_2 == 1) &&\n       (_DAT_18000c120 = GetProcAddress(param_1,\"nvapi_pepQueryInterface\"),\n       _DAT_18000c120 == (FARPROC)0x0)) {\n      return -1;\n    }\n    goto LAB_18000116e;\n  }\n  DAT_18000c118 = GetProcAddress(param_1,\"nvapi_QueryInterface\");\n  if (DAT_18000c118 == (FARPROC)0x0) {\n    return -1;\n  }\n  DAT_18000c108 = (code *)(*DAT_18000c118)();\n  if (DAT_18000c118 == (FARPROC)0x0) {\n    DAT_18000c110 = (code *)0x0;\n  }\n  else {\n    DAT_18000c110 = (code *)(*DAT_18000c118)();\n  }\n  if (param_3 == 0) {\n    if (DAT_18000c110 == (code *)0x0) {\n      return -1;\n    }\n    iVar1 = (*DAT_18000c110)();\n  }\n  else {\n    if (param_3 != 1) {\n      return -1;\n    }\n    if (DAT_18000c108 == (code *)0x0) {\n      return -3;\n    }\n    iVar1 = (*DAT_18000c108)(1);\n  }\n  if (iVar1 != 0) {\n    return iVar1;\n  }\n  if (DAT_18000c118 == (FARPROC)0x0) {\n    DAT_18000c128 = 0;\nLAB_180001120:\n    DAT_18000c130 = 0;\n  }\n  else {\n    DAT_18000c128 = (*DAT_18000c118)(0x33c7358c);\n    if (DAT_18000c118 == (FARPROC)0x0) goto LAB_180001120;\n    DAT_18000c130 = (*DAT_18000c118)(0x593e8644);\n  }\n  if ((DAT_18000c128 == 0) || (DAT_18000c130 != 0)) {\n    DAT_18000c128 = 0;\n    DAT_18000c130 = 0;\n  }\nLAB_18000116e:\n  memset(&DAT_18000c180,0,0x14f0);\n  return 0;\n}\n\n",
+      "assembly": [
+        "0x180001030: PUSH RBX",
+        "0x180001032: SUB RSP, 0x20",
+        "0x180001036: MOV EBX, R8D",
+        "0x180001039: TEST EDX, EDX",
+        "0x18000103b: JNZ 0x18000114c",
+        "0x180001041: LEA RDX, [0x180009268]",
+        "0x180001048: CALL qword ptr [0x180009018]",
+        "0x18000104e: MOV qword ptr [0x18000c118], RAX",
+        "0x180001055: TEST RAX, RAX",
+        "0x180001058: JNZ 0x180001063",
+        "0x18000105a: OR EAX, 0xffffffff",
+        "0x18000105d: ADD RSP, 0x20",
+        "0x180001061: POP RBX",
+        "0x180001062: RET",
+        "0x180001063: MOV ECX, 0xad298d3f",
+        "0x180001068: CALL RAX",
+        "0x18000106a: MOV R10, RAX",
+        "0x18000106d: MOV qword ptr [0x18000c108], RAX",
+        "0x180001074: MOV RAX, qword ptr [0x18000c118]",
+        "0x18000107b: TEST RAX, RAX",
+        "0x18000107e: JZ 0x18000109a",
+        "0x180001080: MOV ECX, 0x150e828",
+        "0x180001085: CALL RAX",
+        "0x180001087: MOV R10, qword ptr [0x18000c108]",
+        "0x18000108e: MOV R11, RAX",
+        "0x180001091: MOV qword ptr [0x18000c110], RAX",
+        "0x180001098: JMP 0x1800010a4",
+        "0x18000109a: XOR R11D, R11D",
+        "0x18000109d: MOV qword ptr [0x18000c110], R11",
+        "0x1800010a4: OR ECX, 0xffffffff",
+        "0x1800010a7: TEST EBX, EBX",
+        "0x1800010a9: JZ 0x1800010c9",
+        "0x1800010ab: CMP EBX, 0x1",
+        "0x1800010ae: JNZ 0x1800010c1",
+        "0x1800010b0: TEST R10, R10",
+        "0x1800010b3: JZ 0x1800010bc",
+        "0x1800010b5: MOV ECX, EBX",
+        "0x1800010b7: CALL R10",
+        "0x1800010ba: JMP 0x1800010d1",
+        "0x1800010bc: MOV ECX, 0xfffffffd",
+        "0x1800010c1: MOV EAX, ECX",
+        "0x1800010c3: ADD RSP, 0x20",
+        "0x1800010c7: POP RBX",
+        "0x1800010c8: RET",
+        "0x1800010c9: TEST R11, R11",
+        "0x1800010cc: JZ 0x1800010c1",
+        "0x1800010ce: CALL R11",
+        "0x1800010d1: MOV ECX, EAX",
+        "0x1800010d3: TEST EAX, EAX",
+        "0x1800010d5: JNZ 0x1800010c1",
+        "0x1800010d7: MOV RAX, qword ptr [0x18000c118]",
+        "0x1800010de: TEST RAX, RAX",
+        "0x1800010e1: JZ 0x180001117",
+        "0x1800010e3: MOV ECX, 0x33c7358c",
+        "0x1800010e8: CALL RAX",
+        "0x1800010ea: MOV RDX, qword ptr [0x18000c118]",
+        "0x1800010f1: MOV qword ptr [0x18000c128], RAX",
+        "0x1800010f8: TEST RDX, RDX",
+        "0x1800010fb: JZ 0x180001120",
+        "0x1800010fd: MOV ECX, 0x593e8644",
+        "0x180001102: CALL RDX",
+        "0x180001104: MOV R11, RAX",
+        "0x180001107: MOV qword ptr [0x18000c130], RAX",
+        "0x18000110e: MOV RAX, qword ptr [0x18000c128]",
+        "0x180001115: JMP 0x18000112a",
+        "0x180001117: XOR EAX, EAX",
+        "0x180001119: MOV qword ptr [0x18000c128], RAX",
+        "0x180001120: XOR R11D, R11D",
+        "0x180001123: MOV qword ptr [0x18000c130], R11",
+        "0x18000112a: TEST RAX, RAX",
+        "0x18000112d: JZ 0x180001134",
+        "0x18000112f: TEST R11, R11",
+        "0x180001132: JZ 0x18000116e",
+        "0x180001134: MOV qword ptr [0x18000c128], 0x0",
+        "0x18000113f: MOV qword ptr [0x18000c130], 0x0",
+        "0x18000114a: JMP 0x18000116e",
+        "0x18000114c: CMP EDX, 0x1",
+        "0x18000114f: JNZ 0x18000116e",
+        "0x180001151: LEA RDX, [0x180009250]",
+        "0x180001158: CALL qword ptr [0x180009018]",
+        "0x18000115e: MOV qword ptr [0x18000c120], RAX",
+        "0x180001165: TEST RAX, RAX",
+        "0x180001168: JZ 0x18000105a",
+        "0x18000116e: LEA RCX, [0x18000c180]",
+        "0x180001175: XOR EDX, EDX",
+        "0x180001177: MOV R8D, 0x14f0",
+        "0x18000117d: CALL 0x180008650",
+        "0x180001182: XOR EAX, EAX",
+        "0x180001184: ADD RSP, 0x20",
+        "0x180001188: POP RBX",
+        "0x180001189: RET"
+      ],
+      "callees": [
+        {
+          "address": "EXTERNAL:0x4",
+          "name": "KERNEL32.DLL::GetProcAddress",
+          "classification": {
+            "external": true,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [],
+            "total_bytes": 0,
+            "span_bytes": 0,
+            "non_contiguous": false,
+            "contains_entry": false
+          }
+        },
+        {
+          "address": "0x180008650",
+          "name": "VCRUNTIME140.DLL::memset",
+          "classification": {
+            "external": false,
+            "thunk": true,
+            "thunk_target": "EXTERNAL:0x24",
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x180008650",
+                "end": "0x180008655"
+              }
+            ],
+            "total_bytes": 6,
+            "span_bytes": 6,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        }
+      ],
+      "referenced_names": [
+        {
+          "address": "0x18000105a",
+          "value": "LAB_18000105a",
+          "source_address": "0x180001168"
+        },
+        {
+          "address": "0x180001063",
+          "value": "LAB_180001063",
+          "source_address": "0x180001058"
+        },
+        {
+          "address": "0x18000109a",
+          "value": "LAB_18000109a",
+          "source_address": "0x18000107e"
+        },
+        {
+          "address": "0x1800010a4",
+          "value": "LAB_1800010a4",
+          "source_address": "0x180001098"
+        },
+        {
+          "address": "0x1800010bc",
+          "value": "LAB_1800010bc",
+          "source_address": "0x1800010b3"
+        },
+        {
+          "address": "0x1800010c1",
+          "value": "LAB_1800010c1",
+          "source_address": "0x1800010ae"
+        },
+        {
+          "address": "0x1800010c1",
+          "value": "LAB_1800010c1",
+          "source_address": "0x1800010cc"
+        },
+        {
+          "address": "0x1800010c1",
+          "value": "LAB_1800010c1",
+          "source_address": "0x1800010d5"
+        },
+        {
+          "address": "0x1800010c9",
+          "value": "LAB_1800010c9",
+          "source_address": "0x1800010a9"
+        },
+        {
+          "address": "0x1800010d1",
+          "value": "LAB_1800010d1",
+          "source_address": "0x1800010ba"
+        },
+        {
+          "address": "0x180001117",
+          "value": "LAB_180001117",
+          "source_address": "0x1800010e1"
+        },
+        {
+          "address": "0x180001120",
+          "value": "LAB_180001120",
+          "source_address": "0x1800010fb"
+        },
+        {
+          "address": "0x18000112a",
+          "value": "LAB_18000112a",
+          "source_address": "0x180001115"
+        },
+        {
+          "address": "0x180001134",
+          "value": "LAB_180001134",
+          "source_address": "0x18000112d"
+        },
+        {
+          "address": "0x18000114c",
+          "value": "LAB_18000114c",
+          "source_address": "0x18000103b"
+        },
+        {
+          "address": "0x18000116e",
+          "value": "LAB_18000116e",
+          "source_address": "0x180001132"
+        },
+        {
+          "address": "0x18000116e",
+          "value": "LAB_18000116e",
+          "source_address": "0x18000114a"
+        },
+        {
+          "address": "0x18000116e",
+          "value": "LAB_18000116e",
+          "source_address": "0x18000114f"
+        },
+        {
+          "address": "0x180008650",
+          "value": "VCRUNTIME140.DLL::memset",
+          "source_address": "0x18000117d"
+        },
+        {
+          "address": "0x180009018",
+          "value": "PTR_GetProcAddress_180009018",
+          "source_address": "0x180001048"
+        },
+        {
+          "address": "0x180009018",
+          "value": "PTR_GetProcAddress_180009018",
+          "source_address": "0x180001158"
+        },
+        {
+          "address": "0x180009250",
+          "value": "s_nvapi_pepQueryInterface_180009250",
+          "source_address": "0x180001151"
+        },
+        {
+          "address": "0x180009268",
+          "value": "s_nvapi_QueryInterface_180009268",
+          "source_address": "0x180001041"
+        },
+        {
+          "address": "0x18000c108",
+          "value": "DAT_18000c108",
+          "source_address": "0x18000106d"
+        },
+        {
+          "address": "0x18000c108",
+          "value": "DAT_18000c108",
+          "source_address": "0x180001087"
+        },
+        {
+          "address": "0x18000c110",
+          "value": "DAT_18000c110",
+          "source_address": "0x180001091"
+        },
+        {
+          "address": "0x18000c110",
+          "value": "DAT_18000c110",
+          "source_address": "0x18000109d"
+        },
+        {
+          "address": "0x18000c118",
+          "value": "DAT_18000c118",
+          "source_address": "0x18000104e"
+        },
+        {
+          "address": "0x18000c118",
+          "value": "DAT_18000c118",
+          "source_address": "0x180001074"
+        },
+        {
+          "address": "0x18000c118",
+          "value": "DAT_18000c118",
+          "source_address": "0x1800010d7"
+        },
+        {
+          "address": "0x18000c118",
+          "value": "DAT_18000c118",
+          "source_address": "0x1800010ea"
+        },
+        {
+          "address": "0x18000c120",
+          "value": "DAT_18000c120",
+          "source_address": "0x18000115e"
+        },
+        {
+          "address": "0x18000c128",
+          "value": "DAT_18000c128",
+          "source_address": "0x1800010f1"
+        },
+        {
+          "address": "0x18000c128",
+          "value": "DAT_18000c128",
+          "source_address": "0x18000110e"
+        },
+        {
+          "address": "0x18000c128",
+          "value": "DAT_18000c128",
+          "source_address": "0x180001119"
+        },
+        {
+          "address": "0x18000c128",
+          "value": "DAT_18000c128",
+          "source_address": "0x180001134"
+        },
+        {
+          "address": "0x18000c130",
+          "value": "DAT_18000c130",
+          "source_address": "0x180001107"
+        },
+        {
+          "address": "0x18000c130",
+          "value": "DAT_18000c130",
+          "source_address": "0x180001123"
+        },
+        {
+          "address": "0x18000c130",
+          "value": "DAT_18000c130",
+          "source_address": "0x18000113f"
+        },
+        {
+          "address": "0x18000c180",
+          "value": "DAT_18000c180",
+          "source_address": "0x18000116e"
+        },
+        {
+          "address": "EXTERNAL:0x4",
+          "value": "KERNEL32.DLL::GetProcAddress",
+          "source_address": "0x180001048"
+        },
+        {
+          "address": "EXTERNAL:0x4",
+          "value": "KERNEL32.DLL::GetProcAddress",
+          "source_address": "0x180001158"
+        }
+      ],
+      "referenced_strings": [
+        {
+          "address": "0x180009250",
+          "value": "nvapi_pepQueryInterface",
+          "source_address": "0x180001151"
+        },
+        {
+          "address": "0x180009268",
+          "value": "nvapi_QueryInterface",
+          "source_address": "0x180001041"
+        }
+      ],
+      "source_evidence_id": "ev_e26289676493f7e038f276e84a469a5f247bd564392bed4cb98ecd01d2cee05d",
+      "source_result_sha256": "3bfc1507f8e2e5536415d4016c7d9d810dc066d0107a38230806f2cb23303f86"
+    },
+    {
+      "role": "module_loader",
+      "operation": "analyze_function",
+      "parameters": {
+        "procedure": "0x180002ea0"
+      },
+      "procedure": {
+        "address": "0x180002ea0",
+        "name": "FUN_180002ea0",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180002ea0",
+              "end": "0x180002f04"
+            }
+          ],
+          "total_bytes": 101,
+          "span_bytes": 101,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "HMODULE __fastcall FUN_180002ea0(WCHAR * param_1, uint param_2)",
+        "locals": [
+          {
+            "description": "undefined8 local_res10 @ Stack[0x10]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res18 @ Stack[0x18]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res8 @ Stack[0x8]:8",
+            "provenance": "ghidra-function-database"
+          }
+        ]
+      },
+      "pseudocode": "\nHMODULE FUN_180002ea0(WCHAR *param_1,uint param_2)\n\n{\n  LPWSTR lpLibFileName;\n  HMODULE pHVar1;\n  \n  pHVar1 = (HMODULE)0x0;\n  lpLibFileName = FUN_1800027c0(param_1);\n  if ((param_1 == (WCHAR *)0x0) || (lpLibFileName != (LPWSTR)0x0)) {\n    pHVar1 = LoadLibraryExW(lpLibFileName,(HANDLE)0x0,param_2 & 0xffffe0f7);\n  }\n  LocalFree(lpLibFileName);\n  return pHVar1;\n}\n\n",
+      "assembly": [
+        "0x180002ea0: MOV qword ptr [RSP + 0x8], RBX",
+        "0x180002ea5: MOV qword ptr [RSP + 0x10], RBP",
+        "0x180002eaa: MOV qword ptr [RSP + 0x18], RSI",
+        "0x180002eaf: PUSH RDI",
+        "0x180002eb0: SUB RSP, 0x20",
+        "0x180002eb4: MOV EBP, EDX",
+        "0x180002eb6: MOV RBX, RCX",
+        "0x180002eb9: XOR ESI, ESI",
+        "0x180002ebb: CALL 0x1800027c0",
+        "0x180002ec0: MOV RDI, RAX",
+        "0x180002ec3: TEST RBX, RBX",
+        "0x180002ec6: JZ 0x180002ecd",
+        "0x180002ec8: TEST RAX, RAX",
+        "0x180002ecb: JZ 0x180002ee4",
+        "0x180002ecd: AND EBP, 0xffffe0f7",
+        "0x180002ed3: XOR EDX, EDX",
+        "0x180002ed5: MOV RCX, RAX",
+        "0x180002ed8: MOV R8D, EBP",
+        "0x180002edb: CALL qword ptr [0x180009060]",
+        "0x180002ee1: MOV RSI, RAX",
+        "0x180002ee4: MOV RCX, RDI",
+        "0x180002ee7: CALL qword ptr [0x180009048]",
+        "0x180002eed: MOV RBX, qword ptr [RSP + 0x30]",
+        "0x180002ef2: MOV RBP, qword ptr [RSP + 0x38]",
+        "0x180002ef7: MOV RAX, RSI",
+        "0x180002efa: MOV RSI, qword ptr [RSP + 0x40]",
+        "0x180002eff: ADD RSP, 0x20",
+        "0x180002f03: POP RDI",
+        "0x180002f04: RET"
+      ],
+      "callees": [
+        {
+          "address": "EXTERNAL:0xa",
+          "name": "KERNEL32.DLL::LocalFree",
+          "classification": {
+            "external": true,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [],
+            "total_bytes": 0,
+            "span_bytes": 0,
+            "non_contiguous": false,
+            "contains_entry": false
+          }
+        },
+        {
+          "address": "EXTERNAL:0xd",
+          "name": "KERNEL32.DLL::LoadLibraryExW",
+          "classification": {
+            "external": true,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [],
+            "total_bytes": 0,
+            "span_bytes": 0,
+            "non_contiguous": false,
+            "contains_entry": false
+          }
+        },
+        {
+          "address": "0x1800027c0",
+          "name": "FUN_1800027c0",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x1800027c0",
+                "end": "0x1800028b7"
+              }
+            ],
+            "total_bytes": 248,
+            "span_bytes": 248,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        }
+      ],
+      "referenced_names": [
+        {
+          "address": "0x1800027c0",
+          "value": "FUN_1800027c0",
+          "source_address": "0x180002ebb"
+        },
+        {
+          "address": "0x180002ecd",
+          "value": "LAB_180002ecd",
+          "source_address": "0x180002ec6"
+        },
+        {
+          "address": "0x180002ee4",
+          "value": "LAB_180002ee4",
+          "source_address": "0x180002ecb"
+        },
+        {
+          "address": "0x180009048",
+          "value": "PTR_LocalFree_180009048",
+          "source_address": "0x180002ee7"
+        },
+        {
+          "address": "0x180009060",
+          "value": "PTR_LoadLibraryExW_180009060",
+          "source_address": "0x180002edb"
+        },
+        {
+          "address": "EXTERNAL:0xa",
+          "value": "KERNEL32.DLL::LocalFree",
+          "source_address": "0x180002ee7"
+        },
+        {
+          "address": "EXTERNAL:0xd",
+          "value": "KERNEL32.DLL::LoadLibraryExW",
+          "source_address": "0x180002edb"
+        }
+      ],
+      "referenced_strings": [],
+      "source_evidence_id": "ev_cb35b93e16ea361f51c4d45426581881eaa566b40aa5d71c17df26442ed14e25",
+      "source_result_sha256": "5a88ec46b2347d2a8c963b642148a6d3dff5a37e8af20903812bdedd4d8fbb30"
+    },
+    {
+      "role": "loader_entry",
+      "operation": "analyze_function",
+      "parameters": {
+        "procedure": "0x180001190"
+      },
+      "procedure": {
+        "address": "0x180001190",
+        "name": "FUN_180001190",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001190",
+              "end": "0x18000126f"
+            }
+          ],
+          "total_bytes": 224,
+          "span_bytes": 224,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "int __fastcall FUN_180001190(int param_1, int param_2)",
+        "locals": [
+          {
+            "description": "undefined8 local_res10 @ Stack[0x10]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res18 @ Stack[0x18]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res8 @ Stack[0x8]:8",
+            "provenance": "ghidra-function-database"
+          }
+        ]
+      },
+      "pseudocode": "\nint FUN_180001190(int param_1,int param_2)\n\n{\n  int iVar1;\n  HMODULE hLibModule;\n  wchar_t *pwVar2;\n  longlong lVar3;\n  \n  if (param_2 == 0) {\n    lVar3 = 0;\n  }\n  else {\n    if (param_2 != 1) {\n      return -3;\n    }\n    lVar3 = 1;\n  }\n  if ((&DAT_18000c138)[param_1] == 0) {\n    pwVar2 = L\"nvpowerapi.dll\";\n    if (param_1 == 0) {\n      pwVar2 = L\"nvapi64.dll\";\n    }\n    hLibModule = FUN_180005070(pwVar2,0);\n    if (hLibModule == (HMODULE)0x0) {\n      return -2;\n    }\n    iVar1 = FUN_180001030(hLibModule,param_1,param_2);\n    if (iVar1 != 0) {\n      FreeLibrary(hLibModule);\n      return iVar1;\n    }\n    (&DAT_18000c138)[param_1] = hLibModule;\n    (&DAT_18000c170)[param_1] = 1;\n    (&DAT_18000c0f8)[lVar3 * 3] = 1;\n    (&DAT_18000c0f0)[lVar3 * 3] = 1;\n  }\n  return 0;\n}\n\n",
+      "assembly": [
+        "0x180001190: PUSH RBX",
+        "0x180001192: PUSH RBP",
+        "0x180001193: PUSH RSI",
+        "0x180001194: SUB RSP, 0x20",
+        "0x180001198: MOV EBX, EDX",
+        "0x18000119a: MOVSXD RSI, ECX",
+        "0x18000119d: TEST EDX, EDX",
+        "0x18000119f: JZ 0x1800011ba",
+        "0x1800011a1: CMP EDX, 0x1",
+        "0x1800011a4: JZ 0x1800011b3",
+        "0x1800011a6: MOV EAX, 0xfffffffd",
+        "0x1800011ab: ADD RSP, 0x20",
+        "0x1800011af: POP RSI",
+        "0x1800011b0: POP RBP",
+        "0x1800011b1: POP RBX",
+        "0x1800011b2: RET",
+        "0x1800011b3: MOV EBP, 0x1",
+        "0x1800011b8: JMP 0x1800011bc",
+        "0x1800011ba: XOR EBP, EBP",
+        "0x1800011bc: MOV qword ptr [RSP + 0x40], RDI",
+        "0x1800011c1: MOV qword ptr [RSP + 0x48], R12",
+        "0x1800011c6: MOV qword ptr [RSP + 0x50], R13",
+        "0x1800011cb: LEA R13, [0x180000000]",
+        "0x1800011d2: CMP qword ptr [R13 + RSI*0x8 + 0xc138], 0x0",
+        "0x1800011db: JNZ 0x180001257",
+        "0x1800011dd: LEA RAX, [0x1800092a0]",
+        "0x1800011e4: LEA RCX, [0x180009280]",
+        "0x1800011eb: TEST ESI, ESI",
+        "0x1800011ed: CMOVZ RCX, RAX",
+        "0x1800011f1: XOR EDX, EDX",
+        "0x1800011f3: CALL 0x180005070",
+        "0x1800011f8: MOV RDI, RAX",
+        "0x1800011fb: TEST RAX, RAX",
+        "0x1800011fe: JNZ 0x180001205",
+        "0x180001200: LEA EAX, [RDI + -0x2]",
+        "0x180001203: JMP 0x180001259",
+        "0x180001205: MOV R8D, EBX",
+        "0x180001208: MOV EDX, ESI",
+        "0x18000120a: MOV RCX, RAX",
+        "0x18000120d: CALL 0x180001030",
+        "0x180001212: MOV EBX, EAX",
+        "0x180001214: TEST EAX, EAX",
+        "0x180001216: JZ 0x180001225",
+        "0x180001218: MOV RCX, RDI",
+        "0x18000121b: CALL qword ptr [0x180009020]",
+        "0x180001221: MOV EAX, EBX",
+        "0x180001223: JMP 0x180001259",
+        "0x180001225: MOV EAX, EBP",
+        "0x180001227: MOV qword ptr [R13 + RSI*0x8 + 0xc138], RDI",
+        "0x18000122f: MOV dword ptr [R13 + RSI*0x4 + 0xc170], 0x1",
+        "0x18000123b: LEA RCX, [RAX + RAX*0x2]",
+        "0x18000123f: MOV dword ptr [R13 + RCX*0x4 + 0xc0f8], 0x1",
+        "0x18000124b: MOV dword ptr [R13 + RCX*0x4 + 0xc0f0], 0x1",
+        "0x180001257: XOR EAX, EAX",
+        "0x180001259: MOV R12, qword ptr [RSP + 0x48]",
+        "0x18000125e: MOV RDI, qword ptr [RSP + 0x40]",
+        "0x180001263: MOV R13, qword ptr [RSP + 0x50]",
+        "0x180001268: ADD RSP, 0x20",
+        "0x18000126c: POP RSI",
+        "0x18000126d: POP RBP",
+        "0x18000126e: POP RBX",
+        "0x18000126f: RET"
+      ],
+      "callees": [
+        {
+          "address": "EXTERNAL:0x5",
+          "name": "KERNEL32.DLL::FreeLibrary",
+          "classification": {
+            "external": true,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [],
+            "total_bytes": 0,
+            "span_bytes": 0,
+            "non_contiguous": false,
+            "contains_entry": false
+          }
+        },
+        {
+          "address": "0x180001030",
+          "name": "FUN_180001030",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x180001030",
+                "end": "0x180001189"
+              }
+            ],
+            "total_bytes": 346,
+            "span_bytes": 346,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        },
+        {
+          "address": "0x180005070",
+          "name": "FUN_180005070",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x180005070",
+                "end": "0x180005175"
+              }
+            ],
+            "total_bytes": 262,
+            "span_bytes": 262,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        }
+      ],
+      "referenced_names": [
+        {
+          "address": "0x180000000",
+          "value": "IMAGE_DOS_HEADER_180000000",
+          "source_address": "0x1800011cb"
+        },
+        {
+          "address": "0x180001030",
+          "value": "FUN_180001030",
+          "source_address": "0x18000120d"
+        },
+        {
+          "address": "0x1800011b3",
+          "value": "LAB_1800011b3",
+          "source_address": "0x1800011a4"
+        },
+        {
+          "address": "0x1800011ba",
+          "value": "LAB_1800011ba",
+          "source_address": "0x18000119f"
+        },
+        {
+          "address": "0x1800011bc",
+          "value": "LAB_1800011bc",
+          "source_address": "0x1800011b8"
+        },
+        {
+          "address": "0x180001205",
+          "value": "LAB_180001205",
+          "source_address": "0x1800011fe"
+        },
+        {
+          "address": "0x180001225",
+          "value": "LAB_180001225",
+          "source_address": "0x180001216"
+        },
+        {
+          "address": "0x180001257",
+          "value": "LAB_180001257",
+          "source_address": "0x1800011db"
+        },
+        {
+          "address": "0x180001259",
+          "value": "LAB_180001259",
+          "source_address": "0x180001203"
+        },
+        {
+          "address": "0x180001259",
+          "value": "LAB_180001259",
+          "source_address": "0x180001223"
+        },
+        {
+          "address": "0x180005070",
+          "value": "FUN_180005070",
+          "source_address": "0x1800011f3"
+        },
+        {
+          "address": "0x180009020",
+          "value": "PTR_FreeLibrary_180009020",
+          "source_address": "0x18000121b"
+        },
+        {
+          "address": "0x180009280",
+          "value": "u_nvpowerapi.dll_180009280",
+          "source_address": "0x1800011e4"
+        },
+        {
+          "address": "0x1800092a0",
+          "value": "u_nvapi64.dll_1800092a0",
+          "source_address": "0x1800011dd"
+        },
+        {
+          "address": "0x1800092a0",
+          "value": "u_nvapi64.dll_1800092a0",
+          "source_address": "0x1800011ed"
+        },
+        {
+          "address": "0x18000c0fc",
+          "value": "DAT_18000c0fc",
+          "source_address": "0x18000124b"
+        },
+        {
+          "address": "0x18000c104",
+          "value": "DAT_18000c104",
+          "source_address": "0x18000123f"
+        },
+        {
+          "address": "0x18000c138",
+          "value": "DAT_18000c138",
+          "source_address": "0x1800011d2"
+        },
+        {
+          "address": "0x18000c138",
+          "value": "DAT_18000c138",
+          "source_address": "0x180001227"
+        },
+        {
+          "address": "0x18000c170",
+          "value": "DAT_18000c170",
+          "source_address": "0x18000122f"
+        },
+        {
+          "address": "EXTERNAL:0x5",
+          "value": "KERNEL32.DLL::FreeLibrary",
+          "source_address": "0x18000121b"
+        }
+      ],
+      "referenced_strings": [
+        {
+          "address": "0x180009280",
+          "value": "nvpowerapi.dll",
+          "source_address": "0x1800011e4"
+        },
+        {
+          "address": "0x1800092a0",
+          "value": "nvapi64.dll",
+          "source_address": "0x1800011dd"
+        },
+        {
+          "address": "0x1800092a0",
+          "value": "nvapi64.dll",
+          "source_address": "0x1800011ed"
+        }
+      ],
+      "source_evidence_id": "ev_8e959cbfc6296d2dfdc0bcefc7cd478305d3ecc82478cfd952d6216f1e9ada7f",
+      "source_result_sha256": "ce6da37700acf1e73f9acff70df8a9f96614792d157bd75e7308e488b541f99d"
+    },
+    {
+      "role": "wait_wrapper",
+      "operation": "analyze_function (existing GInf evidence)",
+      "parameters": {
+        "procedure": "0x180001270"
+      },
+      "procedure": {
+        "address": "0x180001270",
+        "name": "FUN_180001270",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001270",
+              "end": "0x1800012f6"
+            }
+          ],
+          "total_bytes": 135,
+          "span_bytes": 135,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "int __fastcall FUN_180001270(int param_1, int param_2)",
+        "locals": [
+          {
+            "description": "undefined8 local_res10 @ Stack[0x10]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res18 @ Stack[0x18]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res20 @ Stack[0x20]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res8 @ Stack[0x8]:8",
+            "provenance": "ghidra-function-database"
+          }
+        ]
+      },
+      "pseudocode": "\nint FUN_180001270(int param_1,int param_2)\n\n{\n  char cVar1;\n  int iVar2;\n  uint uVar3;\n  \n  uVar3 = 0;\n  cVar1 = (&DAT_18000c158)[param_1];\n  while( true ) {\n    if (cVar1 == '\\0') {\n      if ((&DAT_18000c138)[param_1] == 0) {\n        iVar2 = FUN_180001190(param_1,param_2);\n      }\n      else {\n        iVar2 = 0;\n      }\n      return iVar2;\n    }\n    Sleep(100);\n    uVar3 = uVar3 + 1;\n    if (9 < uVar3) break;\n    cVar1 = (&DAT_18000c158)[param_1];\n  }\n  return -1;\n}\n\n",
+      "assembly": [
+        "0x180001270: MOV qword ptr [RSP + 0x8], RBX",
+        "0x180001275: MOV qword ptr [RSP + 0x10], RBP",
+        "0x18000127a: MOV qword ptr [RSP + 0x18], RSI",
+        "0x18000127f: MOV qword ptr [RSP + 0x20], RDI",
+        "0x180001284: PUSH R12",
+        "0x180001286: SUB RSP, 0x20",
+        "0x18000128a: LEA R12, [0x180000000]",
+        "0x180001291: MOVSXD RSI, ECX",
+        "0x180001294: XOR EBX, EBX",
+        "0x180001296: MOV EBP, EDX",
+        "0x180001298: CMP byte ptr [RSI + R12*0x1 + 0xc158], BL",
+        "0x1800012a0: JZ 0x1800012bf",
+        "0x1800012a2: MOV ECX, 0x64",
+        "0x1800012a7: CALL qword ptr [0x180009028]",
+        "0x1800012ad: INC EBX",
+        "0x1800012af: CMP EBX, 0xa",
+        "0x1800012b2: JNC 0x1800012d5",
+        "0x1800012b4: CMP byte ptr [RSI + R12*0x1 + 0xc158], 0x0",
+        "0x1800012bd: JNZ 0x1800012a2",
+        "0x1800012bf: CMP qword ptr [R12 + RSI*0x8 + 0xc138], 0x0",
+        "0x1800012c8: JNZ 0x1800012da",
+        "0x1800012ca: MOV EDX, EBP",
+        "0x1800012cc: MOV ECX, ESI",
+        "0x1800012ce: CALL 0x180001190",
+        "0x1800012d3: JMP 0x1800012dc",
+        "0x1800012d5: OR EAX, 0xffffffff",
+        "0x1800012d8: JMP 0x1800012dc",
+        "0x1800012da: XOR EAX, EAX",
+        "0x1800012dc: MOV RBX, qword ptr [RSP + 0x30]",
+        "0x1800012e1: MOV RBP, qword ptr [RSP + 0x38]",
+        "0x1800012e6: MOV RSI, qword ptr [RSP + 0x40]",
+        "0x1800012eb: MOV RDI, qword ptr [RSP + 0x48]",
+        "0x1800012f0: ADD RSP, 0x20",
+        "0x1800012f4: POP R12",
+        "0x1800012f6: RET"
+      ],
+      "callees": [
+        {
+          "address": "EXTERNAL:0x6",
+          "name": "KERNEL32.DLL::Sleep",
+          "classification": {
+            "external": true,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [],
+            "total_bytes": 0,
+            "span_bytes": 0,
+            "non_contiguous": false,
+            "contains_entry": false
+          }
+        },
+        {
+          "address": "0x180001190",
+          "name": "FUN_180001190",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x180001190",
+                "end": "0x18000126f"
+              }
+            ],
+            "total_bytes": 224,
+            "span_bytes": 224,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        }
+      ],
+      "referenced_names": [],
+      "referenced_strings": [],
+      "source_evidence_id": "ev_59a040e97b84de161ac6f2e2f50e9e14468011030de45e8b9c09e79a98167e1c"
+    },
+    {
+      "role": "nvapi_query_use",
+      "operation": "analyze_function (existing GInf evidence)",
+      "parameters": {
+        "procedure": "0x180001a00"
+      },
+      "procedure": {
+        "address": "0x180001a00",
+        "name": "FUN_180001a00",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001a00",
+              "end": "0x180001ac2"
+            }
+          ],
+          "total_bytes": 195,
+          "span_bytes": 195,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "int __fastcall FUN_180001a00(undefined8 param_1, undefined8 param_2)",
+        "locals": [
+          {
+            "description": "undefined8 local_res10 @ Stack[0x10]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res18 @ Stack[0x18]:8",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined8 local_res8 @ Stack[0x8]:8",
+            "provenance": "ghidra-function-database"
+          }
+        ]
+      },
+      "pseudocode": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nint FUN_180001a00(undefined8 param_1,undefined8 param_2)\n\n{\n  code *pcVar1;\n  int iVar2;\n  undefined8 local_res18 [2];\n  \n  LOCK();\n  _DAT_18000c0f4 = _DAT_18000c0f4 + 1;\n  UNLOCK();\n  iVar2 = FUN_180001270(0,0);\n  if (iVar2 == 0) {\n    if ((DAT_18000c448 == (code *)0x0) &&\n       ((DAT_18000c118 == (code *)0x0 ||\n        (DAT_18000c448 = (code *)(*DAT_18000c118)(0xf4dae6b), DAT_18000c448 == (code *)0x0)))) {\n      iVar2 = -3;\n    }\n    else {\n      pcVar1 = DAT_18000c448;\n      local_res18[0] = 0;\n      if (DAT_18000c128 != (code *)0x0) {\n        (*DAT_18000c128)(0xf4dae6b,local_res18);\n      }\n      iVar2 = (*pcVar1)(param_1,param_2);\n      if (DAT_18000c130 != (code *)0x0) {\n        (*DAT_18000c130)(0xf4dae6b,local_res18[0],iVar2);\n      }\n    }\n  }\n  LOCK();\n  _DAT_18000c0f4 = _DAT_18000c0f4 + -1;\n  UNLOCK();\n  return iVar2;\n}\n\n",
+      "assembly": [
+        "0x180001a00: MOV qword ptr [RSP + 0x10], RSI",
+        "0x180001a05: PUSH RDI",
+        "0x180001a06: SUB RSP, 0x20",
+        "0x180001a0a: MOV RDI, RDX",
+        "0x180001a0d: MOV RSI, RCX",
+        "0x180001a10: ADD.LOCK dword ptr [0x18000c0f4], 0x1",
+        "0x180001a18: XOR EDX, EDX",
+        "0x180001a1a: XOR ECX, ECX",
+        "0x180001a1c: CALL 0x180001270",
+        "0x180001a21: TEST EAX, EAX",
+        "0x180001a23: JNZ 0x180001ab0",
+        "0x180001a29: MOV qword ptr [RSP + 0x30], RBX",
+        "0x180001a2e: MOV RBX, qword ptr [0x18000c448]",
+        "0x180001a35: TEST RBX, RBX",
+        "0x180001a38: JNZ 0x180001a63",
+        "0x180001a3a: MOV RAX, qword ptr [0x18000c118]",
+        "0x180001a41: TEST RAX, RAX",
+        "0x180001a44: JZ 0x180001a5c",
+        "0x180001a46: MOV ECX, 0xf4dae6b",
+        "0x180001a4b: CALL RAX",
+        "0x180001a4d: MOV RBX, RAX",
+        "0x180001a50: MOV qword ptr [0x18000c448], RAX",
+        "0x180001a57: TEST RAX, RAX",
+        "0x180001a5a: JNZ 0x180001a63",
+        "0x180001a5c: MOV EAX, 0xfffffffd",
+        "0x180001a61: JMP 0x180001aab",
+        "0x180001a63: MOV RAX, qword ptr [0x18000c128]",
+        "0x180001a6a: MOV qword ptr [RSP + 0x40], 0x0",
+        "0x180001a73: TEST RAX, RAX",
+        "0x180001a76: JZ 0x180001a84",
+        "0x180001a78: LEA RDX, [RSP + 0x40]",
+        "0x180001a7d: MOV ECX, 0xf4dae6b",
+        "0x180001a82: CALL RAX",
+        "0x180001a84: MOV RDX, RDI",
+        "0x180001a87: MOV RCX, RSI",
+        "0x180001a8a: CALL RBX",
+        "0x180001a8c: MOV EBX, EAX",
+        "0x180001a8e: MOV RAX, qword ptr [0x18000c130]",
+        "0x180001a95: TEST RAX, RAX",
+        "0x180001a98: JZ 0x180001aa9",
+        "0x180001a9a: MOV RDX, qword ptr [RSP + 0x40]",
+        "0x180001a9f: MOV R8D, EBX",
+        "0x180001aa2: MOV ECX, 0xf4dae6b",
+        "0x180001aa7: CALL RAX",
+        "0x180001aa9: MOV EAX, EBX",
+        "0x180001aab: MOV RBX, qword ptr [RSP + 0x30]",
+        "0x180001ab0: ADD.LOCK dword ptr [0x18000c0f4], -0x1",
+        "0x180001ab8: MOV RSI, qword ptr [RSP + 0x38]",
+        "0x180001abd: ADD RSP, 0x20",
+        "0x180001ac1: POP RDI",
+        "0x180001ac2: RET"
+      ],
+      "callees": [
+        {
+          "address": "0x180001270",
+          "name": "FUN_180001270",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x180001270",
+                "end": "0x1800012f6"
+              }
+            ],
+            "total_bytes": 135,
+            "span_bytes": 135,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        }
+      ],
+      "referenced_names": [],
+      "referenced_strings": [],
+      "source_evidence_id": "ev_7134e28811fe75623ea82d07696a8ac6d41270ef9f242dc320a705dcc83432fa"
+    }
+  ],
+  "conclusions": [
+    {
+      "status": "binary-confirmed",
+      "claim": "FUN_180001190 accepts two int parameters. For param_1 == 0 it selects nvapi64.dll; for param_1 == 1 it selects nvpowerapi.dll. It calls FUN_180001030 and stores the resulting HMODULE in the DAT_18000c138 indexed array, then marks the corresponding state flags.",
+      "evidence": [
+        "ev_8e959cbfc6296d2dfdc0bcefc7cd478305d3ecc82478cfd952d6216f1e9ada7f"
+      ]
+    },
+    {
+      "status": "binary-confirmed",
+      "claim": "FUN_180001030 calls KERNEL32.GetProcAddress with the literal nvapi_QueryInterface when param_2 == 0, and the instruction at 0x18000104e stores the return value directly into DAT_18000c118. The same function resolves nvapi_pepQueryInterface into DAT_18000c120 for param_2 == 1.",
+      "evidence": [
+        "ev_e26289676493f7e038f276e84a469a5f247bd564392bed4cb98ecd01d2cee05d"
+      ]
+    },
+    {
+      "status": "binary-confirmed",
+      "claim": "The module-loading path is FUN_180005070 -> FUN_180002ea0 -> KERNEL32.LoadLibraryExW. FUN_180005070 also contains a guarded NVIDIA path involving FUN_180004e40/FUN_1800044b0; the direct imported loader observed in this path is LoadLibraryExW, not an unqualified LoadLibraryW call.",
+      "evidence": [
+        "ev_c1c6a9bf42e5437c5be346c35d9b82e35799dac0f389a66ad005764b3abc8b80",
+        "ev_cb35b93e16ea361f51c4d45426581881eaa566b40aa5d71c17df26442ed14e25"
+      ]
+    },
+    {
+      "status": "binary-confirmed",
+      "claim": "FUN_180001270 is the wait wrapper: it checks an indexed state byte, sleeps 100 ms, retries up to ten times, and calls FUN_180001190 when the module state is not initialized. Existing GInf evidence identifies FUN_180001a00 as a downstream NVAPI call wrapper.",
+      "evidence": [
+        "ev_59a040e97b84de161ac6f2e2f50e9e14468011030de45e8b9c09e79a98167e1c",
+        "ev_7134e28811fe75623ea82d07696a8ac6d41270ef9f242dc320a705dcc83432fa"
+      ]
+    },
+    {
+      "status": "binary-confirmed",
+      "claim": "FUN_180001a00 reads DAT_18000c118 and calls it with ID 0x0F4DAE6B (shown by Ghidra as 0xf4dae6b) when DAT_18000c448 is unresolved; the returned function pointer is cached in DAT_18000c448.",
+      "evidence": [
+        "ev_7134e28811fe75623ea82d07696a8ac6d41270ef9f242dc320a705dcc83432fa"
+      ]
+    },
+    {
+      "status": "not-established",
+      "claim": "The evidence does not identify the semantic meaning of NVAPI ID 0x0F4DAE6B or prove that it controls a particular GS66 fan, power rail, or performance mode. That requires mapping the call arguments and return values through managed callers and Windows hardware validation.",
+      "evidence": []
+    }
+  ],
+  "safety": "All operations were offline static analysis. No Windows binary, NVIDIA DLL, service, driver, or hardware interface was executed."
+}

@@ -1,0 +1,89 @@
+{
+  "mode": "offline-static-pe-section-comparison",
+  "files": [
+    {
+      "path": "app/GInf.dll",
+      "sha256": "e0675578d0bf298fec13ec7f4d4a0b81081611f4fc18a3dc3da98b19e82d6ef2",
+      "sections": [
+        {
+          "name": ".text",
+          "rva": "0x1000",
+          "raw_bytes": 31232,
+          "sha256": "4b6d7e40a5172c82448d01581a7bd94e90e0a866ecde5b84f8ef7404d25dfe78"
+        },
+        {
+          "name": ".rdata",
+          "rva": "0x9000",
+          "raw_bytes": 9728,
+          "sha256": "d13f7f0d088794b275423aabafcea7b04f512488de679a56af27f99a721dae56"
+        },
+        {
+          "name": ".data",
+          "rva": "0xc000",
+          "raw_bytes": 512,
+          "sha256": "012ba76938919367f78861b9c974d7163cd1d6474a4f6a35acd05077d04480c5"
+        },
+        {
+          "name": ".pdata",
+          "rva": "0xe000",
+          "raw_bytes": 2560,
+          "sha256": "3dfa1f9b47f63adbc900b970d465dd5133e93c76a165b425f45b5398971b337d"
+        },
+        {
+          "name": ".rsrc",
+          "rva": "0xf000",
+          "raw_bytes": 1536,
+          "sha256": "05d6a0db2216f47314e621153a007cd882a347f20a3649616d0e01c1896988e3"
+        },
+        {
+          "name": ".reloc",
+          "rva": "0x10000",
+          "raw_bytes": 512,
+          "sha256": "c41d93f62dfc989dab9da6b96feb1b2baba4ce09ee65ccfdb8a3719e9b5a031b"
+        }
+      ]
+    },
+    {
+      "path": "pf/MSI/One Dragon Center/GInf.dll",
+      "sha256": "92555c7f8f92953862ce5d6d6883193a758e1ba7085a0956012cbe5c5aa25857",
+      "sections": [
+        {
+          "name": ".text",
+          "rva": "0x1000",
+          "raw_bytes": 31232,
+          "sha256": "4b6d7e40a5172c82448d01581a7bd94e90e0a866ecde5b84f8ef7404d25dfe78"
+        },
+        {
+          "name": ".rdata",
+          "rva": "0x9000",
+          "raw_bytes": 9728,
+          "sha256": "d13f7f0d088794b275423aabafcea7b04f512488de679a56af27f99a721dae56"
+        },
+        {
+          "name": ".data",
+          "rva": "0xc000",
+          "raw_bytes": 512,
+          "sha256": "012ba76938919367f78861b9c974d7163cd1d6474a4f6a35acd05077d04480c5"
+        },
+        {
+          "name": ".pdata",
+          "rva": "0xe000",
+          "raw_bytes": 2560,
+          "sha256": "3dfa1f9b47f63adbc900b970d465dd5133e93c76a165b425f45b5398971b337d"
+        },
+        {
+          "name": ".rsrc",
+          "rva": "0xf000",
+          "raw_bytes": 1536,
+          "sha256": "05d6a0db2216f47314e621153a007cd882a347f20a3649616d0e01c1896988e3"
+        },
+        {
+          "name": ".reloc",
+          "rva": "0x10000",
+          "raw_bytes": 512,
+          "sha256": "c41d93f62dfc989dab9da6b96feb1b2baba4ce09ee65ccfdb8a3719e9b5a031b"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "mode": "public-source-static-crosscheck",
+  "sources": [
+    {
+      "repository": "NVIDIA/nvapi",
+      "commit": "70d337db9186e968eab622f7e786de7e437faf3d",
+      "path": "NvApiDriverSettings.h",
+      "url": "https://raw.githubusercontent.com/NVIDIA/nvapi/70d337db9186e968eab622f7e786de7e437faf3d/NvApiDriverSettings.h",
+      "sha256": "95ffda903832840343a81189e052a0756774bd92e4b37f2dc49598d493f951d4",
+      "matches": [
+        {
+          "line": 236,
+          "text": "    PREFERRED_PSTATE_ID                           = 0x1057EB71,"
+        }
+      ]
+    },
+    {
+      "repository": "NVIDIA/nvapi",
+      "commit": "70d337db9186e968eab622f7e786de7e437faf3d",
+      "path": "nvapi_interface.h",
+      "url": "https://raw.githubusercontent.com/NVIDIA/nvapi/70d337db9186e968eab622f7e786de7e437faf3d/nvapi_interface.h",
+      "sha256": "d279f81e7f92f2743bfea2ec7ada693001805e13645eb1c6f2af44ef9c342834",
+      "matches": [
+        {
+          "line": 529,
+          "text": "    { \"NvAPI_DRS_SetSetting\", 0x577dd202 },"
+        }
+      ]
+    }
+  ]
+}

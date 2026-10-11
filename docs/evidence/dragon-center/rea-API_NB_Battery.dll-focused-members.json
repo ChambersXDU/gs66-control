@@ -1,0 +1,3627 @@
+{
+  "schema": "rea-managed-focused-evidence-v1",
+  "source_evidence_id": "ev_6376879d0d8baf59d48f15d1c83ba788a5f83674b0cbcb3c0b518cbbb80d8100",
+  "source_operation": "inspect_managed_members",
+  "source_result_sha256": "d179b91c26d20b9030aad44d618d0890d72a0a2aae22efddac0455cde6bdf2f0",
+  "selection": "Selected methods whose names match control, IPC or access-boundary study; not a complete member inventory. Names are selection filters, not semantic conclusions.",
+  "artifact": {
+    "path": "/private/tmp/gs66-research/nbfoundation/pf/MSI/One Dragon Center/Battery/API_NB_Battery.dll",
+    "sha256": "db88c39b264beafd8fd409a344316a1ea867316e43fda7ff39c8cc77d778af9e",
+    "byte_length": 49904,
+    "format": "pe"
+  },
+  "module": {
+    "name": "API_NB_Battery.dll",
+    "generation": 0,
+    "mvid": "d73dddcf-565c-45ab-8a1e-3ec6c9e40e5e",
+    "enc_id": null,
+    "enc_base_id": null,
+    "token": "0x00000001",
+    "row_offset": 12100
+  },
+  "metadata": {
+    "status": "complete",
+    "version": "v4.0.30319",
+    "table_row_counts": {
+      "Module": 1,
+      "TypeRef": 83,
+      "TypeDef": 14,
+      "Field": 84,
+      "MethodDef": 159,
+      "Param": 98,
+      "InterfaceImpl": 1,
+      "MemberRef": 128,
+      "Constant": 9,
+      "CustomAttribute": 121,
+      "FieldMarshal": 9,
+      "StandAloneSig": 26,
+      "PropertyMap": 5,
+      "Property": 32,
+      "MethodSemantics": 64,
+      "ModuleRef": 1,
+      "TypeSpec": 3,
+      "ImplMap": 12,
+      "FieldRVA": 2,
+      "Assembly": 1,
+      "AssemblyRef": 9,
+      "NestedClass": 2,
+      "MethodSpec": 4
+    }
+  },
+  "identity_scope": {
+    "token_identity": "build-local",
+    "requires_artifact_sha256": "db88c39b264beafd8fd409a344316a1ea867316e43fda7ff39c8cc77d778af9e",
+    "requires_mvid": "d73dddcf-565c-45ab-8a1e-3ec6c9e40e5e"
+  },
+  "methods": [
+    {
+      "token": "0x0600002a",
+      "row_offset": 13882,
+      "declaring_type_token": "0x02000005",
+      "declaring_type": "API_Dynamic.C_Battery",
+      "name": "WriteECBatteryMode",
+      "rva": 14718,
+      "impl_flags": 0,
+      "flags": 131,
+      "signature": {
+        "raw_length": 5,
+        "raw_sha256": "b0b771efb3d666590de2b289ec7a2f8f10c633bc6bc1a890b3becd120a928247",
+        "kind": "method",
+        "parse_status": "decoded",
+        "calling_convention": "default has-this",
+        "generic_parameter_count": null,
+        "parameter_count": 1,
+        "return_type": "void",
+        "parameter_types": [
+          "valuetype:8"
+        ],
+        "field_type": null,
+        "issue": null
+      },
+      "body": {
+        "status": "present",
+        "header_format": "tiny",
+        "rva": 14718,
+        "file_offset": 7038,
+        "max_stack": 8,
+        "init_locals": false,
+        "local_var_sig_token": null,
+        "il_size": 19,
+        "il_sha256": "0d88d1559be2454369600756d79bf50e98c8b1a0d225fddf2abdf7ee107c505d",
+        "normalized_il_sha256": "6c99ea29a82739e333599db7b82d2a53e5056a9cda246b786dd1123577022c07",
+        "instruction_count": 7,
+        "decoded_instruction_count": 7,
+        "truncated_instructions": 0,
+        "opcode_counts": {
+          "ldarg.0": 2,
+          "ldfld": 1,
+          "ldarg.1": 1,
+          "callvirt": 1,
+          "stfld": 1,
+          "ret": 1
+        },
+        "anchors": [
+          {
+            "il_offset": 2,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000013"
+          },
+          {
+            "il_offset": 8,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000040"
+          },
+          {
+            "il_offset": 13,
+            "opcode": "stfld",
+            "operand_kind": "field",
+            "operand": "0x04000018"
+          }
+        ],
+        "exception_regions": [],
+        "issue": null
+      }
+    },
+    {
+      "token": "0x0600003f",
+      "row_offset": 14176,
+      "declaring_type_token": "0x02000007",
+      "declaring_type": "API_Dynamic.PerformanceMonitor",
+      "name": "ReadECBatteryMemory",
+      "rva": 15564,
+      "impl_flags": 0,
+      "flags": 134,
+      "signature": {
+        "raw_length": 3,
+        "raw_sha256": "9468fec5d938f21b9caadb55b9b59a20771227a116ca3535639344ccafe2c92f",
+        "kind": "method",
+        "parse_status": "decoded",
+        "calling_convention": "default has-this",
+        "generic_parameter_count": null,
+        "parameter_count": 0,
+        "return_type": "u4",
+        "parameter_types": [],
+        "field_type": null,
+        "issue": null
+      },
+      "body": {
+        "status": "present",
+        "header_format": "fat",
+        "rva": 15564,
+        "file_offset": 7884,
+        "max_stack": 4,
+        "init_locals": true,
+        "local_var_sig_token": "0x11000011",
+        "il_size": 100,
+        "il_sha256": "8ccdc6d94f6ed9ccf15563df82c1d3cdea7c5574ac7c3d5e67bda8e7f2999c82",
+        "normalized_il_sha256": "406a3cfa9d6634807639f950ffcb4ccfe9b29294e7b3107af36c311efd82e696",
+        "instruction_count": 41,
+        "decoded_instruction_count": 41,
+        "truncated_instructions": 0,
+        "opcode_counts": {
+          "ldc.i4.0": 3,
+          "stloc.0": 2,
+          "ldarg.0": 5,
+          "ldfld": 5,
+          "ldc.i4.2": 1,
+          "blt.s": 1,
+          "ldc.i4.s": 1,
+          "ldc.i4": 2,
+          "ldc.i4.1": 3,
+          "newarr": 1,
+          "callvirt": 1,
+          "stloc.1": 1,
+          "ldloc.1": 2,
+          "beq.s": 1,
+          "br.s": 2,
+          "ldloc.0": 1,
+          "brfalse.s": 1,
+          "ldelem.u1": 1,
+          "call": 4,
+          "conv.u8": 1,
+          "ldloca.s": 1,
+          "ret": 1
+        },
+        "anchors": [
+          {
+            "il_offset": 3,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000030"
+          },
+          {
+            "il_offset": 8,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005c"
+          },
+          {
+            "il_offset": 14,
+            "opcode": "blt.s",
+            "operand_kind": "branch",
+            "operand": "74"
+          },
+          {
+            "il_offset": 17,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000030"
+          },
+          {
+            "il_offset": 22,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "24"
+          },
+          {
+            "il_offset": 24,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "215"
+          },
+          {
+            "il_offset": 30,
+            "opcode": "newarr",
+            "operand_kind": "type",
+            "operand": "0x0100002f"
+          },
+          {
+            "il_offset": 35,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a00005d"
+          },
+          {
+            "il_offset": 42,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005e"
+          },
+          {
+            "il_offset": 48,
+            "opcode": "beq.s",
+            "operand_kind": "branch",
+            "operand": "53"
+          },
+          {
+            "il_offset": 51,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "54"
+          },
+          {
+            "il_offset": 56,
+            "opcode": "brfalse.s",
+            "operand_kind": "branch",
+            "operand": "93"
+          },
+          {
+            "il_offset": 60,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005f"
+          },
+          {
+            "il_offset": 67,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0600003b"
+          },
+          {
+            "il_offset": 72,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "93"
+          },
+          {
+            "il_offset": 75,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-67106577"
+          },
+          {
+            "il_offset": 81,
+            "opcode": "ldloca.s",
+            "operand_kind": "variable",
+            "operand": "0"
+          },
+          {
+            "il_offset": 83,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000060"
+          },
+          {
+            "il_offset": 88,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0600003b"
+          },
+          {
+            "il_offset": 94,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0600003a"
+          }
+        ],
+        "exception_regions": [],
+        "issue": null
+      }
+    },
+    {
+      "token": "0x06000040",
+      "row_offset": 14190,
+      "declaring_type_token": "0x02000007",
+      "declaring_type": "API_Dynamic.PerformanceMonitor",
+      "name": "WriteECBatteryMode",
+      "rva": 15676,
+      "impl_flags": 0,
+      "flags": 134,
+      "signature": {
+        "raw_length": 5,
+        "raw_sha256": "575ba288e3b9ae27bdc89565ca75e82ca530d9f52d2ad66e3d1d3d56a6dc77c9",
+        "kind": "method",
+        "parse_status": "decoded",
+        "calling_convention": "default has-this",
+        "generic_parameter_count": null,
+        "parameter_count": 1,
+        "return_type": "bool",
+        "parameter_types": [
+          "valuetype:8"
+        ],
+        "field_type": null,
+        "issue": null
+      },
+      "body": {
+        "status": "present",
+        "header_format": "tiny",
+        "rva": 15676,
+        "file_offset": 7996,
+        "max_stack": 8,
+        "init_locals": false,
+        "local_var_sig_token": null,
+        "il_size": 52,
+        "il_sha256": "3ad9a9a66e3ef2a6cb1ec50b9b6b211177148276094fa0b2e987dd987ef18640",
+        "normalized_il_sha256": "cf4b10ffd8c147ffcd2a4f53e9d230959a64bc4a2b74e9058ddf69ccb6fdeb45",
+        "instruction_count": 19,
+        "decoded_instruction_count": 19,
+        "truncated_instructions": 0,
+        "opcode_counts": {
+          "ldarg.0": 5,
+          "ldfld": 2,
+          "ldc.i4.2": 1,
+          "blt.s": 1,
+          "ldstr": 2,
+          "call": 4,
+          "ldarg.1": 2,
+          "ret": 2
+        },
+        "anchors": [
+          {
+            "il_offset": 1,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000030"
+          },
+          {
+            "il_offset": 6,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005c"
+          },
+          {
+            "il_offset": 12,
+            "opcode": "blt.s",
+            "operand_kind": "branch",
+            "operand": "33"
+          },
+          {
+            "il_offset": 15,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001bd1"
+          },
+          {
+            "il_offset": 20,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 27,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000041"
+          },
+          {
+            "il_offset": 34,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001bf7"
+          },
+          {
+            "il_offset": 39,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 46,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000042"
+          }
+        ],
+        "exception_regions": [],
+        "issue": null
+      }
+    },
+    {
+      "token": "0x06000041",
+      "row_offset": 14204,
+      "declaring_type_token": "0x02000007",
+      "declaring_type": "API_Dynamic.PerformanceMonitor",
+      "name": "WriteECBatteryMode_WMIACPI_2",
+      "rva": 15732,
+      "impl_flags": 0,
+      "flags": 129,
+      "signature": {
+        "raw_length": 5,
+        "raw_sha256": "575ba288e3b9ae27bdc89565ca75e82ca530d9f52d2ad66e3d1d3d56a6dc77c9",
+        "kind": "method",
+        "parse_status": "decoded",
+        "calling_convention": "default has-this",
+        "generic_parameter_count": null,
+        "parameter_count": 1,
+        "return_type": "bool",
+        "parameter_types": [
+          "valuetype:8"
+        ],
+        "field_type": null,
+        "issue": null
+      },
+      "body": {
+        "status": "present",
+        "header_format": "fat",
+        "rva": 15732,
+        "file_offset": 8052,
+        "max_stack": 4,
+        "init_locals": true,
+        "local_var_sig_token": "0x11000012",
+        "il_size": 356,
+        "il_sha256": "62a9f35331e559049a45eb2eb37c5f3ff125aabcdbb866073fbcf63a3988fc75",
+        "normalized_il_sha256": "32ff19f193f718f3f3b1678e2166d40ee88e8dc206cbe8e2c2b1af7ae02ec84e",
+        "instruction_count": 140,
+        "decoded_instruction_count": 140,
+        "truncated_instructions": 0,
+        "opcode_counts": {
+          "ldarg.0": 13,
+          "ldfld": 9,
+          "ldc.i4.s": 8,
+          "ldc.i4": 4,
+          "ldc.i4.1": 10,
+          "newarr": 2,
+          "callvirt": 4,
+          "stloc.0": 1,
+          "ldloc.0": 2,
+          "beq.s": 4,
+          "ldc.i4.0": 10,
+          "br.s": 5,
+          "stloc.1": 4,
+          "brtrue.s": 1,
+          "ldstr": 7,
+          "call": 15,
+          "ret": 2,
+          "ldelem.u1": 1,
+          "stloc.2": 1,
+          "ldloc.2": 4,
+          "and": 1,
+          "conv.u1": 4,
+          "stloc.3": 1,
+          "stloc.s": 1,
+          "ldarg.1": 1,
+          "switch": 1,
+          "br": 2,
+          "ldloc.s": 6,
+          "ldloc.3": 3,
+          "sub": 3,
+          "add": 3,
+          "stelem.i1": 3,
+          "ldloca.s": 3,
+          "ldloc.1": 1
+        },
+        "anchors": [
+          {
+            "il_offset": 1,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000030"
+          },
+          {
+            "il_offset": 6,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "24"
+          },
+          {
+            "il_offset": 8,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "215"
+          },
+          {
+            "il_offset": 14,
+            "opcode": "newarr",
+            "operand_kind": "type",
+            "operand": "0x0100002f"
+          },
+          {
+            "il_offset": 19,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a00005d"
+          },
+          {
+            "il_offset": 26,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005e"
+          },
+          {
+            "il_offset": 32,
+            "opcode": "beq.s",
+            "operand_kind": "branch",
+            "operand": "37"
+          },
+          {
+            "il_offset": 35,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "38"
+          },
+          {
+            "il_offset": 40,
+            "opcode": "brtrue.s",
+            "operand_kind": "branch",
+            "operand": "55"
+          },
+          {
+            "il_offset": 43,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001c1b"
+          },
+          {
+            "il_offset": 48,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 56,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005f"
+          },
+          {
+            "il_offset": 65,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "127"
+          },
+          {
+            "il_offset": 71,
+            "opcode": "newarr",
+            "operand_kind": "type",
+            "operand": "0x0100002f"
+          },
+          {
+            "il_offset": 76,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 79,
+            "opcode": "switch",
+            "operand_kind": "switch",
+            "operand": "3"
+          },
+          {
+            "il_offset": 96,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "342"
+          },
+          {
+            "il_offset": 102,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001cc4"
+          },
+          {
+            "il_offset": 107,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 112,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 118,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "100"
+          },
+          {
+            "il_offset": 124,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000030"
+          },
+          {
+            "il_offset": 129,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "25"
+          },
+          {
+            "il_offset": 131,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "215"
+          },
+          {
+            "il_offset": 136,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 138,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a00005d"
+          },
+          {
+            "il_offset": 143,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005e"
+          },
+          {
+            "il_offset": 149,
+            "opcode": "beq.s",
+            "operand_kind": "branch",
+            "operand": "154"
+          },
+          {
+            "il_offset": 152,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "155"
+          },
+          {
+            "il_offset": 157,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001cda"
+          },
+          {
+            "il_offset": 162,
+            "opcode": "ldloca.s",
+            "operand_kind": "variable",
+            "operand": "1"
+          },
+          {
+            "il_offset": 164,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000061"
+          },
+          {
+            "il_offset": 169,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a00002f"
+          },
+          {
+            "il_offset": 174,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 179,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "342"
+          },
+          {
+            "il_offset": 185,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001d08"
+          },
+          {
+            "il_offset": 190,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 195,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 201,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "80"
+          },
+          {
+            "il_offset": 207,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000030"
+          },
+          {
+            "il_offset": 212,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "25"
+          },
+          {
+            "il_offset": 214,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "215"
+          },
+          {
+            "il_offset": 219,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 221,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a00005d"
+          },
+          {
+            "il_offset": 226,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005e"
+          },
+          {
+            "il_offset": 232,
+            "opcode": "beq.s",
+            "operand_kind": "branch",
+            "operand": "237"
+          },
+          {
+            "il_offset": 235,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "238"
+          },
+          {
+            "il_offset": 240,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001d1c"
+          },
+          {
+            "il_offset": 245,
+            "opcode": "ldloca.s",
+            "operand_kind": "variable",
+            "operand": "1"
+          },
+          {
+            "il_offset": 247,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000061"
+          },
+          {
+            "il_offset": 252,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a00002f"
+          },
+          {
+            "il_offset": 257,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 262,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "342"
+          },
+          {
+            "il_offset": 265,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001d48"
+          },
+          {
+            "il_offset": 270,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 275,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 281,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "60"
+          },
+          {
+            "il_offset": 287,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000030"
+          },
+          {
+            "il_offset": 292,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "25"
+          },
+          {
+            "il_offset": 294,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "215"
+          },
+          {
+            "il_offset": 299,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 301,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a00005d"
+          },
+          {
+            "il_offset": 306,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x0a00005e"
+          },
+          {
+            "il_offset": 312,
+            "opcode": "beq.s",
+            "operand_kind": "branch",
+            "operand": "317"
+          },
+          {
+            "il_offset": 315,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "318"
+          },
+          {
+            "il_offset": 320,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001d5c"
+          },
+          {
+            "il_offset": 325,
+            "opcode": "ldloca.s",
+            "operand_kind": "variable",
+            "operand": "1"
+          },
+          {
+            "il_offset": 327,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000061"
+          },
+          {
+            "il_offset": 332,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a00002f"
+          },
+          {
+            "il_offset": 337,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 344,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0600003d"
+          },
+          {
+            "il_offset": 350,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0600003c"
+          }
+        ],
+        "exception_regions": [],
+        "issue": null
+      }
+    },
+    {
+      "token": "0x06000042",
+      "row_offset": 14218,
+      "declaring_type_token": "0x02000007",
+      "declaring_type": "API_Dynamic.PerformanceMonitor",
+      "name": "WriteECBatteryMode_WMIACPI_1",
+      "rva": 16100,
+      "impl_flags": 0,
+      "flags": 129,
+      "signature": {
+        "raw_length": 5,
+        "raw_sha256": "575ba288e3b9ae27bdc89565ca75e82ca530d9f52d2ad66e3d1d3d56a6dc77c9",
+        "kind": "method",
+        "parse_status": "decoded",
+        "calling_convention": "default has-this",
+        "generic_parameter_count": null,
+        "parameter_count": 1,
+        "return_type": "bool",
+        "parameter_types": [
+          "valuetype:8"
+        ],
+        "field_type": null,
+        "issue": null
+      },
+      "body": {
+        "status": "present",
+        "header_format": "fat",
+        "rva": 16100,
+        "file_offset": 8420,
+        "max_stack": 3,
+        "init_locals": true,
+        "local_var_sig_token": "0x11000013",
+        "il_size": 164,
+        "il_sha256": "2bdafeafa9d1198a09b1bb20b35e822dbd28b5cd0d882fc81fac98e398b25a99",
+        "normalized_il_sha256": "5deef548e2c222cb4d108ba8c66852d9f9851721d1f16168be5fbf9662303333",
+        "instruction_count": 67,
+        "decoded_instruction_count": 67,
+        "truncated_instructions": 0,
+        "opcode_counts": {
+          "ldc.i4.0": 3,
+          "stloc.0": 1,
+          "ldc.i4": 4,
+          "conv.u8": 4,
+          "ldloca.s": 1,
+          "call": 10,
+          "stloc.1": 1,
+          "ldloc.1": 4,
+          "ldc.i4.s": 4,
+          "and": 1,
+          "stloc.2": 1,
+          "stloc.3": 4,
+          "ldloc.0": 1,
+          "brtrue.s": 1,
+          "ldarg.0": 6,
+          "ldstr": 4,
+          "ret": 2,
+          "ldarg.1": 1,
+          "switch": 1,
+          "br.s": 3,
+          "ldloc.2": 3,
+          "sub": 3,
+          "add": 3,
+          "ldloc.3": 1
+        },
+        "anchors": [
+          {
+            "il_offset": 2,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-67106577"
+          },
+          {
+            "il_offset": 8,
+            "opcode": "ldloca.s",
+            "operand_kind": "variable",
+            "operand": "0"
+          },
+          {
+            "il_offset": 10,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000060"
+          },
+          {
+            "il_offset": 17,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "127"
+          },
+          {
+            "il_offset": 24,
+            "opcode": "brtrue.s",
+            "operand_kind": "branch",
+            "operand": "39"
+          },
+          {
+            "il_offset": 27,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001d88"
+          },
+          {
+            "il_offset": 32,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 40,
+            "opcode": "switch",
+            "operand_kind": "switch",
+            "operand": "3"
+          },
+          {
+            "il_offset": 57,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "150"
+          },
+          {
+            "il_offset": 60,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001df0"
+          },
+          {
+            "il_offset": 65,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 70,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-67106577"
+          },
+          {
+            "il_offset": 79,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "100"
+          },
+          {
+            "il_offset": 82,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000062"
+          },
+          {
+            "il_offset": 88,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "150"
+          },
+          {
+            "il_offset": 91,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001dfa"
+          },
+          {
+            "il_offset": 96,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 101,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-67106577"
+          },
+          {
+            "il_offset": 110,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "80"
+          },
+          {
+            "il_offset": 113,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000062"
+          },
+          {
+            "il_offset": 119,
+            "opcode": "br.s",
+            "operand_kind": "branch",
+            "operand": "150"
+          },
+          {
+            "il_offset": 122,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001e02"
+          },
+          {
+            "il_offset": 127,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000047"
+          },
+          {
+            "il_offset": 132,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-67106577"
+          },
+          {
+            "il_offset": 141,
+            "opcode": "ldc.i4.s",
+            "operand_kind": "constant",
+            "operand": "60"
+          },
+          {
+            "il_offset": 144,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000062"
+          },
+          {
+            "il_offset": 152,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0600003d"
+          },
+          {
+            "il_offset": 158,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0600003c"
+          }
+        ],
+        "exception_regions": [],
+        "issue": null
+      }
+    },
+    {
+      "token": "0x0600004c",
+      "row_offset": 14358,
+      "declaring_type_token": "0x02000008",
+      "declaring_type": "API_Dynamic.PluginClass",
+      "name": "MainEntry",
+      "rva": 16614,
+      "impl_flags": 0,
+      "flags": 486,
+      "signature": {
+        "raw_length": 3,
+        "raw_sha256": "19e1bd1daf2ae492b895802f55c905ef2d25aea509c6010868e218adb408c010",
+        "kind": "method",
+        "parse_status": "decoded",
+        "calling_convention": "default has-this",
+        "generic_parameter_count": null,
+        "parameter_count": 0,
+        "return_type": "i4",
+        "parameter_types": [],
+        "field_type": null,
+        "issue": null
+      },
+      "body": {
+        "status": "present",
+        "header_format": "tiny",
+        "rva": 16614,
+        "file_offset": 8934,
+        "max_stack": 8,
+        "init_locals": false,
+        "local_var_sig_token": null,
+        "il_size": 32,
+        "il_sha256": "f7744df5e65d649906b46f8a653987d348ae1d8b923434923981606f5b2f0540",
+        "normalized_il_sha256": "e540c5bc1ad4b9d882e6f7016c5abb9b3a9fb4dc4eebff580b03f6ae1b26c42b",
+        "instruction_count": 8,
+        "decoded_instruction_count": 8,
+        "truncated_instructions": 0,
+        "opcode_counts": {
+          "newobj": 1,
+          "stsfld": 1,
+          "ldsfld": 1,
+          "callvirt": 1,
+          "ldarg.0": 1,
+          "call": 1,
+          "ldc.i4": 1,
+          "ret": 1
+        },
+        "anchors": [
+          {
+            "il_offset": 0,
+            "opcode": "newobj",
+            "operand_kind": "method",
+            "operand": "0x06000035"
+          },
+          {
+            "il_offset": 5,
+            "opcode": "stsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 10,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 15,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600000d"
+          },
+          {
+            "il_offset": 21,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000057"
+          },
+          {
+            "il_offset": 26,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "1007"
+          }
+        ],
+        "exception_regions": [],
+        "issue": null
+      }
+    },
+    {
+      "token": "0x0600004f",
+      "row_offset": 14400,
+      "declaring_type_token": "0x02000008",
+      "declaring_type": "API_Dynamic.PluginClass",
+      "name": "Transfer_Command",
+      "rva": 16676,
+      "impl_flags": 0,
+      "flags": 486,
+      "signature": {
+        "raw_length": 6,
+        "raw_sha256": "25f0afdf1d577a3dd46469c1ef5c4ae1f832c8323b4888f0cd862f1cffccf5b6",
+        "kind": "method",
+        "parse_status": "decoded",
+        "calling_convention": "default has-this",
+        "generic_parameter_count": null,
+        "parameter_count": 1,
+        "return_type": "u1[]",
+        "parameter_types": [
+          "u1[]"
+        ],
+        "field_type": null,
+        "issue": null
+      },
+      "body": {
+        "status": "present",
+        "header_format": "fat",
+        "rva": 16676,
+        "file_offset": 8996,
+        "max_stack": 5,
+        "init_locals": true,
+        "local_var_sig_token": "0x11000016",
+        "il_size": 1147,
+        "il_sha256": "a87e310345f86866e174671069dbaa4cd2ea5d8ece21b2004a56162537925888",
+        "normalized_il_sha256": "7fe002b00923073aeef789221b45748b6a3e3026cf085de84e524b92f21b024f",
+        "instruction_count": 319,
+        "decoded_instruction_count": 319,
+        "truncated_instructions": 0,
+        "opcode_counts": {
+          "ldarg.1": 6,
+          "brfalse": 2,
+          "ldlen": 3,
+          "call": 45,
+          "callvirt": 25,
+          "stloc.0": 1,
+          "ldloc.0": 17,
+          "stloc.1": 1,
+          "ldloc.1": 23,
+          "ldc.i4": 23,
+          "bgt.un": 1,
+          "bgt.un.s": 6,
+          "beq": 14,
+          "br": 24,
+          "beq.s": 2,
+          "ldstr": 20,
+          "brtrue": 16,
+          "ldsfld": 22,
+          "ldflda": 1,
+          "ret": 17,
+          "ldfld": 5,
+          "stloc.2": 1,
+          "ldloc.2": 1,
+          "ldarg.0": 3,
+          "stloc.3": 1,
+          "ldloca.s": 1,
+          "ldloc.3": 1,
+          "ldc.i4.0": 3,
+          "ldc.i4.1": 3,
+          "ldc.i4.2": 1,
+          "stloc.s": 7,
+          "ldloc.s": 9,
+          "nop": 1,
+          "ldc.i4.8": 3,
+          "brtrue.s": 1,
+          "conv.i4": 2,
+          "sub": 1,
+          "newarr": 2,
+          "pop": 2,
+          "leave.s": 2
+        },
+        "anchors": [
+          {
+            "il_offset": 1,
+            "opcode": "brfalse",
+            "operand_kind": "branch",
+            "operand": "1140"
+          },
+          {
+            "il_offset": 8,
+            "opcode": "brfalse",
+            "operand_kind": "branch",
+            "operand": "1140"
+          },
+          {
+            "il_offset": 13,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000026"
+          },
+          {
+            "il_offset": 19,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a00006f"
+          },
+          {
+            "il_offset": 26,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000092"
+          },
+          {
+            "il_offset": 33,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "2062896142"
+          },
+          {
+            "il_offset": 38,
+            "opcode": "bgt.un",
+            "operand_kind": "branch",
+            "operand": "175"
+          },
+          {
+            "il_offset": 44,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "719357640"
+          },
+          {
+            "il_offset": 49,
+            "opcode": "bgt.un.s",
+            "operand_kind": "branch",
+            "operand": "113"
+          },
+          {
+            "il_offset": 52,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "196485847"
+          },
+          {
+            "il_offset": 57,
+            "opcode": "bgt.un.s",
+            "operand_kind": "branch",
+            "operand": "86"
+          },
+          {
+            "il_offset": 60,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "68602680"
+          },
+          {
+            "il_offset": 65,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "616"
+          },
+          {
+            "il_offset": 71,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "196485847"
+          },
+          {
+            "il_offset": 76,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "511"
+          },
+          {
+            "il_offset": 81,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 87,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "282457293"
+          },
+          {
+            "il_offset": 92,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "343"
+          },
+          {
+            "il_offset": 98,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "719357640"
+          },
+          {
+            "il_offset": 103,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "448"
+          },
+          {
+            "il_offset": 108,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 114,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "1157557902"
+          },
+          {
+            "il_offset": 119,
+            "opcode": "bgt.un.s",
+            "operand_kind": "branch",
+            "operand": "148"
+          },
+          {
+            "il_offset": 122,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "890826077"
+          },
+          {
+            "il_offset": 127,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "406"
+          },
+          {
+            "il_offset": 133,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "1157557902"
+          },
+          {
+            "il_offset": 138,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "553"
+          },
+          {
+            "il_offset": 143,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 149,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "1195568582"
+          },
+          {
+            "il_offset": 154,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "385"
+          },
+          {
+            "il_offset": 160,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "2062896142"
+          },
+          {
+            "il_offset": 165,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "427"
+          },
+          {
+            "il_offset": 170,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 176,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-1448115639"
+          },
+          {
+            "il_offset": 181,
+            "opcode": "bgt.un.s",
+            "operand_kind": "branch",
+            "operand": "242"
+          },
+          {
+            "il_offset": 184,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-1668355296"
+          },
+          {
+            "il_offset": 189,
+            "opcode": "bgt.un.s",
+            "operand_kind": "branch",
+            "operand": "215"
+          },
+          {
+            "il_offset": 192,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-2070557137"
+          },
+          {
+            "il_offset": 197,
+            "opcode": "beq.s",
+            "operand_kind": "branch",
+            "operand": "322"
+          },
+          {
+            "il_offset": 200,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-1668355296"
+          },
+          {
+            "il_offset": 205,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "532"
+          },
+          {
+            "il_offset": 210,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 216,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-1616276643"
+          },
+          {
+            "il_offset": 221,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "364"
+          },
+          {
+            "il_offset": 227,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-1448115639"
+          },
+          {
+            "il_offset": 232,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "469"
+          },
+          {
+            "il_offset": 237,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 243,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-430913978"
+          },
+          {
+            "il_offset": 248,
+            "opcode": "bgt.un.s",
+            "operand_kind": "branch",
+            "operand": "277"
+          },
+          {
+            "il_offset": 251,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-1054497564"
+          },
+          {
+            "il_offset": 256,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "595"
+          },
+          {
+            "il_offset": 262,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-430913978"
+          },
+          {
+            "il_offset": 267,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "490"
+          },
+          {
+            "il_offset": 272,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 278,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-233449856"
+          },
+          {
+            "il_offset": 283,
+            "opcode": "beq.s",
+            "operand_kind": "branch",
+            "operand": "301"
+          },
+          {
+            "il_offset": 286,
+            "opcode": "ldc.i4",
+            "operand_kind": "constant",
+            "operand": "-39517352"
+          },
+          {
+            "il_offset": 291,
+            "opcode": "beq",
+            "operand_kind": "branch",
+            "operand": "574"
+          },
+          {
+            "il_offset": 296,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 302,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001f34"
+          },
+          {
+            "il_offset": 307,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 312,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "637"
+          },
+          {
+            "il_offset": 317,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 323,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001f4e"
+          },
+          {
+            "il_offset": 328,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 333,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "663"
+          },
+          {
+            "il_offset": 338,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 344,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001f62"
+          },
+          {
+            "il_offset": 349,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 354,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "706"
+          },
+          {
+            "il_offset": 359,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 365,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001f8a"
+          },
+          {
+            "il_offset": 370,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 375,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "768"
+          },
+          {
+            "il_offset": 380,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 386,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001fc8"
+          },
+          {
+            "il_offset": 391,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 396,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "795"
+          },
+          {
+            "il_offset": 401,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 407,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70001ffe"
+          },
+          {
+            "il_offset": 412,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 417,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "822"
+          },
+          {
+            "il_offset": 422,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 428,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x7000203a"
+          },
+          {
+            "il_offset": 433,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 438,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "849"
+          },
+          {
+            "il_offset": 443,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 449,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70002068"
+          },
+          {
+            "il_offset": 454,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 459,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "866"
+          },
+          {
+            "il_offset": 464,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 470,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70002080"
+          },
+          {
+            "il_offset": 475,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 480,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "882"
+          },
+          {
+            "il_offset": 485,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 491,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x7000209e"
+          },
+          {
+            "il_offset": 496,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 501,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "909"
+          },
+          {
+            "il_offset": 506,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 512,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x700020c0"
+          },
+          {
+            "il_offset": 517,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 522,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "925"
+          },
+          {
+            "il_offset": 527,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 533,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x700020da"
+          },
+          {
+            "il_offset": 538,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 543,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "950"
+          },
+          {
+            "il_offset": 548,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 554,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70002100"
+          },
+          {
+            "il_offset": 559,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 564,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "975"
+          },
+          {
+            "il_offset": 569,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 575,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70002122"
+          },
+          {
+            "il_offset": 580,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 585,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "1000"
+          },
+          {
+            "il_offset": 590,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 596,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x7000214c"
+          },
+          {
+            "il_offset": 601,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 606,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "1025"
+          },
+          {
+            "il_offset": 611,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 617,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70002174"
+          },
+          {
+            "il_offset": 622,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000019"
+          },
+          {
+            "il_offset": 627,
+            "opcode": "brtrue",
+            "operand_kind": "branch",
+            "operand": "1050"
+          },
+          {
+            "il_offset": 632,
+            "opcode": "br",
+            "operand_kind": "branch",
+            "operand": "1075"
+          },
+          {
+            "il_offset": 637,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000026"
+          },
+          {
+            "il_offset": 642,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 647,
+            "opcode": "ldflda",
+            "operand_kind": "field",
+            "operand": "0x04000011"
+          },
+          {
+            "il_offset": 652,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000023"
+          },
+          {
+            "il_offset": 657,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 663,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 668,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000028"
+          },
+          {
+            "il_offset": 673,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 678,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000016"
+          },
+          {
+            "il_offset": 684,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70002194"
+          },
+          {
+            "il_offset": 689,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000059"
+          },
+          {
+            "il_offset": 694,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 700,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 707,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x700021dc"
+          },
+          {
+            "il_offset": 712,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000051"
+          },
+          {
+            "il_offset": 717,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 722,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000029"
+          },
+          {
+            "il_offset": 727,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 732,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000017"
+          },
+          {
+            "il_offset": 739,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x70002210"
+          },
+          {
+            "il_offset": 744,
+            "opcode": "ldloca.s",
+            "operand_kind": "variable",
+            "operand": "3"
+          },
+          {
+            "il_offset": 746,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000071"
+          },
+          {
+            "il_offset": 751,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a00002f"
+          },
+          {
+            "il_offset": 756,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000051"
+          },
+          {
+            "il_offset": 762,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000072"
+          },
+          {
+            "il_offset": 768,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 774,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002a"
+          },
+          {
+            "il_offset": 779,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 784,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000018"
+          },
+          {
+            "il_offset": 789,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000073"
+          },
+          {
+            "il_offset": 795,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 801,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002a"
+          },
+          {
+            "il_offset": 806,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 811,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000018"
+          },
+          {
+            "il_offset": 816,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000073"
+          },
+          {
+            "il_offset": 822,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 828,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002a"
+          },
+          {
+            "il_offset": 833,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 838,
+            "opcode": "ldfld",
+            "operand_kind": "field",
+            "operand": "0x04000018"
+          },
+          {
+            "il_offset": 843,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000073"
+          },
+          {
+            "il_offset": 849,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 854,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002b"
+          },
+          {
+            "il_offset": 860,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000073"
+          },
+          {
+            "il_offset": 866,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 871,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002c"
+          },
+          {
+            "il_offset": 876,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000073"
+          },
+          {
+            "il_offset": 883,
+            "opcode": "ldstr",
+            "operand_kind": "string",
+            "operand": "0x7000223e"
+          },
+          {
+            "il_offset": 888,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x06000051"
+          },
+          {
+            "il_offset": 893,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 898,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002d"
+          },
+          {
+            "il_offset": 903,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000073"
+          },
+          {
+            "il_offset": 909,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 914,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002e"
+          },
+          {
+            "il_offset": 919,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000074"
+          },
+          {
+            "il_offset": 925,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 930,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0600002f"
+          },
+          {
+            "il_offset": 935,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 937,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 942,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "4"
+          },
+          {
+            "il_offset": 944,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 950,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 955,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000030"
+          },
+          {
+            "il_offset": 960,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "5"
+          },
+          {
+            "il_offset": 962,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 967,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "5"
+          },
+          {
+            "il_offset": 969,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 975,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 980,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000031"
+          },
+          {
+            "il_offset": 985,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "6"
+          },
+          {
+            "il_offset": 987,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 992,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "6"
+          },
+          {
+            "il_offset": 994,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 1000,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 1005,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000032"
+          },
+          {
+            "il_offset": 1010,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "7"
+          },
+          {
+            "il_offset": 1012,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 1017,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "7"
+          },
+          {
+            "il_offset": 1019,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 1025,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 1030,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000033"
+          },
+          {
+            "il_offset": 1035,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "8"
+          },
+          {
+            "il_offset": 1037,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 1042,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "8"
+          },
+          {
+            "il_offset": 1044,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 1050,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x04000027"
+          },
+          {
+            "il_offset": 1055,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x06000034"
+          },
+          {
+            "il_offset": 1060,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "9"
+          },
+          {
+            "il_offset": 1062,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 1067,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "9"
+          },
+          {
+            "il_offset": 1069,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a000027"
+          },
+          {
+            "il_offset": 1077,
+            "opcode": "ldsfld",
+            "operand_kind": "field",
+            "operand": "0x0400002a"
+          },
+          {
+            "il_offset": 1084,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000075"
+          },
+          {
+            "il_offset": 1089,
+            "opcode": "brtrue.s",
+            "operand_kind": "branch",
+            "operand": "1135"
+          },
+          {
+            "il_offset": 1096,
+            "opcode": "newarr",
+            "operand_kind": "type",
+            "operand": "0x0100002f"
+          },
+          {
+            "il_offset": 1101,
+            "opcode": "stloc.s",
+            "operand_kind": "variable",
+            "operand": "10"
+          },
+          {
+            "il_offset": 1105,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "10"
+          },
+          {
+            "il_offset": 1108,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "10"
+          },
+          {
+            "il_offset": 1112,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a00002a"
+          },
+          {
+            "il_offset": 1117,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000070"
+          },
+          {
+            "il_offset": 1122,
+            "opcode": "ldloc.s",
+            "operand_kind": "variable",
+            "operand": "10"
+          },
+          {
+            "il_offset": 1124,
+            "opcode": "callvirt",
+            "operand_kind": "method",
+            "operand": "0x0a00006f"
+          },
+          {
+            "il_offset": 1129,
+            "opcode": "call",
+            "operand_kind": "method",
+            "operand": "0x0a000076"
+          },
+          {
+            "il_offset": 1135,
+            "opcode": "leave.s",
+            "operand_kind": "branch",
+            "operand": "1140"
+          },
+          {
+            "il_offset": 1138,
+            "opcode": "leave.s",
+            "operand_kind": "branch",
+            "operand": "1140"
+          },
+          {
+            "il_offset": 1141,
+            "opcode": "newarr",
+            "operand_kind": "type",
+            "operand": "0x0100002f"
+          }
+        ],
+        "exception_regions": [
+          {
+            "flags": 0,
+            "try_offset": 1076,
+            "try_length": 61,
+            "handler_offset": 1137,
+            "handler_length": 3,
+            "class_token": "0x01000011",
+            "filter_offset": null
+          }
+        ],
+        "issue": null
+      }
+    }
+  ],
+  "call_edges": [
+    {
+      "caller_token": "0x0600002a",
+      "caller": "API_Dynamic.C_Battery.WriteECBatteryMode",
+      "opcode": "callvirt",
+      "target_token": "0x06000040",
+      "target_kind": "method-def",
+      "target_name": "WriteECBatteryMode"
+    },
+    {
+      "caller_token": "0x0600003f",
+      "caller": "API_Dynamic.PerformanceMonitor.ReadECBatteryMemory",
+      "opcode": "callvirt",
+      "target_token": "0x0a00005d",
+      "target_kind": "member-ref",
+      "target_name": "InvokeWmiMethod"
+    },
+    {
+      "caller_token": "0x0600003f",
+      "caller": "API_Dynamic.PerformanceMonitor.ReadECBatteryMemory",
+      "opcode": "call",
+      "target_token": "0x0600003b",
+      "target_kind": "method-def",
+      "target_name": "set_ECBatteryMemory"
+    },
+    {
+      "caller_token": "0x0600003f",
+      "caller": "API_Dynamic.PerformanceMonitor.ReadECBatteryMemory",
+      "opcode": "call",
+      "target_token": "0x0a000060",
+      "target_kind": "member-ref",
+      "target_name": "ReadMemory"
+    },
+    {
+      "caller_token": "0x0600003f",
+      "caller": "API_Dynamic.PerformanceMonitor.ReadECBatteryMemory",
+      "opcode": "call",
+      "target_token": "0x0600003b",
+      "target_kind": "method-def",
+      "target_name": "set_ECBatteryMemory"
+    },
+    {
+      "caller_token": "0x0600003f",
+      "caller": "API_Dynamic.PerformanceMonitor.ReadECBatteryMemory",
+      "opcode": "call",
+      "target_token": "0x0600003a",
+      "target_kind": "method-def",
+      "target_name": "get_ECBatteryMemory"
+    },
+    {
+      "caller_token": "0x06000040",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000040",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode",
+      "opcode": "call",
+      "target_token": "0x06000041",
+      "target_kind": "method-def",
+      "target_name": "WriteECBatteryMode_WMIACPI_2"
+    },
+    {
+      "caller_token": "0x06000040",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000040",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode",
+      "opcode": "call",
+      "target_token": "0x06000042",
+      "target_kind": "method-def",
+      "target_name": "WriteECBatteryMode_WMIACPI_1"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "callvirt",
+      "target_token": "0x0a00005d",
+      "target_kind": "member-ref",
+      "target_name": "InvokeWmiMethod"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "callvirt",
+      "target_token": "0x0a00005d",
+      "target_kind": "member-ref",
+      "target_name": "InvokeWmiMethod"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0a000061",
+      "target_kind": "member-ref",
+      "target_name": "ToString"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0a00002f",
+      "target_kind": "member-ref",
+      "target_name": "Concat"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "callvirt",
+      "target_token": "0x0a00005d",
+      "target_kind": "member-ref",
+      "target_name": "InvokeWmiMethod"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0a000061",
+      "target_kind": "member-ref",
+      "target_name": "ToString"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0a00002f",
+      "target_kind": "member-ref",
+      "target_name": "Concat"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "callvirt",
+      "target_token": "0x0a00005d",
+      "target_kind": "member-ref",
+      "target_name": "InvokeWmiMethod"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0a000061",
+      "target_kind": "member-ref",
+      "target_name": "ToString"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0a00002f",
+      "target_kind": "member-ref",
+      "target_name": "Concat"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0600003d",
+      "target_kind": "method-def",
+      "target_name": "set_ECBatteryModeWriteSuccess"
+    },
+    {
+      "caller_token": "0x06000041",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_2",
+      "opcode": "call",
+      "target_token": "0x0600003c",
+      "target_kind": "method-def",
+      "target_name": "get_ECBatteryModeWriteSuccess"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x0a000060",
+      "target_kind": "member-ref",
+      "target_name": "ReadMemory"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x0a000062",
+      "target_kind": "member-ref",
+      "target_name": "WriteMemory"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x0a000062",
+      "target_kind": "member-ref",
+      "target_name": "WriteMemory"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x06000047",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x0a000062",
+      "target_kind": "member-ref",
+      "target_name": "WriteMemory"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x0600003d",
+      "target_kind": "method-def",
+      "target_name": "set_ECBatteryModeWriteSuccess"
+    },
+    {
+      "caller_token": "0x06000042",
+      "caller": "API_Dynamic.PerformanceMonitor.WriteECBatteryMode_WMIACPI_1",
+      "opcode": "call",
+      "target_token": "0x0600003c",
+      "target_kind": "method-def",
+      "target_name": "get_ECBatteryModeWriteSuccess"
+    },
+    {
+      "caller_token": "0x0600004c",
+      "caller": "API_Dynamic.PluginClass.MainEntry",
+      "opcode": "newobj",
+      "target_token": "0x06000035",
+      "target_kind": "method-def",
+      "target_name": ".ctor"
+    },
+    {
+      "caller_token": "0x0600004c",
+      "caller": "API_Dynamic.PluginClass.MainEntry",
+      "opcode": "callvirt",
+      "target_token": "0x0600000d",
+      "target_kind": "method-def",
+      "target_name": "Process_Main"
+    },
+    {
+      "caller_token": "0x0600004c",
+      "caller": "API_Dynamic.PluginClass.MainEntry",
+      "opcode": "call",
+      "target_token": "0x06000057",
+      "target_kind": "method-def",
+      "target_name": "PrepareLogFile"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000026",
+      "target_kind": "member-ref",
+      "target_name": "get_ASCII"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a00006f",
+      "target_kind": "member-ref",
+      "target_name": "GetString"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x06000092",
+      "target_kind": "method-def",
+      "target_name": "ComputeStringHash"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000019",
+      "target_kind": "member-ref",
+      "target_name": "op_Equality"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000026",
+      "target_kind": "member-ref",
+      "target_name": "get_ASCII"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000023",
+      "target_kind": "member-ref",
+      "target_name": "ToString"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x06000028",
+      "target_kind": "method-def",
+      "target_name": "GetAllMonitoringData"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000059",
+      "target_kind": "member-ref",
+      "target_name": "WriteLine"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x06000051",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x06000029",
+      "target_kind": "method-def",
+      "target_name": "GetECBatteryMemoryValue"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000071",
+      "target_kind": "member-ref",
+      "target_name": "ToString"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a00002f",
+      "target_kind": "member-ref",
+      "target_name": "Concat"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x06000051",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000072",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002a",
+      "target_kind": "method-def",
+      "target_name": "WriteECBatteryMode"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000073",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002a",
+      "target_kind": "method-def",
+      "target_name": "WriteECBatteryMode"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000073",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002a",
+      "target_kind": "method-def",
+      "target_name": "WriteECBatteryMode"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000073",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002b",
+      "target_kind": "method-def",
+      "target_name": "CallBatteryCalibration"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000073",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002c",
+      "target_kind": "method-def",
+      "target_name": "SSD_InitDLL"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000073",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x06000051",
+      "target_kind": "method-def",
+      "target_name": "writeLog"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002d",
+      "target_kind": "method-def",
+      "target_name": "SSD_ReleaseDLL"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000073",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002e",
+      "target_kind": "method-def",
+      "target_name": "SSD_GetDiskCount"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000074",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0600002f",
+      "target_kind": "method-def",
+      "target_name": "SSD_GetModel"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x06000030",
+      "target_kind": "method-def",
+      "target_name": "SSD_GetTemperature"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x06000031",
+      "target_kind": "method-def",
+      "target_name": "SSD_GetLifeCycle"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x06000032",
+      "target_kind": "method-def",
+      "target_name": "SSD_GetTotalDiskSize"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x06000033",
+      "target_kind": "method-def",
+      "target_name": "SSD_GetFreeDiskSize"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x06000034",
+      "target_kind": "method-def",
+      "target_name": "SSD_GetDriveMap"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a000027",
+      "target_kind": "member-ref",
+      "target_name": "GetBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000075",
+      "target_kind": "member-ref",
+      "target_name": "CompareBytes"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a00002a",
+      "target_kind": "member-ref",
+      "target_name": "Copy"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000070",
+      "target_kind": "member-ref",
+      "target_name": "get_UTF8"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "callvirt",
+      "target_token": "0x0a00006f",
+      "target_kind": "member-ref",
+      "target_name": "GetString"
+    },
+    {
+      "caller_token": "0x0600004f",
+      "caller": "API_Dynamic.PluginClass.Transfer_Command",
+      "opcode": "call",
+      "target_token": "0x0a000076",
+      "target_kind": "member-ref",
+      "target_name": "Parse"
+    }
+  ],
+  "limitations": [
+    "Metadata tokens are build-local coordinates and are only meaningful with the reported artifact SHA-256 and MVID.",
+    "CIL instruction anchors are decoded from file-backed method bodies only; no target assembly is loaded or executed.",
+    "Signatures are decoded for common ECMA-335 primitive, class, valuetype, pointer, byref, array, and generic variable forms; unsupported forms retain raw signature hashes."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "evidence_id": "ev_970a699281e60af352d20574adb42edb38acb4c184e73b2f1bfd5bdc34271a10",
+  "subject": {
+    "name": "MSIWMIACPI2.dll",
+    "digest": {
+      "sha256": "1930038a503f8a6cc5824fa479e44c9fc9cf95e0dc60e78caad4b3df76533828"
+    },
+    "format": "pe",
+    "architecture": "x86",
+    "local_path": "/private/tmp/gs66-research/nbfoundation/app/MSIWMIACPI2.dll"
+  },
+  "provider": {
+    "id": "rea-dotnet-static",
+    "name": "REA managed static analysis provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_managed_native_boundaries",
+  "parameters": {
+    "path": "/tmp/gs66-research/nbfoundation/app/MSIWMIACPI2.dll"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/private/tmp/gs66-research/nbfoundation/app/MSIWMIACPI2.dll",
+      "sha256": "1930038a503f8a6cc5824fa479e44c9fc9cf95e0dc60e78caad4b3df76533828",
+      "byte_length": 81456,
+      "format": "pe"
+    },
+    "module": {
+      "name": "MSIWMIACPI2.dll",
+      "generation": 0,
+      "mvid": "7298d906-9507-4f4e-abc2-bfa09726c559",
+      "enc_id": null,
+      "enc_base_id": null,
+      "token": "0x00000001",
+      "row_offset": 29932
+    },
+    "metadata": {
+      "status": "complete",
+      "version": "v4.0.30319",
+      "table_row_counts": {
+        "Module": 1,
+        "TypeRef": 119,
+        "TypeDef": 32,
+        "Field": 159,
+        "MethodDef": 143,
+        "Param": 181,
+        "MemberRef": 247,
+        "Constant": 105,
+        "CustomAttribute": 67,
+        "ClassLayout": 5,
+        "StandAloneSig": 53,
+        "PropertyMap": 6,
+        "Property": 18,
+        "MethodSemantics": 28,
+        "MethodImpl": 1,
+        "TypeSpec": 20,
+        "FieldRVA": 8,
+        "Assembly": 1,
+        "AssemblyRef": 5,
+        "NestedClass": 17,
+        "GenericParam": 4,
+        "MethodSpec": 9,
+        "GenericParamConstraint": 2
+      }
+    },
+    "identity_scope": {
+      "token_identity": "build-local",
+      "requires_artifact_sha256": "1930038a503f8a6cc5824fa479e44c9fc9cf95e0dc60e78caad4b3df76533828",
+      "requires_mvid": "7298d906-9507-4f4e-abc2-bfa09726c559"
+    },
+    "cli_native": {
+      "il_only": true,
+      "requires_32bit": false,
+      "strong_name_signed": false,
+      "native_entry_point": false,
+      "ready_to_run_signature": false,
+      "managed_native_header_rva": 0,
+      "managed_native_header_size": 0
+    },
+    "module_refs": [],
+    "pinvoke_imports": [],
+    "native_implementations": [],
+    "summary": {
+      "module_ref_count": 0,
+      "pinvoke_import_count": 0,
+      "native_implementation_count": 0,
+      "ready_to_run": false,
+      "mixed_mode_or_native_header": false
+    },
+    "coverage": {
+      "state": "complete",
+      "issues": []
+    },
+    "limitations": [
+      "P/Invoke rows prove managed import declarations only; this inspection does not verify that a native library, export, thunk, or provider-qualified function exists.",
+      "Managed metadata tokens are build-local coordinates and are only meaningful with the reported artifact SHA-256 and MVID.",
+      "ReadyToRun, NativeAOT, C++/CLI, and IL2CPP native semantics require separately selected native-provider evidence; this tool does not translate managed tokens into native addresses."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "P/Invoke rows prove managed import declarations only; this inspection does not verify that a native library, export, thunk, or provider-qualified function exists.",
+    "Managed metadata tokens are build-local coordinates and are only meaningful with the reported artifact SHA-256 and MVID.",
+    "ReadyToRun, NativeAOT, C++/CLI, and IL2CPP native semantics require separately selected native-provider evidence; this tool does not translate managed tokens into native addresses."
+  ],
+  "locations": [
+    {
+      "kind": "file-offset",
+      "offset": 29932
+    }
+  ],
+  "evidence_links": []
+}
