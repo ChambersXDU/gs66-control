@@ -30,4 +30,6 @@ dotnet publish src/Gs66Control.App/Gs66Control.App.csproj -c Release -r win-x64 
 
 Linux 构建需要 NuGet 下载 Windows Desktop targeting / runtime 包。交叉编译成功不能代替 Windows UI 或 GS66 硬件验证。当前环境不能运行 WinForms，因此必须在 Windows 上手工验证启动不采集、两种数据来源、取消/关闭、查询失败提示及 JSON 导出。
 
+GitHub 发布流程在推送 `v*-preview.*` tag 时，由 Windows runner 执行模拟/离线测试、自包含发布、完整 ZIP 和 SHA-256 校验文件生成，再上传预览 Release；只有构建与测试成功才公开 Release。此流程不进行 WMI 实机采集，发布包的实际 SHA-256 以对应 Release 附件为准。
+
 2026-10-11 验证结果：Linux 上 Release 构建成功，0 个警告、0 个错误；`win-x64` 自包含发布成功。生成的 `artifacts/windows-x64/Gs66Control.exe` 已确认是 x86-64 Windows GUI PE，完整目录约 162 MiB。没有在 Windows 上运行 UI，也没有采集真实 GS66 的硬件数据。
