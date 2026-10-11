@@ -11,6 +11,8 @@ TestResults/
 # local captures may contain machine identifiers
 gs66-diagnostic*.json
 captures/
+artifacts/
+__pycache__/
 *.dmp
 
 # OS

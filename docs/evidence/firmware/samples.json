@@ -1,0 +1,153 @@
+{
+  "researchDate": "2026-10-11",
+  "target": "MSI GS66 Stealth 10SE / MS-16V1",
+  "actualHardwareFirmware": "unknown",
+  "mode": "offline-static",
+  "samples": [
+    {
+      "package": "E16V1IMS.112.zip",
+      "url": "https://download.msi.com/bos_exe/nb/E16V1IMS.112.zip",
+      "packageBytes": 7748573,
+      "packageSha256": "db2b8cba87eed4f27e8af67fbd919067fdc810e834d0d97acec8bec42b89cd3b",
+      "zipCrcValid": true,
+      "imageMember": "E16V1IMS.112/E16V1IMS.112",
+      "imageBytes": 16777216,
+      "imageSha256": "81b67146ee0940468e00c33fd3588ae1ef2f061d41f6c0d801350857ff9bd1c8",
+      "members": [
+        {
+          "path": "E16V1IMS.112/E16V1IMS.112",
+          "bytes": 16777216,
+          "sha256": "81b67146ee0940468e00c33fd3588ae1ef2f061d41f6c0d801350857ff9bd1c8"
+        },
+        {
+          "path": "E16V1IMS.112/E16V1IMS.1xx.txt",
+          "bytes": 2003,
+          "sha256": "be65db8251a93c13a0d00cbcb58c84043772e43dda85a69af116411153b195fe"
+        },
+        {
+          "path": "E16V1IMS.112/General Version BIOS Update Instruction (BSU) v2.7_All.pdf",
+          "bytes": 1596747,
+          "sha256": "8ceb07b82b67724b17c7ac62fd9af52dba20b15928da14c25eb3bfa5ca47aad2"
+        }
+      ],
+      "releaseDateInNotes": "2020-12-15",
+      "officialPageDate": "2020-12-18",
+      "officialPageSha256": "db2b8cba87eed4f27e8af67fbd919067fdc810e834d0d97acec8bec42b89cd3b"
+    },
+    {
+      "package": "16V1EMS1.118.zip",
+      "url": "https://download.msi.com/archive/frm_exe/nb/16V1EMS1.118.zip",
+      "packageBytes": 1011780,
+      "packageSha256": "b8520d6fe69bcfe8c83bb63fbc5003fbfbb76191d2f4287dfd1465e499c5172f",
+      "zipCrcValid": true,
+      "imageMember": "16V1EMS1.118/16V1EMS1.118",
+      "imageBytes": 131072,
+      "imageSha256": "9f4db4407715ec284b6b1ab8396792ffbd3e854d757e6778ba38ac04f4fcf68a",
+      "members": [
+        {
+          "path": "16V1EMS1.118/16V1EMS1.118",
+          "bytes": 131072,
+          "sha256": "9f4db4407715ec284b6b1ab8396792ffbd3e854d757e6778ba38ac04f4fcf68a"
+        },
+        {
+          "path": "16V1EMS1.118/16V1EMS1_1xx.txt",
+          "bytes": 2865,
+          "sha256": "65ac074e404fd97021da89e318878b5d1ec109914987e11c43b5162639c63368"
+        },
+        {
+          "path": "16V1EMS1.118/EcFlashWin_041.exe",
+          "bytes": 442368,
+          "sha256": "d78d0890fd429ba6a094f0519babfe088db25947ec3a7fbbea8636f951895271"
+        },
+        {
+          "path": "16V1EMS1.118/EC_Win.BAT",
+          "bytes": 1860,
+          "sha256": "d52a65c31412136af082ec6224828e1e18cf8192565072947f1b7bec1b4e546e"
+        },
+        {
+          "path": "16V1EMS1.118/[General Version] EC Update Instruction (Win) v3.3_All.pdf",
+          "bytes": 843725,
+          "sha256": "1421b225feacbecaa5058155813a5e1a19f4f70e5f93bab6a7e8436d5588347e"
+        }
+      ],
+      "releaseDateInNotes": "2021-03-10",
+      "embeddedBuildText": "16V1EMS1.11802/04/2116:46:37",
+      "embeddedBuildTextOffset": 36880
+    }
+  ],
+  "dsdt": {
+    "sha256": "6677339abcebcc88c439a0f7d50ad1d3f7ecce45ad7c9597bd84cfef1f7aed08",
+    "file": "DSDT-6677339abceb.aml",
+    "bytes": 265893,
+    "oemId": "MSI_NB",
+    "oemTableId": "MEGABOOK",
+    "checksumValid": true,
+    "locations": [
+      {
+        "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/241 C118F50D-391D-45F4-B3D3-11BC931AA56D/0 Raw section/body.bin",
+        "sectionBytes": 265893,
+        "sectionSha256": "6677339abcebcc88c439a0f7d50ad1d3f7ecce45ad7c9597bd84cfef1f7aed08",
+        "offset": 0,
+        "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+      },
+      {
+        "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/241 C118F50D-391D-45F4-B3D3-11BC931AA56D/body.bin",
+        "sectionBytes": 265897,
+        "sectionSha256": "e4a69ffe525b27af05e72d9304163bbdbadc697ffd91d0b8e57c4ab888813d69",
+        "offset": 4,
+        "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+      },
+      {
+        "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+        "sectionBytes": 7118728,
+        "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+        "offset": 4615524,
+        "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+      },
+      {
+        "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+        "sectionBytes": 7118848,
+        "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+        "offset": 4615644,
+        "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+      }
+    ]
+  },
+  "modernGuidSearch": {
+    "pattern": "ABBC0F6E-8EA1-11D1-00A0-C90629100000",
+    "patternHexBytesLe": "6e0fbcaba18ed11100a0c90629100000",
+    "scope": "All 75 unique checksum-valid DSDT/SSDT candidates from 2458 UEFIExtract body.bin files",
+    "matchedTables": [],
+    "limitations": [
+      "This is a bounded byte-pattern search, not proof of runtime class availability or absence from all possible firmware revisions."
+    ]
+  },
+  "tools": [
+    {
+      "name": "UEFIExtract",
+      "versionOrCommit": "A75",
+      "executableSha256": "f1b8d112838adcf741c43dbd87f3dc61f06996239e9801ae62cf46ea1cd2485a"
+    },
+    {
+      "name": "iasl",
+      "versionOrCommit": "20250404",
+      "executableSha256": "bbc9710408dfd0551549d2d1528e4d9514a8782ae5b5117fc7b3d5488ce42f07"
+    },
+    {
+      "name": "bmfdec",
+      "versionOrCommit": "c7b72f6ece126a8f686d66402009a14cb032a769",
+      "executableSha256": "0e7e5a07a40ae357f124a22cdade157a351351b28cc4a7184970ddac989e22b1"
+    },
+    {
+      "name": "morluto/rea",
+      "package": "rea-agents@6.4.0",
+      "skillVersion": "37",
+      "skillSourceCommit": "d9b4ae182d60dfd7fd5ba5bb539716413cbfdca6",
+      "usedOperations": [
+        "inspect_artifact",
+        "inspect_pe_resources"
+      ],
+      "firmwareRegionInspection": "unavailable: caller-supplied Binwalk path absent; UEFIExtract extraction used separately"
+    }
+  ]
+}

@@ -12,4 +12,7 @@ public sealed record HardwareSnapshot(
     IReadOnlyList<string> Gpus,
     string? BiosVersion,
     IReadOnlyList<string> MsiWmiClasses,
-    IReadOnlyList<string> Warnings);
+    IReadOnlyList<string> Warnings)
+{
+    public IReadOnlyList<MsiWmiClassSchema> MsiWmiSchemas { get; init; } = [];
+}

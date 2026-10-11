@@ -1,0 +1,3148 @@
+{
+  "schemaVersion": 1,
+  "mode": "offline-static",
+  "dslFile": "DSDT-6677339abceb.dsl",
+  "dslSha256": "3cca8708cb1b65a23eff96261bc5d2896096908882dbd4c6566d43e338eed463",
+  "device": "\\_SB.PCI0.LPCB.EC.SCM0",
+  "region": {
+    "addressSpace": "EmbeddedControl",
+    "offset": 0,
+    "bytes": 256
+  },
+  "namedConstants": {
+    "TDVR": 20
+  },
+  "descriptors": [
+    {
+      "guid": "24418d6a-0a79-524c-9ab1-18b78ca68ce7",
+      "objectIdHex": "4141",
+      "objectId": "AA",
+      "instanceCount": 34,
+      "flags": 1,
+      "classInMof": "MSI_Software"
+    },
+    {
+      "guid": "4afbd56b-9f91-8f49-81f5-995ba73822af",
+      "objectIdHex": "4142",
+      "objectId": "AB",
+      "instanceCount": 4,
+      "flags": 1,
+      "classInMof": "MSI_Device"
+    },
+    {
+      "guid": "2d3cba6c-1c9c-7f41-b54c-f5d5d580d482",
+      "objectIdHex": "4143",
+      "objectId": "AC",
+      "instanceCount": 3,
+      "flags": 1,
+      "classInMof": "MSI_Power"
+    },
+    {
+      "guid": "40ba026d-075d-cd4a-9710-f7c57347cac9",
+      "objectIdHex": "4144",
+      "objectId": "AD",
+      "instanceCount": 16,
+      "flags": 1,
+      "classInMof": "MSI_Master_Battery"
+    },
+    {
+      "guid": "8dbccf6e-9db4-0e46-a3f2-99afaaa77a7a",
+      "objectIdHex": "4145",
+      "objectId": "AE",
+      "instanceCount": 14,
+      "flags": 1,
+      "classInMof": "MSI_Slave_Battery"
+    },
+    {
+      "guid": "bd2a216f-2fb9-a640-b807-dddbad656891",
+      "objectIdHex": "4146",
+      "objectId": "AF",
+      "instanceCount": 19,
+      "flags": 1,
+      "classInMof": "MSI_CPU"
+    },
+    {
+      "guid": "1ec3ec7a-1e9b-e74a-9026-cf122b0bbd21",
+      "objectIdHex": "4147",
+      "objectId": "AG",
+      "instanceCount": 18,
+      "flags": 1,
+      "classInMof": "MSI_VGA"
+    },
+    {
+      "guid": "a1753d7b-b621-de4a-b41a-55716a0ece7a",
+      "objectIdHex": "4148",
+      "objectId": "AH",
+      "instanceCount": 21,
+      "flags": 1,
+      "classInMof": "MSI_System"
+    },
+    {
+      "guid": "a1753d7c-b621-de4a-b41a-55716a0ece7a",
+      "objectIdHex": "4149",
+      "objectId": "AI",
+      "instanceCount": 8,
+      "flags": 1,
+      "classInMof": "MSI_AP"
+    },
+    {
+      "guid": "5b3cc38a-40d9-7245-8ae6-1145b751be3f",
+      "objectIdHex": "c000",
+      "objectId": null,
+      "instanceCount": 1,
+      "flags": 9,
+      "classInMof": "MSI_Event"
+    }
+  ],
+  "fields": {
+    "TD2B": {
+      "byteOffset": 43,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD2C": {
+      "byteOffset": 44,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "T2D0": {
+      "byteOffset": 45,
+      "bitOffset": 0,
+      "bits": 1
+    },
+    "T2D1": {
+      "byteOffset": 45,
+      "bitOffset": 1,
+      "bits": 4
+    },
+    "T2D5": {
+      "byteOffset": 45,
+      "bitOffset": 5,
+      "bits": 3
+    },
+    "TD2E": {
+      "byteOffset": 46,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD2F": {
+      "byteOffset": 47,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD30": {
+      "byteOffset": 48,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD31": {
+      "byteOffset": 49,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD32": {
+      "byteOffset": 50,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD33": {
+      "byteOffset": 51,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD35": {
+      "byteOffset": 53,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD36": {
+      "byteOffset": 54,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD38": {
+      "byteOffset": 56,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD3A": {
+      "byteOffset": 58,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD3C": {
+      "byteOffset": 60,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD3E": {
+      "byteOffset": 62,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD40": {
+      "byteOffset": 64,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD42": {
+      "byteOffset": 66,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD44": {
+      "byteOffset": 68,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD46": {
+      "byteOffset": 70,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD48": {
+      "byteOffset": 72,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD4A": {
+      "byteOffset": 74,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD4C": {
+      "byteOffset": 76,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD4E": {
+      "byteOffset": 78,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD50": {
+      "byteOffset": 80,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD52": {
+      "byteOffset": 82,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD54": {
+      "byteOffset": 84,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD56": {
+      "byteOffset": 86,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD58": {
+      "byteOffset": 88,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD5A": {
+      "byteOffset": 90,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD5C": {
+      "byteOffset": 92,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD5E": {
+      "byteOffset": 94,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD60": {
+      "byteOffset": 96,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD62": {
+      "byteOffset": 98,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD64": {
+      "byteOffset": 100,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD66": {
+      "byteOffset": 102,
+      "bitOffset": 0,
+      "bits": 16
+    },
+    "TD68": {
+      "byteOffset": 104,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD69": {
+      "byteOffset": 105,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD6A": {
+      "byteOffset": 106,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD6B": {
+      "byteOffset": 107,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD6C": {
+      "byteOffset": 108,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD6D": {
+      "byteOffset": 109,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD6E": {
+      "byteOffset": 110,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD6F": {
+      "byteOffset": 111,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD70": {
+      "byteOffset": 112,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD71": {
+      "byteOffset": 113,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD72": {
+      "byteOffset": 114,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD73": {
+      "byteOffset": 115,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD74": {
+      "byteOffset": 116,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD75": {
+      "byteOffset": 117,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD76": {
+      "byteOffset": 118,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD77": {
+      "byteOffset": 119,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD78": {
+      "byteOffset": 120,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD79": {
+      "byteOffset": 121,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD80": {
+      "byteOffset": 128,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD81": {
+      "byteOffset": 129,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD82": {
+      "byteOffset": 130,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD83": {
+      "byteOffset": 131,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD84": {
+      "byteOffset": 132,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD85": {
+      "byteOffset": 133,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD86": {
+      "byteOffset": 134,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD87": {
+      "byteOffset": 135,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD88": {
+      "byteOffset": 136,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD89": {
+      "byteOffset": 137,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD8A": {
+      "byteOffset": 138,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD8B": {
+      "byteOffset": 139,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD8C": {
+      "byteOffset": 140,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD8D": {
+      "byteOffset": 141,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD8E": {
+      "byteOffset": 142,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD8F": {
+      "byteOffset": 143,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TD90": {
+      "byteOffset": 144,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA0": {
+      "byteOffset": 160,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA1": {
+      "byteOffset": 161,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA2": {
+      "byteOffset": 162,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA3": {
+      "byteOffset": 163,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA4": {
+      "byteOffset": 164,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA5": {
+      "byteOffset": 165,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA6": {
+      "byteOffset": 166,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA7": {
+      "byteOffset": 167,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA8": {
+      "byteOffset": 168,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDA9": {
+      "byteOffset": 169,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDAA": {
+      "byteOffset": 170,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDAB": {
+      "byteOffset": 171,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDAC": {
+      "byteOffset": 172,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDAD": {
+      "byteOffset": 173,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDAE": {
+      "byteOffset": 174,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDAF": {
+      "byteOffset": 175,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB0": {
+      "byteOffset": 176,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB1": {
+      "byteOffset": 177,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB2": {
+      "byteOffset": 178,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB3": {
+      "byteOffset": 179,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB4": {
+      "byteOffset": 180,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB5": {
+      "byteOffset": 181,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB6": {
+      "byteOffset": 182,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB7": {
+      "byteOffset": 183,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB8": {
+      "byteOffset": 184,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDB9": {
+      "byteOffset": 185,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDBA": {
+      "byteOffset": 186,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDBB": {
+      "byteOffset": 187,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDBE": {
+      "byteOffset": 188,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDBF": {
+      "byteOffset": 189,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDC8": {
+      "byteOffset": 200,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDC9": {
+      "byteOffset": 201,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDCA": {
+      "byteOffset": 202,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDCB": {
+      "byteOffset": 203,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDCC": {
+      "byteOffset": 204,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDCD": {
+      "byteOffset": 205,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDCE": {
+      "byteOffset": 206,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDCF": {
+      "byteOffset": 207,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDE0": {
+      "byteOffset": 224,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDE3": {
+      "byteOffset": 227,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TE40": {
+      "byteOffset": 228,
+      "bitOffset": 0,
+      "bits": 3
+    },
+    "TE43": {
+      "byteOffset": 228,
+      "bitOffset": 3,
+      "bits": 5
+    },
+    "TDE5": {
+      "byteOffset": 229,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDE6": {
+      "byteOffset": 230,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDE7": {
+      "byteOffset": 231,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDE8": {
+      "byteOffset": 232,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDE9": {
+      "byteOffset": 233,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDED": {
+      "byteOffset": 237,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDEE": {
+      "byteOffset": 238,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF0": {
+      "byteOffset": 240,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF1": {
+      "byteOffset": 241,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF2": {
+      "byteOffset": 242,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF3": {
+      "byteOffset": 243,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF4": {
+      "byteOffset": 244,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF5": {
+      "byteOffset": 245,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF6": {
+      "byteOffset": 246,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF7": {
+      "byteOffset": 247,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF8": {
+      "byteOffset": 248,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDF9": {
+      "byteOffset": 249,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDFA": {
+      "byteOffset": 250,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDFB": {
+      "byteOffset": 251,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDFC": {
+      "byteOffset": 252,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDFD": {
+      "byteOffset": 253,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDFE": {
+      "byteOffset": 254,
+      "bitOffset": 0,
+      "bits": 8
+    },
+    "TDFF": {
+      "byteOffset": 255,
+      "bitOffset": 0,
+      "bits": 8
+    }
+  },
+  "methods": [
+    {
+      "name": "WQAA",
+      "branches": [
+        {
+          "index": 0,
+          "field": "T2D0",
+          "byteOffset": 45,
+          "bitOffset": 0,
+          "bits": 1,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "T2D1",
+          "byteOffset": 45,
+          "bitOffset": 1,
+          "bits": 4,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TDEE",
+          "byteOffset": 238,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "T2D5",
+          "byteOffset": 45,
+          "bitOffset": 5,
+          "bits": 3,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TDE5",
+          "byteOffset": 229,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TDE6",
+          "byteOffset": 230,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TDA0",
+          "byteOffset": 160,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TDA1",
+          "byteOffset": 161,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TDA2",
+          "byteOffset": 162,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TDA3",
+          "byteOffset": 163,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TDA4",
+          "byteOffset": 164,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TDA5",
+          "byteOffset": 165,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDA6",
+          "byteOffset": 166,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TDA7",
+          "byteOffset": 167,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TDA8",
+          "byteOffset": 168,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TDA9",
+          "byteOffset": 169,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TDAA",
+          "byteOffset": 170,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TDAB",
+          "byteOffset": 171,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 18,
+          "field": "TDAC",
+          "byteOffset": 172,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 19,
+          "field": "TDAD",
+          "byteOffset": 173,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 20,
+          "field": "TDAE",
+          "byteOffset": 174,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 21,
+          "field": "TDAF",
+          "byteOffset": 175,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 22,
+          "field": "TDB0",
+          "byteOffset": 176,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 23,
+          "field": "TDB1",
+          "byteOffset": 177,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 24,
+          "field": "TDB2",
+          "byteOffset": 178,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 25,
+          "field": "TDB3",
+          "byteOffset": 179,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 26,
+          "field": "TDB4",
+          "byteOffset": 180,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 27,
+          "field": "TDB5",
+          "byteOffset": 181,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 28,
+          "field": "TDB6",
+          "byteOffset": 182,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 29,
+          "field": "TDB7",
+          "byteOffset": 183,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 30,
+          "field": "TDB8",
+          "byteOffset": 184,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 31,
+          "field": "TDB9",
+          "byteOffset": 185,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 32,
+          "field": "TDBA",
+          "byteOffset": 186,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 33,
+          "field": "TDBB",
+          "byteOffset": 187,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAB",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD2E",
+          "byteOffset": 46,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD2F",
+          "byteOffset": 47,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD2B",
+          "byteOffset": 43,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD2C",
+          "byteOffset": 44,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAC",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD30",
+          "byteOffset": 48,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TDBE",
+          "byteOffset": 188,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TDBF",
+          "byteOffset": 189,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAD",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD31",
+          "byteOffset": 49,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD38",
+          "byteOffset": 56,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD3A",
+          "byteOffset": 58,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD3C",
+          "byteOffset": 60,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD3E",
+          "byteOffset": 62,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD40",
+          "byteOffset": 64,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD42",
+          "byteOffset": 66,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD44",
+          "byteOffset": 68,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD46",
+          "byteOffset": 70,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD48",
+          "byteOffset": 72,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD4A",
+          "byteOffset": 74,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD4C",
+          "byteOffset": 76,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDE8",
+          "byteOffset": 232,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD35",
+          "byteOffset": 53,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TD36",
+          "byteOffset": 54,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TD4E",
+          "byteOffset": 78,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAE",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD32",
+          "byteOffset": 50,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD50",
+          "byteOffset": 80,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD52",
+          "byteOffset": 82,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD54",
+          "byteOffset": 84,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD56",
+          "byteOffset": 86,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD58",
+          "byteOffset": 88,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD5A",
+          "byteOffset": 90,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD5C",
+          "byteOffset": 92,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD5E",
+          "byteOffset": 94,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD60",
+          "byteOffset": 96,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD62",
+          "byteOffset": 98,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD64",
+          "byteOffset": 100,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDE9",
+          "byteOffset": 233,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD66",
+          "byteOffset": 102,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAF",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD33",
+          "byteOffset": 51,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD68",
+          "byteOffset": 104,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD71",
+          "byteOffset": 113,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD70",
+          "byteOffset": 112,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD69",
+          "byteOffset": 105,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD6A",
+          "byteOffset": 106,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD6B",
+          "byteOffset": 107,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD6C",
+          "byteOffset": 108,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD6D",
+          "byteOffset": 109,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD6E",
+          "byteOffset": 110,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD6F",
+          "byteOffset": 111,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD72",
+          "byteOffset": 114,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TD73",
+          "byteOffset": 115,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD74",
+          "byteOffset": 116,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TD75",
+          "byteOffset": 117,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TD76",
+          "byteOffset": 118,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TD77",
+          "byteOffset": 119,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TD78",
+          "byteOffset": 120,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 18,
+          "field": "TD79",
+          "byteOffset": 121,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAG",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD33",
+          "byteOffset": 51,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD80",
+          "byteOffset": 128,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD89",
+          "byteOffset": 137,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD88",
+          "byteOffset": 136,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD81",
+          "byteOffset": 129,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD82",
+          "byteOffset": 130,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD83",
+          "byteOffset": 131,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD84",
+          "byteOffset": 132,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD85",
+          "byteOffset": 133,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD86",
+          "byteOffset": 134,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD87",
+          "byteOffset": 135,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD8A",
+          "byteOffset": 138,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TD8B",
+          "byteOffset": 139,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD8C",
+          "byteOffset": 140,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TD8D",
+          "byteOffset": 141,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TD8E",
+          "byteOffset": 142,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TD8F",
+          "byteOffset": 143,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TD90",
+          "byteOffset": 144,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAH",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TE40",
+          "byteOffset": 228,
+          "bitOffset": 0,
+          "bits": 3,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TE43",
+          "byteOffset": 228,
+          "bitOffset": 3,
+          "bits": 5,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TDE7",
+          "byteOffset": 231,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TDF0",
+          "byteOffset": 240,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TDF1",
+          "byteOffset": 241,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TDFE",
+          "byteOffset": 254,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TDFF",
+          "byteOffset": 255,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TDF2",
+          "byteOffset": 242,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TDF3",
+          "byteOffset": 243,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TDF4",
+          "byteOffset": 244,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TDF5",
+          "byteOffset": 245,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TDF6",
+          "byteOffset": 246,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDF7",
+          "byteOffset": 247,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TDF8",
+          "byteOffset": 248,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TDF9",
+          "byteOffset": 249,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TDFA",
+          "byteOffset": 250,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TDFB",
+          "byteOffset": 251,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TDFC",
+          "byteOffset": 252,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 18,
+          "field": "TDFD",
+          "byteOffset": 253,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 19,
+          "field": "TDE0",
+          "byteOffset": 224,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 20,
+          "field": "TDE3",
+          "byteOffset": 227,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WQAI",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TDCF",
+          "byteOffset": 207,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TDCE",
+          "byteOffset": 206,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": [
+            {
+              "field": "TDCE",
+              "valueExpression": "TDVR"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "field": "TDCD",
+          "byteOffset": 205,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TDCC",
+          "byteOffset": 204,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TDCB",
+          "byteOffset": 203,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TDCA",
+          "byteOffset": 202,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TDC9",
+          "byteOffset": 201,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TDC8",
+          "byteOffset": 200,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAA",
+      "branches": [
+        {
+          "index": 0,
+          "field": "T2D0",
+          "byteOffset": 45,
+          "bitOffset": 0,
+          "bits": 1,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "T2D1",
+          "byteOffset": 45,
+          "bitOffset": 1,
+          "bits": 4,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TDEE",
+          "byteOffset": 238,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "T2D5",
+          "byteOffset": 45,
+          "bitOffset": 5,
+          "bits": 3,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TDE5",
+          "byteOffset": 229,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TDE6",
+          "byteOffset": 230,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TDA0",
+          "byteOffset": 160,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TDA1",
+          "byteOffset": 161,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TDA2",
+          "byteOffset": 162,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TDA3",
+          "byteOffset": 163,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TDA4",
+          "byteOffset": 164,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TDA5",
+          "byteOffset": 165,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDA6",
+          "byteOffset": 166,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TDA7",
+          "byteOffset": 167,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TDA8",
+          "byteOffset": 168,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TDA9",
+          "byteOffset": 169,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TDAA",
+          "byteOffset": 170,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TDAB",
+          "byteOffset": 171,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 18,
+          "field": "TDAC",
+          "byteOffset": 172,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 19,
+          "field": "TDAD",
+          "byteOffset": 173,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 20,
+          "field": "TDAE",
+          "byteOffset": 174,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 21,
+          "field": "TDAF",
+          "byteOffset": 175,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 22,
+          "field": "TDB0",
+          "byteOffset": 176,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 23,
+          "field": "TDB1",
+          "byteOffset": 177,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 24,
+          "field": "TDB2",
+          "byteOffset": 178,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 25,
+          "field": "TDB3",
+          "byteOffset": 179,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 26,
+          "field": "TDB4",
+          "byteOffset": 180,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 27,
+          "field": "TDB5",
+          "byteOffset": 181,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 28,
+          "field": "TDB6",
+          "byteOffset": 182,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 29,
+          "field": "TDB7",
+          "byteOffset": 183,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 30,
+          "field": "TDB8",
+          "byteOffset": 184,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 31,
+          "field": "TDB9",
+          "byteOffset": 185,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 32,
+          "field": "TDBA",
+          "byteOffset": 186,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 33,
+          "field": "TDBB",
+          "byteOffset": 187,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAB",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD2E",
+          "byteOffset": 46,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD2F",
+          "byteOffset": 47,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD2B",
+          "byteOffset": 43,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD2C",
+          "byteOffset": 44,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAC",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD30",
+          "byteOffset": 48,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TDBE",
+          "byteOffset": 188,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TDBF",
+          "byteOffset": 189,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAD",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD31",
+          "byteOffset": 49,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD38",
+          "byteOffset": 56,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD3A",
+          "byteOffset": 58,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD3C",
+          "byteOffset": 60,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD3E",
+          "byteOffset": 62,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD40",
+          "byteOffset": 64,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD42",
+          "byteOffset": 66,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD44",
+          "byteOffset": 68,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD46",
+          "byteOffset": 70,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD48",
+          "byteOffset": 72,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD4A",
+          "byteOffset": 74,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD4C",
+          "byteOffset": 76,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDE8",
+          "byteOffset": 232,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD35",
+          "byteOffset": 53,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TD36",
+          "byteOffset": 54,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TD4E",
+          "byteOffset": 78,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAE",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD32",
+          "byteOffset": 50,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD50",
+          "byteOffset": 80,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD52",
+          "byteOffset": 82,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD54",
+          "byteOffset": 84,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD56",
+          "byteOffset": 86,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD58",
+          "byteOffset": 88,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD5A",
+          "byteOffset": 90,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD5C",
+          "byteOffset": 92,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD5E",
+          "byteOffset": 94,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD60",
+          "byteOffset": 96,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD62",
+          "byteOffset": 98,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD64",
+          "byteOffset": 100,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDE9",
+          "byteOffset": 233,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD66",
+          "byteOffset": 102,
+          "bitOffset": 0,
+          "bits": 16,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAF",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD33",
+          "byteOffset": 51,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD68",
+          "byteOffset": 104,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD71",
+          "byteOffset": 113,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD70",
+          "byteOffset": 112,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD69",
+          "byteOffset": 105,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD6A",
+          "byteOffset": 106,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD6B",
+          "byteOffset": 107,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD6C",
+          "byteOffset": 108,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD6D",
+          "byteOffset": 109,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD6E",
+          "byteOffset": 110,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD6F",
+          "byteOffset": 111,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD72",
+          "byteOffset": 114,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TD73",
+          "byteOffset": 115,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD74",
+          "byteOffset": 116,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TD75",
+          "byteOffset": 117,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TD76",
+          "byteOffset": 118,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TD77",
+          "byteOffset": 119,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TD78",
+          "byteOffset": 120,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 18,
+          "field": "TD79",
+          "byteOffset": 121,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAG",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TD33",
+          "byteOffset": 51,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TD80",
+          "byteOffset": 128,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TD89",
+          "byteOffset": 137,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TD88",
+          "byteOffset": 136,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TD81",
+          "byteOffset": 129,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TD82",
+          "byteOffset": 130,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TD83",
+          "byteOffset": 131,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TD84",
+          "byteOffset": 132,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TD85",
+          "byteOffset": 133,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TD86",
+          "byteOffset": 134,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TD87",
+          "byteOffset": 135,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TD8A",
+          "byteOffset": 138,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TD8B",
+          "byteOffset": 139,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TD8C",
+          "byteOffset": 140,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TD8D",
+          "byteOffset": 141,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TD8E",
+          "byteOffset": 142,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TD8F",
+          "byteOffset": 143,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TD90",
+          "byteOffset": 144,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAH",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TE40",
+          "byteOffset": 228,
+          "bitOffset": 0,
+          "bits": 3,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TE43",
+          "byteOffset": 228,
+          "bitOffset": 3,
+          "bits": 5,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TDE7",
+          "byteOffset": 231,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TDF0",
+          "byteOffset": 240,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TDF1",
+          "byteOffset": 241,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TDFE",
+          "byteOffset": 254,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TDFF",
+          "byteOffset": 255,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TDF2",
+          "byteOffset": 242,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 8,
+          "field": "TDF3",
+          "byteOffset": 243,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 9,
+          "field": "TDF4",
+          "byteOffset": 244,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 10,
+          "field": "TDF5",
+          "byteOffset": 245,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 11,
+          "field": "TDF6",
+          "byteOffset": 246,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 12,
+          "field": "TDF7",
+          "byteOffset": 247,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 13,
+          "field": "TDF8",
+          "byteOffset": 248,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 14,
+          "field": "TDF9",
+          "byteOffset": 249,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 15,
+          "field": "TDFA",
+          "byteOffset": 250,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 16,
+          "field": "TDFB",
+          "byteOffset": 251,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 17,
+          "field": "TDFC",
+          "byteOffset": 252,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 18,
+          "field": "TDFD",
+          "byteOffset": 253,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 19,
+          "field": "TDE0",
+          "byteOffset": 224,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 20,
+          "field": "TDE3",
+          "byteOffset": 227,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    },
+    {
+      "name": "WSAI",
+      "branches": [
+        {
+          "index": 0,
+          "field": "TDCF",
+          "byteOffset": 207,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 1,
+          "field": "TDCE",
+          "byteOffset": 206,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 2,
+          "field": "TDCD",
+          "byteOffset": 205,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 3,
+          "field": "TDCC",
+          "byteOffset": 204,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 4,
+          "field": "TDCB",
+          "byteOffset": 203,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 5,
+          "field": "TDCA",
+          "byteOffset": 202,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 6,
+          "field": "TDC9",
+          "byteOffset": 201,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        },
+        {
+          "index": 7,
+          "field": "TDC8",
+          "byteOffset": 200,
+          "bitOffset": 0,
+          "bits": 8,
+          "querySideEffects": []
+        }
+      ]
+    }
+  ],
+  "excerpts": [
+    {
+      "name": "SCM0 header",
+      "firstLine": 57723,
+      "lastLine": 57728,
+      "text": "Device (SCM0)\n            {\n                Name (_HID, \"PNP0C14\" /* Windows Management Instrumentation Device */)  // _HID: Hardware ID\n                Name (_UID, Zero)  // _UID: Unique ID\n                Name (TDVR, 0x14)\n                "
+    },
+    {
+      "name": "_WDG",
+      "firstLine": 57728,
+      "lastLine": 57755,
+      "text": "Name (_WDG, Buffer (0xC8)\n                {\n                    /* 0000 */  0x6A, 0x8D, 0x41, 0x24, 0x79, 0x0A, 0x4C, 0x52,  // j.A$y.LR\n                    /* 0008 */  0x9A, 0xB1, 0x18, 0xB7, 0x8C, 0xA6, 0x8C, 0xE7,  // ........\n                    /* 0010 */  0x41, 0x41, 0x22, 0x01, 0x6B, 0xD5, 0xFB, 0x4A,  // AA\".k..J\n                    /* 0018 */  0x91, 0x9F, 0x49, 0x8F, 0x81, 0xF5, 0x99, 0x5B,  // ..I....[\n                    /* 0020 */  0xA7, 0x38, 0x22, 0xAF, 0x41, 0x42, 0x04, 0x01,  // .8\".AB..\n                    /* 0028 */  0x6C, 0xBA, 0x3C, 0x2D, 0x9C, 0x1C, 0x41, 0x7F,  // l.<-..A.\n                    /* 0030 */  0xB5, 0x4C, 0xF5, 0xD5, 0xD5, 0x80, 0xD4, 0x82,  // .L......\n                    /* 0038 */  0x41, 0x43, 0x03, 0x01, 0x6D, 0x02, 0xBA, 0x40,  // AC..m..@\n                    /* 0040 */  0x5D, 0x07, 0x4A, 0xCD, 0x97, 0x10, 0xF7, 0xC5,  // ].J.....\n                    /* 0048 */  0x73, 0x47, 0xCA, 0xC9, 0x41, 0x44, 0x10, 0x01,  // sG..AD..\n                    /* 0050 */  0x6E, 0xCF, 0xBC, 0x8D, 0xB4, 0x9D, 0x46, 0x0E,  // n.....F.\n                    /* 0058 */  0xA3, 0xF2, 0x99, 0xAF, 0xAA, 0xA7, 0x7A, 0x7A,  // ......zz\n                    /* 0060 */  0x41, 0x45, 0x0E, 0x01, 0x6F, 0x21, 0x2A, 0xBD,  // AE..o!*.\n                    /* 0068 */  0xB9, 0x2F, 0x40, 0xA6, 0xB8, 0x07, 0xDD, 0xDB,  // ./@.....\n                    /* 0070 */  0xAD, 0x65, 0x68, 0x91, 0x41, 0x46, 0x13, 0x01,  // .eh.AF..\n                    /* 0078 */  0x7A, 0xEC, 0xC3, 0x1E, 0x9B, 0x1E, 0x4A, 0xE7,  // z.....J.\n                    /* 0080 */  0x90, 0x26, 0xCF, 0x12, 0x2B, 0x0B, 0xBD, 0x21,  // .&..+..!\n                    /* 0088 */  0x41, 0x47, 0x12, 0x01, 0x7B, 0x3D, 0x75, 0xA1,  // AG..{=u.\n                    /* 0090 */  0x21, 0xB6, 0x4A, 0xDE, 0xB4, 0x1A, 0x55, 0x71,  // !.J...Uq\n                    /* 0098 */  0x6A, 0x0E, 0xCE, 0x7A, 0x41, 0x48, 0x15, 0x01,  // j..zAH..\n                    /* 00A0 */  0x7C, 0x3D, 0x75, 0xA1, 0x21, 0xB6, 0x4A, 0xDE,  // |=u.!.J.\n                    /* 00A8 */  0xB4, 0x1A, 0x55, 0x71, 0x6A, 0x0E, 0xCE, 0x7A,  // ..Uqj..z\n                    /* 00B0 */  0x41, 0x49, 0x08, 0x01, 0x8A, 0xC3, 0x3C, 0x5B,  // AI....<[\n                    /* 00B8 */  0xD9, 0x40, 0x45, 0x72, 0x8A, 0xE6, 0x11, 0x45,  // .@Er...E\n                    /* 00C0 */  0xB7, 0x51, 0xBE, 0x3F, 0xC0, 0x00, 0x01, 0x09   // .Q.?....\n                }"
+    },
+    {
+      "name": "EmbeddedControl region / Field",
+      "firstLine": 57755,
+      "lastLine": 57906,
+      "text": ")\n                OperationRegion (EC, EmbeddedControl, Zero, 0x0100)\n                Field (EC, ByteAcc, NoLock, Preserve)\n                {\n                    Offset (0x2B), \n                    TD2B,   8, \n                    TD2C,   8, \n                    T2D0,   1, \n                    T2D1,   4, \n                    T2D5,   3, \n                    TD2E,   8, \n                    TD2F,   8, \n                    TD30,   8, \n                    TD31,   8, \n                    TD32,   8, \n                    TD33,   8, \n                    Offset (0x35), \n                    TD35,   8, \n                    TD36,   8, \n                    Offset (0x38), \n                    TD38,   16, \n                    TD3A,   16, \n                    TD3C,   16, \n                    TD3E,   16, \n                    TD40,   16, \n                    TD42,   16, \n                    TD44,   16, \n                    TD46,   16, \n                    TD48,   16, \n                    TD4A,   16, \n                    TD4C,   16, \n                    TD4E,   16, \n                    TD50,   16, \n                    TD52,   16, \n                    TD54,   16, \n                    TD56,   16, \n                    TD58,   16, \n                    TD5A,   16, \n                    TD5C,   16, \n                    TD5E,   16, \n                    TD60,   16, \n                    TD62,   16, \n                    TD64,   16, \n                    TD66,   16, \n                    TD68,   8, \n                    TD69,   8, \n                    TD6A,   8, \n                    TD6B,   8, \n                    TD6C,   8, \n                    TD6D,   8, \n                    TD6E,   8, \n                    TD6F,   8, \n                    TD70,   8, \n                    TD71,   8, \n                    TD72,   8, \n                    TD73,   8, \n                    TD74,   8, \n                    TD75,   8, \n                    TD76,   8, \n                    TD77,   8, \n                    TD78,   8, \n                    TD79,   8, \n                    Offset (0x80), \n                    TD80,   8, \n                    TD81,   8, \n                    TD82,   8, \n                    TD83,   8, \n                    TD84,   8, \n                    TD85,   8, \n                    TD86,   8, \n                    TD87,   8, \n                    TD88,   8, \n                    TD89,   8, \n                    TD8A,   8, \n                    TD8B,   8, \n                    TD8C,   8, \n                    TD8D,   8, \n                    TD8E,   8, \n                    TD8F,   8, \n                    TD90,   8, \n                    Offset (0xA0), \n                    TDA0,   8, \n                    TDA1,   8, \n                    TDA2,   8, \n                    TDA3,   8, \n                    TDA4,   8, \n                    TDA5,   8, \n                    TDA6,   8, \n                    TDA7,   8, \n                    TDA8,   8, \n                    TDA9,   8, \n                    TDAA,   8, \n                    TDAB,   8, \n                    TDAC,   8, \n                    TDAD,   8, \n                    TDAE,   8, \n                    TDAF,   8, \n                    TDB0,   8, \n                    TDB1,   8, \n                    TDB2,   8, \n                    TDB3,   8, \n                    TDB4,   8, \n                    TDB5,   8, \n                    TDB6,   8, \n                    TDB7,   8, \n                    TDB8,   8, \n                    TDB9,   8, \n                    TDBA,   8, \n                    TDBB,   8, \n                    TDBE,   8, \n                    TDBF,   8, \n                    Offset (0xC8), \n                    TDC8,   8, \n                    TDC9,   8, \n                    TDCA,   8, \n                    TDCB,   8, \n                    TDCC,   8, \n                    TDCD,   8, \n                    TDCE,   8, \n                    TDCF,   8, \n                    Offset (0xE0), \n                    TDE0,   8, \n                    Offset (0xE3), \n                    TDE3,   8, \n                    TE40,   3, \n                    TE43,   5, \n                    TDE5,   8, \n                    TDE6,   8, \n                    TDE7,   8, \n                    TDE8,   8, \n                    TDE9,   8, \n                    Offset (0xED), \n                    TDED,   8, \n                    TDEE,   8, \n                    Offset (0xF0), \n                    TDF0,   8, \n                    TDF1,   8, \n                    TDF2,   8, \n                    TDF3,   8, \n                    TDF4,   8, \n                    TDF5,   8, \n                    TDF6,   8, \n                    TDF7,   8, \n                    TDF8,   8, \n                    TDF9,   8, \n                    TDFA,   8, \n                    TDFB,   8, \n                    TDFC,   8, \n                    TDFD,   8, \n                    TDFE,   8, \n                    TDFF,   8\n                }"
+    },
+    {
+      "name": "WQAF",
+      "firstLine": 58349,
+      "lastLine": 58464,
+      "text": "Method (WQAF, 1, NotSerialized)\n                {\n                    If ((Arg0 == Zero))\n                    {\n                        Local0 = TD33 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD33 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == One))\n                    {\n                        Local0 = TD68 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD68 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x02))\n                    {\n                        Local0 = TD71 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD71 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x03))\n                    {\n                        Local0 = TD70 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD70 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x04))\n                    {\n                        Local0 = TD69 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD69 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x05))\n                    {\n                        Local0 = TD6A /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6A */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x06))\n                    {\n                        Local0 = TD6B /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6B */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x07))\n                    {\n                        Local0 = TD6C /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6C */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x08))\n                    {\n                        Local0 = TD6D /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6D */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x09))\n                    {\n                        Local0 = TD6E /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6E */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0A))\n                    {\n                        Local0 = TD6F /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6F */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0B))\n                    {\n                        Local0 = TD72 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD72 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0C))\n                    {\n                        Local0 = TD73 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD73 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0D))\n                    {\n                        Local0 = TD74 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD74 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0E))\n                    {\n                        Local0 = TD75 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD75 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0F))\n                    {\n                        Local0 = TD76 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD76 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x10))\n                    {\n                        Local0 = TD77 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD77 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x11))\n                    {\n                        Local0 = TD78 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD78 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x12))\n                    {\n                        Local0 = TD79 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD79 */\n                        Return (Local0)\n                    }\n                }"
+    },
+    {
+      "name": "WQAG",
+      "firstLine": 58466,
+      "lastLine": 58575,
+      "text": "Method (WQAG, 1, NotSerialized)\n                {\n                    If ((Arg0 == Zero))\n                    {\n                        Local0 = TD33 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD33 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == One))\n                    {\n                        Local0 = TD80 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD80 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x02))\n                    {\n                        Local0 = TD89 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD89 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x03))\n                    {\n                        Local0 = TD88 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD88 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x04))\n                    {\n                        Local0 = TD81 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD81 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x05))\n                    {\n                        Local0 = TD82 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD82 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x06))\n                    {\n                        Local0 = TD83 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD83 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x07))\n                    {\n                        Local0 = TD84 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD84 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x08))\n                    {\n                        Local0 = TD85 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD85 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x09))\n                    {\n                        Local0 = TD86 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD86 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0A))\n                    {\n                        Local0 = TD87 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD87 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0B))\n                    {\n                        Local0 = TD8A /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8A */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0C))\n                    {\n                        Local0 = TD8B /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8B */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0D))\n                    {\n                        Local0 = TD8C /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8C */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0E))\n                    {\n                        Local0 = TD8D /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8D */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0F))\n                    {\n                        Local0 = TD8E /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8E */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x10))\n                    {\n                        Local0 = TD8F /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8F */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x11))\n                    {\n                        Local0 = TD90 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD90 */\n                        Return (Local0)\n                    }\n                }"
+    },
+    {
+      "name": "WQAH",
+      "firstLine": 58577,
+      "lastLine": 58704,
+      "text": "Method (WQAH, 1, NotSerialized)\n                {\n                    If ((Arg0 == Zero))\n                    {\n                        Local0 = TE40 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TE40 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == One))\n                    {\n                        Local0 = TE43 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TE43 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x02))\n                    {\n                        Local0 = TDE7 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDE7 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x03))\n                    {\n                        Local0 = TDF0 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF0 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x04))\n                    {\n                        Local0 = TDF1 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF1 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x05))\n                    {\n                        Local0 = TDFE /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFE */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x06))\n                    {\n                        Local0 = TDFF /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFF */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x07))\n                    {\n                        Local0 = TDF2 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF2 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x08))\n                    {\n                        Local0 = TDF3 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF3 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x09))\n                    {\n                        Local0 = TDF4 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF4 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0A))\n                    {\n                        Local0 = TDF5 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF5 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0B))\n                    {\n                        Local0 = TDF6 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF6 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0C))\n                    {\n                        Local0 = TDF7 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF7 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0D))\n                    {\n                        Local0 = TDF8 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF8 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0E))\n                    {\n                        Local0 = TDF9 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF9 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x0F))\n                    {\n                        Local0 = TDFA /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFA */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x10))\n                    {\n                        Local0 = TDFB /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFB */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x11))\n                    {\n                        Local0 = TDFC /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFC */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x12))\n                    {\n                        Local0 = TDFD /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFD */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x13))\n                    {\n                        Local0 = TDE0 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDE0 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x14))\n                    {\n                        Local0 = TDE3 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDE3 */\n                        Return (Local0)\n                    }\n                }"
+    },
+    {
+      "name": "WQAI",
+      "firstLine": 58706,
+      "lastLine": 58756,
+      "text": "Method (WQAI, 1, NotSerialized)\n                {\n                    If ((Arg0 == Zero))\n                    {\n                        Local0 = TDCF /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDCF */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == One))\n                    {\n                        TDCE = TDVR /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDVR */\n                        Local0 = TDCE /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDCE */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x02))\n                    {\n                        Local0 = TDCD /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDCD */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x03))\n                    {\n                        Local0 = TDCC /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDCC */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x04))\n                    {\n                        Local0 = TDCB /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDCB */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x05))\n                    {\n                        Local0 = TDCA /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDCA */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x06))\n                    {\n                        Local0 = TDC9 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDC9 */\n                        Return (Local0)\n                    }\n\n                    If ((Arg0 == 0x07))\n                    {\n                        Local0 = TDC8 /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDC8 */\n                        Return (Local0)\n                    }\n                }"
+    },
+    {
+      "name": "WSAF",
+      "firstLine": 59199,
+      "lastLine": 59314,
+      "text": "Method (WSAF, 2, NotSerialized)\n                {\n                    If ((Arg0 == Zero))\n                    {\n                        TD33 = Arg1\n                        Return (TD33) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD33 */\n                    }\n\n                    If ((Arg0 == One))\n                    {\n                        TD68 = Arg1\n                        Return (TD68) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD68 */\n                    }\n\n                    If ((Arg0 == 0x02))\n                    {\n                        TD71 = Arg1\n                        Return (TD71) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD71 */\n                    }\n\n                    If ((Arg0 == 0x03))\n                    {\n                        TD70 = Arg1\n                        Return (TD70) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD70 */\n                    }\n\n                    If ((Arg0 == 0x04))\n                    {\n                        TD69 = Arg1\n                        Return (TD69) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD69 */\n                    }\n\n                    If ((Arg0 == 0x05))\n                    {\n                        TD6A = Arg1\n                        Return (TD6A) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6A */\n                    }\n\n                    If ((Arg0 == 0x06))\n                    {\n                        TD6B = Arg1\n                        Return (TD6B) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6B */\n                    }\n\n                    If ((Arg0 == 0x07))\n                    {\n                        TD6C = Arg1\n                        Return (TD6C) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6C */\n                    }\n\n                    If ((Arg0 == 0x08))\n                    {\n                        TD6D = Arg1\n                        Return (TD6D) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6D */\n                    }\n\n                    If ((Arg0 == 0x09))\n                    {\n                        TD6E = Arg1\n                        Return (TD6E) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6E */\n                    }\n\n                    If ((Arg0 == 0x0A))\n                    {\n                        TD6F = Arg1\n                        Return (TD6F) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD6F */\n                    }\n\n                    If ((Arg0 == 0x0B))\n                    {\n                        TD72 = Arg1\n                        Return (TD72) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD72 */\n                    }\n\n                    If ((Arg0 == 0x0C))\n                    {\n                        TD73 = Arg1\n                        Return (TD73) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD73 */\n                    }\n\n                    If ((Arg0 == 0x0D))\n                    {\n                        TD74 = Arg1\n                        Return (TD74) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD74 */\n                    }\n\n                    If ((Arg0 == 0x0E))\n                    {\n                        TD75 = Arg1\n                        Return (TD75) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD75 */\n                    }\n\n                    If ((Arg0 == 0x0F))\n                    {\n                        TD76 = Arg1\n                        Return (TD76) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD76 */\n                    }\n\n                    If ((Arg0 == 0x10))\n                    {\n                        TD77 = Arg1\n                        Return (TD77) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD77 */\n                    }\n\n                    If ((Arg0 == 0x11))\n                    {\n                        TD78 = Arg1\n                        Return (TD78) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD78 */\n                    }\n\n                    If ((Arg0 == 0x12))\n                    {\n                        TD79 = Arg1\n                        Return (TD79) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD79 */\n                    }\n                }"
+    },
+    {
+      "name": "WSAG",
+      "firstLine": 59316,
+      "lastLine": 59425,
+      "text": "Method (WSAG, 2, NotSerialized)\n                {\n                    If ((Arg0 == Zero))\n                    {\n                        TD33 = Arg1\n                        Return (TD33) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD33 */\n                    }\n\n                    If ((Arg0 == One))\n                    {\n                        TD80 = Arg1\n                        Return (TD80) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD80 */\n                    }\n\n                    If ((Arg0 == 0x02))\n                    {\n                        TD89 = Arg1\n                        Return (TD89) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD89 */\n                    }\n\n                    If ((Arg0 == 0x03))\n                    {\n                        TD88 = Arg1\n                        Return (TD88) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD88 */\n                    }\n\n                    If ((Arg0 == 0x04))\n                    {\n                        TD81 = Arg1\n                        Return (TD81) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD81 */\n                    }\n\n                    If ((Arg0 == 0x05))\n                    {\n                        TD82 = Arg1\n                        Return (TD82) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD82 */\n                    }\n\n                    If ((Arg0 == 0x06))\n                    {\n                        TD83 = Arg1\n                        Return (TD83) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD83 */\n                    }\n\n                    If ((Arg0 == 0x07))\n                    {\n                        TD84 = Arg1\n                        Return (TD84) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD84 */\n                    }\n\n                    If ((Arg0 == 0x08))\n                    {\n                        TD85 = Arg1\n                        Return (TD85) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD85 */\n                    }\n\n                    If ((Arg0 == 0x09))\n                    {\n                        TD86 = Arg1\n                        Return (TD86) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD86 */\n                    }\n\n                    If ((Arg0 == 0x0A))\n                    {\n                        TD87 = Arg1\n                        Return (TD87) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD87 */\n                    }\n\n                    If ((Arg0 == 0x0B))\n                    {\n                        TD8A = Arg1\n                        Return (TD8A) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8A */\n                    }\n\n                    If ((Arg0 == 0x0C))\n                    {\n                        TD8B = Arg1\n                        Return (TD8B) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8B */\n                    }\n\n                    If ((Arg0 == 0x0D))\n                    {\n                        TD8C = Arg1\n                        Return (TD8C) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8C */\n                    }\n\n                    If ((Arg0 == 0x0E))\n                    {\n                        TD8D = Arg1\n                        Return (TD8D) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8D */\n                    }\n\n                    If ((Arg0 == 0x0F))\n                    {\n                        TD8E = Arg1\n                        Return (TD8E) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8E */\n                    }\n\n                    If ((Arg0 == 0x10))\n                    {\n                        TD8F = Arg1\n                        Return (TD8F) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD8F */\n                    }\n\n                    If ((Arg0 == 0x11))\n                    {\n                        TD90 = Arg1\n                        Return (TD90) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TD90 */\n                    }\n                }"
+    },
+    {
+      "name": "WSAH",
+      "firstLine": 59427,
+      "lastLine": 59554,
+      "text": "Method (WSAH, 2, NotSerialized)\n                {\n                    If ((Arg0 == Zero))\n                    {\n                        TE40 = Arg1\n                        Return (TE40) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TE40 */\n                    }\n\n                    If ((Arg0 == One))\n                    {\n                        TE43 = Arg1\n                        Return (TE43) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TE43 */\n                    }\n\n                    If ((Arg0 == 0x02))\n                    {\n                        TDE7 = Arg1\n                        Return (TDE7) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDE7 */\n                    }\n\n                    If ((Arg0 == 0x03))\n                    {\n                        TDF0 = Arg1\n                        Return (TDF0) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF0 */\n                    }\n\n                    If ((Arg0 == 0x04))\n                    {\n                        TDF1 = Arg1\n                        Return (TDF1) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF1 */\n                    }\n\n                    If ((Arg0 == 0x05))\n                    {\n                        TDFE = Arg1\n                        Return (TDFE) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFE */\n                    }\n\n                    If ((Arg0 == 0x06))\n                    {\n                        TDFF = Arg1\n                        Return (TDFF) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFF */\n                    }\n\n                    If ((Arg0 == 0x07))\n                    {\n                        TDF2 = Arg1\n                        Return (TDF2) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF2 */\n                    }\n\n                    If ((Arg0 == 0x08))\n                    {\n                        TDF3 = Arg1\n                        Return (TDF3) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF3 */\n                    }\n\n                    If ((Arg0 == 0x09))\n                    {\n                        TDF4 = Arg1\n                        Return (TDF4) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF4 */\n                    }\n\n                    If ((Arg0 == 0x0A))\n                    {\n                        TDF5 = Arg1\n                        Return (TDF5) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF5 */\n                    }\n\n                    If ((Arg0 == 0x0B))\n                    {\n                        TDF6 = Arg1\n                        Return (TDF6) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF6 */\n                    }\n\n                    If ((Arg0 == 0x0C))\n                    {\n                        TDF7 = Arg1\n                        Return (TDF7) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF7 */\n                    }\n\n                    If ((Arg0 == 0x0D))\n                    {\n                        TDF8 = Arg1\n                        Return (TDF8) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF8 */\n                    }\n\n                    If ((Arg0 == 0x0E))\n                    {\n                        TDF9 = Arg1\n                        Return (TDF9) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDF9 */\n                    }\n\n                    If ((Arg0 == 0x0F))\n                    {\n                        TDFA = Arg1\n                        Return (TDFA) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFA */\n                    }\n\n                    If ((Arg0 == 0x10))\n                    {\n                        TDFB = Arg1\n                        Return (TDFB) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFB */\n                    }\n\n                    If ((Arg0 == 0x11))\n                    {\n                        TDFC = Arg1\n                        Return (TDFC) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFC */\n                    }\n\n                    If ((Arg0 == 0x12))\n                    {\n                        TDFD = Arg1\n                        Return (TDFD) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDFD */\n                    }\n\n                    If ((Arg0 == 0x13))\n                    {\n                        TDE0 = Arg1\n                        Return (TDE0) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDE0 */\n                    }\n\n                    If ((Arg0 == 0x14))\n                    {\n                        TDE3 = Arg1\n                        Return (TDE3) /* \\_SB_.PCI0.LPCB.EC__.SCM0.TDE3 */\n                    }\n                }"
+    }
+  ],
+  "limitations": [
+    "Only the studied SCM0 declaration and simple constant-index branches are parsed.",
+    "Indices here are ACPI Arg0 values, not independently verified Windows enumeration order.",
+    "Method bodies are decompiled static evidence; no firmware method is invoked.",
+    "No sensor units, defaults, physical fan routing or live compatibility are inferred."
+  ],
+  "mofBinding": {
+    "artifactSha256": "d02e23490f28d7636b13d8b2a8a830c00afdc2ba8747cece9ad9a6dd95fe301f",
+    "resourceSha256": "bf35f4d7f7c82c7953ddc5ce173573044c5821a745f7391e5a133e6a6ee37b14",
+    "decompressedSha256": "2959642f2e494ce8c3344568b054dbcef5dd7e195659b88ce6afa80a0dcff0ba",
+    "basis": "Exact GUID match to parsed first 15 classes of msiapcfg.dll MOFDATA; final MSI_ACPI method class omitted"
+  },
+  "standaloneMapSha256": "e4b893d32955f99e6a94cf3485950e1b49932dfc194c8fbf2b8c27b9bedafad7"
+}

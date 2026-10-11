@@ -18,7 +18,15 @@ jobs:
           dotnet-version: 8.0.x
       - name: Build CLI
         run: dotnet build src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release
+      - name: Build Windows desktop app
+        if: runner.os == 'Windows'
+        run: dotnet build src/Gs66Control.App/Gs66Control.App.csproj --configuration Release
       - name: Unit tests (simulated hardware)
         run: dotnet test tests/Gs66Control.Tests/Gs66Control.Tests.csproj --configuration Release
       - name: Simulation smoke test
         run: dotnet run --project src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release -- simulate
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline ACPI parser tests
+        run: python -m unittest discover -s tests -p "test_*.py"

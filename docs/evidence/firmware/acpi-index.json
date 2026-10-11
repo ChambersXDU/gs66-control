@@ -1,0 +1,2862 @@
+{
+  "schemaVersion": 1,
+  "mode": "offline-static",
+  "bodyFilesScanned": 2458,
+  "limitations": [
+    "Only checksum-valid DSDT/SSDT candidates in extracted body.bin files are included.",
+    "Firmware may include alternative tables that are never installed at runtime.",
+    "Decompression breaks correspondence with original flash byte offsets."
+  ],
+  "tables": [
+    {
+      "sha256": "6677339abcebcc88c439a0f7d50ad1d3f7ecce45ad7c9597bd84cfef1f7aed08",
+      "file": "DSDT-6677339abceb.aml",
+      "bytes": 265893,
+      "oemId": "MSI_NB",
+      "oemTableId": "MEGABOOK",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/241 C118F50D-391D-45F4-B3D3-11BC931AA56D/0 Raw section/body.bin",
+          "sectionBytes": 265893,
+          "sectionSha256": "6677339abcebcc88c439a0f7d50ad1d3f7ecce45ad7c9597bd84cfef1f7aed08",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/241 C118F50D-391D-45F4-B3D3-11BC931AA56D/body.bin",
+          "sectionBytes": 265897,
+          "sectionSha256": "e4a69ffe525b27af05e72d9304163bbdbadc697ffd91d0b8e57c4ab888813d69",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4615524,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4615644,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "001cc6bf28f1b050b980bd0d013606cf7498f04dc0a6bcfe5e505662908bfba9",
+      "file": "SSDT-001cc6bf28f1.aml",
+      "bytes": 12864,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmst4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/17 Raw section/body.bin",
+          "sectionBytes": 12864,
+          "sectionSha256": "001cc6bf28f1b050b980bd0d013606cf7498f04dc0a6bcfe5e505662908bfba9",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 200524,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5669084,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5669204,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "04784767800748d4152989b074b9d72434a601c540e270f88a062c2c2871ed90",
+      "file": "SSDT-047847678007.aml",
+      "bytes": 4269,
+      "oemId": "AmdRef",
+      "oemTableId": "AmdTabl\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/1 Raw section/body.bin",
+          "sectionBytes": 4269,
+          "sectionSha256": "04784767800748d4152989b074b9d72434a601c540e270f88a062c2c2871ed90",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/body.bin",
+          "sectionBytes": 27783,
+          "sectionSha256": "0a9c6f55d4968427253494450689b812f61064f829243f71ec6327668d4eaf09",
+          "offset": 4436,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4526340,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4526460,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "047e0d2a1bd4c001283177c70d96bd3a093264666c4f4fd89e4fcff9bfb2afcf",
+      "file": "SSDT-047e0d2a1bd4.aml",
+      "bytes": 970,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "ApCst\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/0 Raw section/body.bin",
+          "sectionBytes": 970,
+          "sectionSha256": "047e0d2a1bd4c001283177c70d96bd3a093264666c4f4fd89e4fcff9bfb2afcf",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5173780,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5173900,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "0e33ca1cbae9f27d0bc3339350b21b7069368d60df67428ea96d6d2388ff5b0f",
+      "file": "SSDT-0e33ca1cbae9.aml",
+      "bytes": 3362,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "ApPsd\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/3 Raw section/body.bin",
+          "sectionBytes": 3362,
+          "sectionSha256": "0e33ca1cbae9f27d0bc3339350b21b7069368d60df67428ea96d6d2388ff5b0f",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 3884,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5177660,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5177780,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "13fb08200032c0ae4506656f92ce91b17c1109eedbb6253498c35e8c3c0dcb4d",
+      "file": "SSDT-13fb08200032.aml",
+      "bytes": 12331,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlH_Tbt",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/4 Raw section/body.bin",
+          "sectionBytes": 12331,
+          "sectionSha256": "13fb08200032c0ae4506656f92ce91b17c1109eedbb6253498c35e8c3c0dcb4d",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 43608,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5512168,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5512288,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "16482799e6b88d5b7d33a7c8f7ed8583b4dfbdd018bccb51dfceb9ada4a962ad",
+      "file": "SSDT-16482799e6b8.aml",
+      "bytes": 12981,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmat4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/14 Raw section/body.bin",
+          "sectionBytes": 12981,
+          "sectionSha256": "16482799e6b88d5b7d33a7c8f7ed8583b4dfbdd018bccb51dfceb9ada4a962ad",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 161800,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5630360,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5630480,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "16c90e1b5a409bbc8380e02bf8a97dbb956ff59c2f06ade4bce97afbbd4ed8bf",
+      "file": "SSDT-16c90e1b5a40.aml",
+      "bytes": 13038,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cfhd4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/27 Raw section/body.bin",
+          "sectionBytes": 13038,
+          "sectionSha256": "16c90e1b5a409bbc8380e02bf8a97dbb956ff59c2f06ade4bce97afbbd4ed8bf",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 319268,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5787828,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5787948,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "170d0581be945c683f4220e1a57e84ab1d8bcd63e7c8914e3f0255b55d4b6442",
+      "file": "SSDT-170d0581be94.aml",
+      "bytes": 98,
+      "oemId": "NvBDDS",
+      "oemTableId": "NvBDDSTl",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/6 Raw section/body.bin",
+          "sectionBytes": 98,
+          "sectionSha256": "170d0581be945c683f4220e1a57e84ab1d8bcd63e7c8914e3f0255b55d4b6442",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 31352,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4581064,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4581184,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "18b38c45cb1bc528ec5a64392e768bc2c6332da67fb4b6945d41f61be7bcf8f2",
+      "file": "SSDT-18b38c45cb1b.aml",
+      "bytes": 8672,
+      "oemId": "OptRf1",
+      "oemTableId": "Opt1Tabl",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/5 Raw section/body.bin",
+          "sectionBytes": 8672,
+          "sectionSha256": "18b38c45cb1bc528ec5a64392e768bc2c6332da67fb4b6945d41f61be7bcf8f2",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 22676,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4572388,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4572508,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "1e076953632855da699087b70693fc76bf472128465d31928c7d864eadfc2a9e",
+      "file": "SSDT-1e0769536328.aml",
+      "bytes": 12864,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmsd4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/16 Raw section/body.bin",
+          "sectionBytes": 12864,
+          "sectionSha256": "1e076953632855da699087b70693fc76bf472128465d31928c7d864eadfc2a9e",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 187656,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5656216,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5656336,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "1e835dd3cbdbc1727cee384c030905b918fd1fae5c4192fc5af7fa50f5ea5cfa",
+      "file": "SSDT-1e835dd3cbdb.aml",
+      "bytes": 2126,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "Cpu0Ist\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/7 Raw section/body.bin",
+          "sectionBytes": 2126,
+          "sectionSha256": "1e835dd3cbdbc1727cee384c030905b918fd1fae5c4192fc5af7fa50f5ea5cfa",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 11480,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5185256,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5185376,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "22eb118711e1cf0d36849724b93e4297fabeecfbce685b727fe5803f84bb0e39",
+      "file": "SSDT-22eb118711e1.aml",
+      "bytes": 12983,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmud4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/18 Raw section/body.bin",
+          "sectionBytes": 12983,
+          "sectionSha256": "22eb118711e1cf0d36849724b93e4297fabeecfbce685b727fe5803f84bb0e39",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 213392,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5681952,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5682072,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "278fa9a4d8a1df5515f02eac5fe4b6b192190e640ef53db6faf51f5d30390304",
+      "file": "SSDT-278fa9a4d8a1.aml",
+      "bytes": 124,
+      "oemId": "INTEL ",
+      "oemTableId": "RamDisk ",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/276 RamDiskDxe/3 Raw section/body.bin",
+          "sectionBytes": 124,
+          "sectionSha256": "278fa9a4d8a1df5515f02eac5fe4b6b192190e640ef53db6faf51f5d30390304",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/276 RamDiskDxe/body.bin",
+          "sectionBytes": 30914,
+          "sectionSha256": "e299c81eef84e387cf2e7b29a9df0b09b4b4cc8d669efb144aa1633520f11d1b",
+          "offset": 30748,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5875388,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5875508,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "2c8a2f042b0b02cf40b88f78c39a111acd17f2124bdede0c66d3c4b8e99dbe53",
+      "file": "SSDT-2c8a2f042b0b.aml",
+      "bytes": 17537,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlH_DTb",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/2 Raw section/body.bin",
+          "sectionBytes": 17537,
+          "sectionSha256": "2c8a2f042b0b02cf40b88f78c39a111acd17f2124bdede0c66d3c4b8e99dbe53",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 14524,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5483084,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5483204,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "2e4c649d180391fea065208938755e902858fa3870218f7829e5de317f5afe3d",
+      "file": "SSDT-2e4c649d1803.aml",
+      "bytes": 387,
+      "oemId": "Intel\u0000",
+      "oemTableId": "IntelRMT",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/233 6684D675-EE06-49B2-876F-79C58FDDA5B7/0 Raw section/body.bin",
+          "sectionBytes": 387,
+          "sectionSha256": "2e4c649d180391fea065208938755e902858fa3870218f7829e5de317f5afe3d",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/233 6684D675-EE06-49B2-876F-79C58FDDA5B7/body.bin",
+          "sectionBytes": 571,
+          "sectionSha256": "c4b0b7bfd27041220d1b9af2a67e31d76972630ab860bcde87376c2786e4fdee",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4501156,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4501276,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "301127f0de284b4e57c0f84837b88635f607ccc7b2fc9e363afe76a27cd38de5",
+      "file": "SSDT-301127f0de28.aml",
+      "bytes": 983,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "ApHwp\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/1 Raw section/body.bin",
+          "sectionBytes": 983,
+          "sectionSha256": "301127f0de284b4e57c0f84837b88635f607ccc7b2fc9e363afe76a27cd38de5",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 980,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5174756,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5174876,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "3184ae1b1788eacfdcafd1d2dbf4055c125904d27afdac274c85a4561664e2ea",
+      "file": "SSDT-3184ae1b1788.aml",
+      "bytes": 98,
+      "oemId": "NvDDS\u0000",
+      "oemTableId": "NvDDSTl\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/3 Raw section/body.bin",
+          "sectionBytes": 98,
+          "sectionSha256": "3184ae1b1788eacfdcafd1d2dbf4055c125904d27afdac274c85a4561664e2ea",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/body.bin",
+          "sectionBytes": 27783,
+          "sectionSha256": "0a9c6f55d4968427253494450689b812f61064f829243f71ec6327668d4eaf09",
+          "offset": 18104,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4540008,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4540128,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "32a3d1d85cbf3bb48f5a0a79bb9dafcd886ccb9e2c2f815bfc39dd4a6a75a5e0",
+      "file": "SSDT-32a3d1d85cbf.aml",
+      "bytes": 2642,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "ItbmSci\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/14 Raw section/body.bin",
+          "sectionBytes": 2642,
+          "sectionSha256": "32a3d1d85cbf3bb48f5a0a79bb9dafcd886ccb9e2c2f815bfc39dd4a6a75a5e0",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 29948,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5203724,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5203844,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "3bc586bc3ba8e17288ec3e255ee72a3656851497ab9ba3b2c20afa4b3ac71b39",
+      "file": "SSDT-3bc586bc3ba8.aml",
+      "bytes": 12984,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmut3",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/23 Raw section/body.bin",
+          "sectionBytes": 12984,
+          "sectionSha256": "3bc586bc3ba8e17288ec3e255ee72a3656851497ab9ba3b2c20afa4b3ac71b39",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 267316,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5735876,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5735996,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "3c9bd499e2fdac9ae8823ee43e46dbc368d0782cfd8c6e7a13cdb9b8275f17be",
+      "file": "SSDT-3c9bd499e2fd.aml",
+      "bytes": 12982,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_whld4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/25 Raw section/body.bin",
+          "sectionBytes": 12982,
+          "sectionSha256": "3c9bd499e2fdac9ae8823ee43e46dbc368d0782cfd8c6e7a13cdb9b8275f17be",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 293292,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5761852,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5761972,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "40931e191653fafb1dc8d386ca97d5c6807fe2d9fa1070caefd916918904be61",
+      "file": "SSDT-40931e191653.aml",
+      "bytes": 9329,
+      "oemId": "OptRef",
+      "oemTableId": "OptTabl\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/3 Raw section/body.bin",
+          "sectionBytes": 9329,
+          "sectionSha256": "40931e191653fafb1dc8d386ca97d5c6807fe2d9fa1070caefd916918904be61",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 13236,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4562948,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4563068,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "44c003bfe54fdeeeae5b61cf36fbe81fb7b7607e0068ac93f56b84e8d7348049",
+      "file": "SSDT-44c003bfe54f.aml",
+      "bytes": 8963,
+      "oemId": "INTEL ",
+      "oemTableId": "Cml2_Tba",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/11 Raw section/body.bin",
+          "sectionBytes": 8963,
+          "sectionSha256": "44c003bfe54fdeeeae5b61cf36fbe81fb7b7607e0068ac93f56b84e8d7348049",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 128204,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5596764,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5596884,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "452a3328d6ab49010307cffffa62984939baf9acb6d1226636075c4c5d9c1b66",
+      "file": "SSDT-452a3328d6ab.aml",
+      "bytes": 70,
+      "oemId": "MeSsdt",
+      "oemTableId": "MeSsdt \u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/265 9A8F82D5-39B1-48DA-92DC-A22DA8834DF6/0 Raw section/body.bin",
+          "sectionBytes": 70,
+          "sectionSha256": "452a3328d6ab49010307cffffa62984939baf9acb6d1226636075c4c5d9c1b66",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/265 9A8F82D5-39B1-48DA-92DC-A22DA8834DF6/body.bin",
+          "sectionBytes": 74,
+          "sectionSha256": "f7cfb6912521a7fddaf991d687f90f8125c855e1b4e79a566d1157d157522cfc",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5381228,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5381348,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "4859ca7a07c0f7c423ee9bd139c89d5bf733c2c121b326d0ad09097e5ea5f92e",
+      "file": "SSDT-4859ca7a07c0.aml",
+      "bytes": 3050,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "HwpLvt\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/12 Raw section/body.bin",
+          "sectionBytes": 3050,
+          "sectionSha256": "4859ca7a07c0f7c423ee9bd139c89d5bf733c2c121b326d0ad09097e5ea5f92e",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 26744,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5200520,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5200640,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "4a19ebf19809de4add64d111296f0bd4929f3a846f21040bbdb3e57045e8a5f4",
+      "file": "SSDT-4a19ebf19809.aml",
+      "bytes": 13749,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlS_Tbt",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/6 Raw section/body.bin",
+          "sectionBytes": 13749,
+          "sectionSha256": "4a19ebf19809de4add64d111296f0bd4929f3a846f21040bbdb3e57045e8a5f4",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 66800,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5535360,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5535480,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "558a0b83238baa1013eb8816c60d472b4fa3bd5224ee46bf735b5096a3622489",
+      "file": "SSDT-558a0b83238b.aml",
+      "bytes": 12984,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmut4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/19 Raw section/body.bin",
+          "sectionBytes": 12984,
+          "sectionSha256": "558a0b83238baa1013eb8816c60d472b4fa3bd5224ee46bf735b5096a3622489",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 226380,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5694940,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5695060,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "562f121d1847b30e13b00d416c9f8b96bbb7d748a6447146b9dd4c8f05c162bc",
+      "file": "SSDT-562f121d1847.aml",
+      "bytes": 14829,
+      "oemId": "INTEL ",
+      "oemTableId": "DptfTabl",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/268 EA139578-FEA0-4DD2-91B5-6953819EF1E4/0 Raw section/body.bin",
+          "sectionBytes": 14829,
+          "sectionSha256": "562f121d1847b30e13b00d416c9f8b96bbb7d748a6447146b9dd4c8f05c162bc",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/268 EA139578-FEA0-4DD2-91B5-6953819EF1E4/body.bin",
+          "sectionBytes": 14833,
+          "sectionSha256": "97b1964c3f30325291e4a40e63cc5bb07614c516dfc42bb57686d4d6daec9bc7",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5428604,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5428724,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "59c9bf9d624ac25e02cfa31d12cdac68a5d1d75e1ff5678920afbed0d1d46c02",
+      "file": "SSDT-59c9bf9d624a.aml",
+      "bytes": 12984,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cm2ur",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/24 Raw section/body.bin",
+          "sectionBytes": 12984,
+          "sectionSha256": "59c9bf9d624ac25e02cfa31d12cdac68a5d1d75e1ff5678920afbed0d1d46c02",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 280304,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5748864,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5748984,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "5a98c61a6ad13eec490ee15fd1f6172787dec87d05c83390d5f593cfaf788ce2",
+      "file": "SSDT-5a98c61a6ad1.aml",
+      "bytes": 4484,
+      "oemId": "AmdBrD",
+      "oemTableId": "AmdBrgDT",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/1 Raw section/body.bin",
+          "sectionBytes": 4484,
+          "sectionSha256": "5a98c61a6ad13eec490ee15fd1f6172787dec87d05c83390d5f593cfaf788ce2",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 4376,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4554088,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4554208,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "5c17ce2f7e429d74631a5ca49f52ae28c5f45a5e616e739dec8eaf8f2025cccd",
+      "file": "SSDT-5c17ce2f7e42.aml",
+      "bytes": 175,
+      "oemId": "Intel_",
+      "oemTableId": "IrmtTabl",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/233 6684D675-EE06-49B2-876F-79C58FDDA5B7/1 Raw section/body.bin",
+          "sectionBytes": 175,
+          "sectionSha256": "5c17ce2f7e429d74631a5ca49f52ae28c5f45a5e616e739dec8eaf8f2025cccd",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/233 6684D675-EE06-49B2-876F-79C58FDDA5B7/body.bin",
+          "sectionBytes": 571,
+          "sectionSha256": "c4b0b7bfd27041220d1b9af2a67e31d76972630ab860bcde87376c2786e4fdee",
+          "offset": 396,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4501548,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4501668,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "609833e61e69d9e27503bb63699b381082302ba2c68f10b09ec966e811819700",
+      "file": "SSDT-609833e61e69.aml",
+      "bytes": 141,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "Itbm\u0000\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/13 Raw section/body.bin",
+          "sectionBytes": 141,
+          "sectionSha256": "609833e61e69d9e27503bb63699b381082302ba2c68f10b09ec966e811819700",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 29800,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5203576,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5203696,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "6623f4dcc834ef4dc2fcd7cabec53ab04d4897b18f17a2dae3bf0194ecb52c88",
+      "file": "SSDT-6623f4dcc834.aml",
+      "bytes": 9766,
+      "oemId": "INTEL ",
+      "oemTableId": "Cml2_X4s",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/12 Raw section/body.bin",
+          "sectionBytes": 9766,
+          "sectionSha256": "6623f4dcc834ef4dc2fcd7cabec53ab04d4897b18f17a2dae3bf0194ecb52c88",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 137172,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5605732,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5605852,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "665589c0ad58c441ba4e52bd0496a779269edda962c65b9329c49c941747f0f8",
+      "file": "SSDT-665589c0ad58.aml",
+      "bytes": 10188,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlU_Tbt",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/9 Raw section/body.bin",
+          "sectionBytes": 10188,
+          "sectionSha256": "665589c0ad58c441ba4e52bd0496a779269edda962c65b9329c49c941747f0f8",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 103184,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5571744,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5571864,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "68dd8a2872aae86d64773032f099a24bb69778f2843cb8fd953bab16cf9b2088",
+      "file": "SSDT-68dd8a2872aa.aml",
+      "bytes": 98,
+      "oemId": "NvDDS\u0000",
+      "oemTableId": "NvDDSTl\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/4 Raw section/body.bin",
+          "sectionBytes": 98,
+          "sectionSha256": "68dd8a2872aae86d64773032f099a24bb69778f2843cb8fd953bab16cf9b2088",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 22572,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4572284,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4572404,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "69c844cf33b7ce1b8f59506e13cf46c2f9ecfb9731fdd8899a48b3c0db00ee34",
+      "file": "SSDT-69c844cf33b7.aml",
+      "bytes": 4426,
+      "oemId": "OemAti",
+      "oemTableId": "DscAtiBD",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/240 2FE1B1C4-3896-4D81-91F9-9DA2802024D5/0 Raw section/body.bin",
+          "sectionBytes": 4426,
+          "sectionSha256": "69c844cf33b7ce1b8f59506e13cf46c2f9ecfb9731fdd8899a48b3c0db00ee34",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/240 2FE1B1C4-3896-4D81-91F9-9DA2802024D5/body.bin",
+          "sectionBytes": 4430,
+          "sectionSha256": "9a83c086073df11597732f9d529c8b069d8c0ee7533d16b79638a94af654cd25",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4611068,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4611188,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "6ca5aa977194c332cbc5669e2567f2e9f27bc77e1b90b577fc8446a9f399f736",
+      "file": "SSDT-6ca5aa977194.aml",
+      "bytes": 8834,
+      "oemId": "OptRef",
+      "oemTableId": "OptBaseU",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/7 Raw section/body.bin",
+          "sectionBytes": 8834,
+          "sectionSha256": "6ca5aa977194c332cbc5669e2567f2e9f27bc77e1b90b577fc8446a9f399f736",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 31456,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4581168,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4581288,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "704d7d292764d3ddc0b07fa32afc07daf6b0162f49d7c660a5e755b301c27f9a",
+      "file": "SSDT-704d7d292764.aml",
+      "bytes": 1024,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "Cpu0Cst\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/5 Raw section/body.bin",
+          "sectionBytes": 1024,
+          "sectionSha256": "704d7d292764d3ddc0b07fa32afc07daf6b0162f49d7c660a5e755b301c27f9a",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 10136,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5183912,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5184032,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "81d0e4b4942d5a8cede91c1d976be3b80ae3ba76e5f58f021ad64faadb1cfa55",
+      "file": "SSDT-81d0e4b4942d.aml",
+      "bytes": 12683,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlU_Rvp",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/8 Raw section/body.bin",
+          "sectionBytes": 12683,
+          "sectionSha256": "81d0e4b4942d5a8cede91c1d976be3b80ae3ba76e5f58f021ad64faadb1cfa55",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 90496,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5559056,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5559176,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "851d5ccd60cc2f0e7ae7f45eeec9280894f17b206fa4fdc3803eb06328d1d148",
+      "file": "SSDT-851d5ccd60cc.aml",
+      "bytes": 8327,
+      "oemId": "CpuRef",
+      "oemTableId": "CpuSsdt\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/10 Raw section/body.bin",
+          "sectionBytes": 8327,
+          "sectionSha256": "851d5ccd60cc2f0e7ae7f45eeec9280894f17b206fa4fdc3803eb06328d1d148",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 14828,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5188604,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5188724,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "87b7bc521bf83f3e788189b6ad2b4a8971755495e5c725dad36fc5835d89531e",
+      "file": "SSDT-87b7bc521bf8.aml",
+      "bytes": 1966,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cflkc",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/22 Raw section/body.bin",
+          "sectionBytes": 1966,
+          "sectionSha256": "87b7bc521bf83f3e788189b6ad2b4a8971755495e5c725dad36fc5835d89531e",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 265344,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5733904,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5734024,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "897bcba692ca25c2648152f3a20b839d529d3515cb38a101f8d0c06ada18cbef",
+      "file": "SSDT-897bcba692ca.aml",
+      "bytes": 10727,
+      "oemId": "Intel\u0000",
+      "oemTableId": "PegSsdt\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/259 E05B8635-E5C0-4D88-B629-19D6A2C6E92E/0 Raw section/body.bin",
+          "sectionBytes": 10727,
+          "sectionSha256": "897bcba692ca25c2648152f3a20b839d529d3515cb38a101f8d0c06ada18cbef",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/259 E05B8635-E5C0-4D88-B629-19D6A2C6E92E/body.bin",
+          "sectionBytes": 10731,
+          "sectionSha256": "c8b44003bb4d53c66d85201ec889e0c75ba8f3d2df84a1bf615f4bc600607914",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5206636,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5206756,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "8aae39ea94f04872ab5bafd4b24a168eba846db15533b701876d77aeb06394f2",
+      "file": "SSDT-8aae39ea94f0.aml",
+      "bytes": 9650,
+      "oemId": "Intel\u0000",
+      "oemTableId": "TbtTypeC",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/267 AcpiPlatformFeatures/6 Raw section/body.bin",
+          "sectionBytes": 9650,
+          "sectionSha256": "8aae39ea94f04872ab5bafd4b24a168eba846db15533b701876d77aeb06394f2",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/267 AcpiPlatformFeatures/body.bin",
+          "sectionBytes": 29370,
+          "sectionSha256": "878a40a3ae401b7a252df07769ee200216dabb63ae7925a36b8f915027620fef",
+          "offset": 19656,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5418856,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5418976,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "8d103c132a63e790944cf4eb232cd96f180a194fd6f654dbae854f058c1bc03d",
+      "file": "SSDT-8d103c132a63.aml",
+      "bytes": 12983,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_whlt4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/26 Raw section/body.bin",
+          "sectionBytes": 12983,
+          "sectionSha256": "8d103c132a63e790944cf4eb232cd96f180a194fd6f654dbae854f058c1bc03d",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 306280,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5774840,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5774960,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "91b2e5af0ca469a3373617badffc1b4f4b2e11c4966b4d3cc902126ec7042df2",
+      "file": "SSDT-91b2e5af0ca4.aml",
+      "bytes": 12762,
+      "oemId": "SaSsdt",
+      "oemTableId": "SaSsdt \u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/260 CA89914D-2317-452E-B245-36C6FB77A9C6/0 Raw section/body.bin",
+          "sectionBytes": 12762,
+          "sectionSha256": "91b2e5af0ca469a3373617badffc1b4f4b2e11c4966b4d3cc902126ec7042df2",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/260 CA89914D-2317-452E-B245-36C6FB77A9C6/body.bin",
+          "sectionBytes": 12766,
+          "sectionSha256": "4c00b73b0ef705daa97674dcf10de520cbd74e4a0bee77eb43ee82946031b1a6",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5217396,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5217516,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "97d153dd8c6e8742fb666d397de984bd9ba6529bb5dd5e93ad430b8bc38f1ff6",
+      "file": "SSDT-97d153dd8c6e.aml",
+      "bytes": 4365,
+      "oemId": "AmdRef",
+      "oemTableId": "AmdTabl\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/2 Raw section/body.bin",
+          "sectionBytes": 4365,
+          "sectionSha256": "97d153dd8c6e8742fb666d397de984bd9ba6529bb5dd5e93ad430b8bc38f1ff6",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 8864,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4558576,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4558696,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "9ebce1e7a6d5c6dbd0ab7bbc21149cc349398dde996587bdb656702863311adc",
+      "file": "SSDT-9ebce1e7a6d5.aml",
+      "bytes": 10852,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlS_Rvp",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/5 Raw section/body.bin",
+          "sectionBytes": 10852,
+          "sectionSha256": "9ebce1e7a6d5c6dbd0ab7bbc21149cc349398dde996587bdb656702863311adc",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 55944,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5524504,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5524624,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "9f44cf0230662ad226142241ef3650d8fdf651f14bbb674e752f361f0af5db1e",
+      "file": "SSDT-9f44cf023066.aml",
+      "bytes": 311,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "Cpu0Hwp\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/6 Raw section/body.bin",
+          "sectionBytes": 311,
+          "sectionSha256": "9f44cf0230662ad226142241ef3650d8fdf651f14bbb674e752f361f0af5db1e",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 11164,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5184940,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5185060,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "a070b769a5aa27c8ca4e684881dcc0d26f32c71ec932a6e3e6b1b324ae2ebb85",
+      "file": "SSDT-a070b769a5aa.aml",
+      "bytes": 4365,
+      "oemId": "AmdRef",
+      "oemTableId": "AmdBaseU",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/0 Raw section/body.bin",
+          "sectionBytes": 4365,
+          "sectionSha256": "a070b769a5aa27c8ca4e684881dcc0d26f32c71ec932a6e3e6b1b324ae2ebb85",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/236 9B65FE7C-855E-43CC-A170-A2A685F3655F/body.bin",
+          "sectionBytes": 40290,
+          "sectionSha256": "cdf321cd65966892efb327fb1f108f58a954980f4b227147ba089956c4717e1d",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4549716,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4549836,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "a134a11f01962a91a1f336657259a3aec41e6a8aee43a6c850a3f83b00b1915d",
+      "file": "SSDT-a134a11f0196.aml",
+      "bytes": 1912,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "ApIst\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/2 Raw section/body.bin",
+          "sectionBytes": 1912,
+          "sectionSha256": "a134a11f01962a91a1f336657259a3aec41e6a8aee43a6c850a3f83b00b1915d",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 1968,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5175744,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5175864,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "a4e72a0d997f542cda6fdaf27d48c078594718b036cc355f819208706259dad6",
+      "file": "SSDT-a4e72a0d997f.aml",
+      "bytes": 14823,
+      "oemId": "INTEL ",
+      "oemTableId": "Cml2_Rvp",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/10 Raw section/body.bin",
+          "sectionBytes": 14823,
+          "sectionSha256": "a4e72a0d997f542cda6fdaf27d48c078594718b036cc355f819208706259dad6",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 113376,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5581936,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5582056,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "a7c075852d29ff99eba8257cdc9db7a09a217219a57a747a07dc0ee1b3b2f223",
+      "file": "SSDT-a7c075852d29.aml",
+      "bytes": 9575,
+      "oemId": "OptRf1",
+      "oemTableId": "Opt1Tabl",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/4 Raw section/body.bin",
+          "sectionBytes": 9575,
+          "sectionSha256": "a7c075852d29ff99eba8257cdc9db7a09a217219a57a747a07dc0ee1b3b2f223",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/body.bin",
+          "sectionBytes": 27783,
+          "sectionSha256": "0a9c6f55d4968427253494450689b812f61064f829243f71ec6327668d4eaf09",
+          "offset": 18208,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4540112,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4540232,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "a84e212b4493d0ab3cf01aeef490127e808f992e7e2d1e0ca93e3931833f4176",
+      "file": "SSDT-a84e212b4493.aml",
+      "bytes": 8590,
+      "oemId": "OemNv1",
+      "oemTableId": "OemNv1T\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/238 2110CC02-D0AC-418B-9E48-5B2C4135604F/0 Raw section/body.bin",
+          "sectionBytes": 8590,
+          "sectionSha256": "a84e212b4493d0ab3cf01aeef490127e808f992e7e2d1e0ca93e3931833f4176",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/238 2110CC02-D0AC-418B-9E48-5B2C4135604F/body.bin",
+          "sectionBytes": 8594,
+          "sectionSha256": "06baad33788e5902dfaf755cd48f3848b5f7b8eb712540ea76126afecbaa1411",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4600852,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4600972,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "ac53efda13c07c6184dad698eaab45a97c8bb740896a0b3b84fb7d0acb6d7b8b",
+      "file": "SSDT-ac53efda13c0.aml",
+      "bytes": 12983,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmul3",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/21 Raw section/body.bin",
+          "sectionBytes": 12983,
+          "sectionSha256": "ac53efda13c07c6184dad698eaab45a97c8bb740896a0b3b84fb7d0acb6d7b8b",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 252356,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5720916,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5721036,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "add931f336b8b6442f97fd7031c643903665d3573ffc9617b9a68d0405ef7f65",
+      "file": "SSDT-add931f336b8.aml",
+      "bytes": 10785,
+      "oemId": "OemNv\u0000",
+      "oemTableId": "OemNvT\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/237 5B232086-350A-42C7-A70E-3497B5765D85/0 Raw section/body.bin",
+          "sectionBytes": 10785,
+          "sectionSha256": "add931f336b8b6442f97fd7031c643903665d3573ffc9617b9a68d0405ef7f65",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/237 5B232086-350A-42C7-A70E-3497B5765D85/body.bin",
+          "sectionBytes": 10789,
+          "sectionSha256": "c08ef80c82d0616878ede8c9447c563cd9572311dfda99f38fe2836f3f19a5ff",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4590036,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4590156,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "ae01d73c10baf08f08cfdcafd98f1d9e0ab411042c664968c68846e5e49abe5e",
+      "file": "SSDT-ae01d73c10ba.aml",
+      "bytes": 9386,
+      "oemId": "OptRef",
+      "oemTableId": "OptTabl\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/2 Raw section/body.bin",
+          "sectionBytes": 9386,
+          "sectionSha256": "ae01d73c10baf08f08cfdcafd98f1d9e0ab411042c664968c68846e5e49abe5e",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/body.bin",
+          "sectionBytes": 27783,
+          "sectionSha256": "0a9c6f55d4968427253494450689b812f61064f829243f71ec6327668d4eaf09",
+          "offset": 8712,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4530616,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4530736,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "b68180fcf28addc0fa8d0b2d6a46fc93171aabd35c0d864df4d09be19d487a66",
+      "file": "SSDT-b68180fcf28a.aml",
+      "bytes": 1159,
+      "oemId": "SgRef\u0000",
+      "oemTableId": "SgRpSsdt",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/232 E3164526-690A-4E0D-B028-AEA16FE2BCF3/0 Raw section/body.bin",
+          "sectionBytes": 1159,
+          "sectionSha256": "b68180fcf28addc0fa8d0b2d6a46fc93171aabd35c0d864df4d09be19d487a66",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/232 E3164526-690A-4E0D-B028-AEA16FE2BCF3/body.bin",
+          "sectionBytes": 2327,
+          "sectionSha256": "887ee855ee6e084965346546ebf788dfc9557d175bdfcf9543bd39517c91f070",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4498804,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4498924,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "b832933daad33ffc59954b435e74052391676b44837aa23bd13154badab268b0",
+      "file": "SSDT-b832933daad3.aml",
+      "bytes": 25063,
+      "oemId": "DptfSd",
+      "oemTableId": "DptfSds_",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/269 3BBB09DA-1E0F-469B-8997-D440F101D6F1/0 Raw section/body.bin",
+          "sectionBytes": 25063,
+          "sectionSha256": "b832933daad33ffc59954b435e74052391676b44837aa23bd13154badab268b0",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/269 3BBB09DA-1E0F-469B-8997-D440F101D6F1/body.bin",
+          "sectionBytes": 25067,
+          "sectionSha256": "afeb21f899ba6f80948fc639c056b26420b126e9a00dbac7e3396546ee451cf6",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5443468,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5443588,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "bce6252cdeeb2f6abcd39189e2fb6ee9bc403c85486f3c7f2b06b8471688a1bd",
+      "file": "SSDT-bce6252cdeeb.aml",
+      "bytes": 4426,
+      "oemId": "AmdBrD",
+      "oemTableId": "AmdBrgDT",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/0 Raw section/body.bin",
+          "sectionBytes": 4426,
+          "sectionSha256": "bce6252cdeeb2f6abcd39189e2fb6ee9bc403c85486f3c7f2b06b8471688a1bd",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/235 6A061113-FE54-4A07-A28E-0A69359EB069/body.bin",
+          "sectionBytes": 27783,
+          "sectionSha256": "0a9c6f55d4968427253494450689b812f61064f829243f71ec6327668d4eaf09",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4521908,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4522028,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "c08f9f3cd959c9de83ad3b426b0ad426dc135a2b932cb454e7b867c3c06ac6ab",
+      "file": "SSDT-c08f9f3cd959.aml",
+      "bytes": 1723,
+      "oemId": "Intel\u0000",
+      "oemTableId": "PerfTune",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/271 22D85435-F24A-43DB-7D04-015606DF21B1/0 Raw section/body.bin",
+          "sectionBytes": 1723,
+          "sectionSha256": "c08f9f3cd959c9de83ad3b426b0ad426dc135a2b932cb454e7b867c3c06ac6ab",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/271 22D85435-F24A-43DB-7D04-015606DF21B1/body.bin",
+          "sectionBytes": 1727,
+          "sectionSha256": "dab1e69d68784e43c026cbc05503622ff5f84a21d9789ba32bc732233ce78e84",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5814412,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5814532,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "cbc89f213643e05d610fa5f9a99d6fd901a4c72c6c06c47e60ed9015eefd86fc",
+      "file": "SSDT-cbc89f213643.aml",
+      "bytes": 13508,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cfht4",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/28 Raw section/body.bin",
+          "sectionBytes": 13508,
+          "sectionSha256": "cbc89f213643e05d610fa5f9a99d6fd901a4c72c6c06c47e60ed9015eefd86fc",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 332312,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5800872,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5800992,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "cc9e0465e459cc52ff760486539125af726ec18dbd3e5ce37b65b5fee41d52a2",
+      "file": "SSDT-cc9e0465e459.aml",
+      "bytes": 12864,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmhdt",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/15 Raw section/body.bin",
+          "sectionBytes": 12864,
+          "sectionSha256": "cc9e0465e459cc52ff760486539125af726ec18dbd3e5ce37b65b5fee41d52a2",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 174788,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5643348,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5643468,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "cf24ec04fc73b779be7a225d4199da496c911b0d7f766ff677945b0634a452cb",
+      "file": "SSDT-cf24ec04fc73.aml",
+      "bytes": 3577,
+      "oemId": "CtdpB\u0000",
+      "oemTableId": "CtdpB\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/11 Raw section/body.bin",
+          "sectionBytes": 3577,
+          "sectionSha256": "cf24ec04fc73b779be7a225d4199da496c911b0d7f766ff677945b0634a452cb",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 23160,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5196936,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5197056,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "d1000790a394f10d1b8a06dbbcd43b137651f1119a65bcda1f29084cca5ac4fa",
+      "file": "SSDT-d1000790a394.aml",
+      "bytes": 9934,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlU_DgT",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/7 Raw section/body.bin",
+          "sectionBytes": 9934,
+          "sectionSha256": "d1000790a394f10d1b8a06dbbcd43b137651f1119a65bcda1f29084cca5ac4fa",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 80556,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5549116,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5549236,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "d7632411b1fa0297cff16cf54abfe0c0e4141876812457acfaa753a1e5bac7bb",
+      "file": "SSDT-d7632411b1fa.aml",
+      "bytes": 1559,
+      "oemId": "OemAti",
+      "oemTableId": "OemAti\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/239 1E28DC28-D461-4C36-93F0-69F2FBE021BC/0 Raw section/body.bin",
+          "sectionBytes": 1559,
+          "sectionSha256": "d7632411b1fa0297cff16cf54abfe0c0e4141876812457acfaa753a1e5bac7bb",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/239 1E28DC28-D461-4C36-93F0-69F2FBE021BC/body.bin",
+          "sectionBytes": 1563,
+          "sectionSha256": "c3ac3e31a5ac5692c4bbeb02cff55b108b6a4fd1762e55cae5a735b7c7977efe",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4609476,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4609596,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "dd7511c8c90945b6bf9204257b63f6bf70e1713d5de8a422f58feb9a0fc7160e",
+      "file": "SSDT-dd7511c8c909.aml",
+      "bytes": 2877,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "ApTst\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/4 Raw section/body.bin",
+          "sectionBytes": 2877,
+          "sectionSha256": "dd7511c8c90945b6bf9204257b63f6bf70e1713d5de8a422f58feb9a0fc7160e",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 7252,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5181028,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5181148,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "de95017ec62ad086e7ff866aff5ea86edcaa92e4a1f8aa0630e56179b04395b4",
+      "file": "SSDT-de95017ec62a.aml",
+      "bytes": 252,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "Cpu0Psd\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/8 Raw section/body.bin",
+          "sectionBytes": 252,
+          "sectionSha256": "de95017ec62ad086e7ff866aff5ea86edcaa92e4a1f8aa0630e56179b04395b4",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 13612,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5187388,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5187508,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "e0fb82ab816fab2c748eb87f40c07c0dccbd273f21ddad0f4c0d396d4eb97741",
+      "file": "SSDT-e0fb82ab816f.aml",
+      "bytes": 10016,
+      "oemId": "TrmRef",
+      "oemTableId": "PtidDevc",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/267 AcpiPlatformFeatures/5 Raw section/body.bin",
+          "sectionBytes": 10016,
+          "sectionSha256": "e0fb82ab816fab2c748eb87f40c07c0dccbd273f21ddad0f4c0d396d4eb97741",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/267 AcpiPlatformFeatures/body.bin",
+          "sectionBytes": 29370,
+          "sectionSha256": "878a40a3ae401b7a252df07769ee200216dabb63ae7925a36b8f915027620fef",
+          "offset": 9636,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5408836,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5408956,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "e194a46da0a7bf6eb3a4ea6a2d63488da49e3a18656265ff1e2207b5dcbb472c",
+      "file": "SSDT-e194a46da0a7.aml",
+      "bytes": 955,
+      "oemId": "PmRef\u0000",
+      "oemTableId": "Cpu0Tst\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/9 Raw section/body.bin",
+          "sectionBytes": 955,
+          "sectionSha256": "e194a46da0a7bf6eb3a4ea6a2d63488da49e3a18656265ff1e2207b5dcbb472c",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/257 C38FB0E2-0C43-49C9-B544-9B17AA4DCBA3/body.bin",
+          "sectionBytes": 32590,
+          "sectionSha256": "214b368040cf210bd9df4612272f23cbdde0958abd8ad588968c97be7902d269",
+          "offset": 13868,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5187644,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5187764,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "e253b7c3eebc12bb07d3daad745114edf16bc48f4826843168cc7b149dac766f",
+      "file": "SSDT-e253b7c3eebc.aml",
+      "bytes": 12982,
+      "oemId": "INTEL\u0000",
+      "oemTableId": "xh_cmdgT",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/20 Raw section/body.bin",
+          "sectionBytes": 12982,
+          "sectionSha256": "e253b7c3eebc12bb07d3daad745114edf16bc48f4826843168cc7b149dac766f",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 239368,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5707928,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5708048,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "e8341cb52651150b0fe2fb7be7ef86415886983ee72e9633cd1d5bb0f61b5189",
+      "file": "SSDT-e8341cb52651.aml",
+      "bytes": 1159,
+      "oemId": "SgRef\u0000",
+      "oemTableId": "SgBaseU\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/232 E3164526-690A-4E0D-B028-AEA16FE2BCF3/1 Raw section/body.bin",
+          "sectionBytes": 1159,
+          "sectionSha256": "e8341cb52651150b0fe2fb7be7ef86415886983ee72e9633cd1d5bb0f61b5189",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/232 E3164526-690A-4E0D-B028-AEA16FE2BCF3/body.bin",
+          "sectionBytes": 2327,
+          "sectionSha256": "887ee855ee6e084965346546ebf788dfc9557d175bdfcf9543bd39517c91f070",
+          "offset": 1168,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4499968,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4500088,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "e8f7bbbdbf32394be0026949e3f05480010c4c0a7b5ee8034f51c0aad8f99c08",
+      "file": "SSDT-e8f7bbbdbf32.aml",
+      "bytes": 11534,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlH_Rvp",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/3 Raw section/body.bin",
+          "sectionBytes": 11534,
+          "sectionSha256": "e8f7bbbdbf32394be0026949e3f05480010c4c0a7b5ee8034f51c0aad8f99c08",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 32068,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5500628,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5500748,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "f337636f879ba8bebd265e465332b0ed20620bce640feb8238d6753850e15a90",
+      "file": "SSDT-f337636f879b.aml",
+      "bytes": 14852,
+      "oemId": "INTEL ",
+      "oemTableId": "WHL_Tbt_",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/13 Raw section/body.bin",
+          "sectionBytes": 14852,
+          "sectionSha256": "f337636f879ba8bebd265e465332b0ed20620bce640feb8238d6753850e15a90",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 146944,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5615504,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5615624,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "f9531ae0e5e4572aa0b7a16d95d8a7fe9f015bcf4099d078c816d05e2fd5bd56",
+      "file": "SSDT-f9531ae0e5e4.aml",
+      "bytes": 14456,
+      "oemId": "INTEL ",
+      "oemTableId": "CmlAepTb",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/1 Raw section/body.bin",
+          "sectionBytes": 14456,
+          "sectionSha256": "f9531ae0e5e4572aa0b7a16d95d8a7fe9f015bcf4099d078c816d05e2fd5bd56",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/270 7E374E25-8E01-4FEE-87F2-390C23C606CD/body.bin",
+          "sectionBytes": 345820,
+          "sectionSha256": "a5c206de59994e1d1561b65ee1aa2857ac8a7326341c0a9f70ccb1d5ee6b64b8",
+          "offset": 64,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 5468624,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 5468744,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    },
+    {
+      "sha256": "f98bfe38d5baae2e259e1d37a9f4db2ecf8a273dd7bc220465d84f7edc16cd81",
+      "file": "SSDT-f98bfe38d5ba.aml",
+      "bytes": 174,
+      "oemId": "SgRef\u0000",
+      "oemTableId": "SgPeg\u0000\u0000\u0000",
+      "checksumValid": true,
+      "locations": [
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/231 8DE8964F-2939-4B49-A348-F6B2B2DE4A42/0 Raw section/body.bin",
+          "sectionBytes": 174,
+          "sectionSha256": "f98bfe38d5baae2e259e1d37a9f4db2ecf8a273dd7bc220465d84f7edc16cd81",
+          "offset": 0,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/231 8DE8964F-2939-4B49-A348-F6B2B2DE4A42/body.bin",
+          "sectionBytes": 178,
+          "sectionSha256": "81bff155158cd80c30f09914a4acced22221a1bb89f748a31e28862abfbd6367",
+          "offset": 4,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/0 5C60F367-A505-419A-859E-2A4FF6CA6FE5/body.bin",
+          "sectionBytes": 7118728,
+          "sectionSha256": "adb714d733eb80ca282608302d760b4eb80e2e82288134f98029560046a8aab3",
+          "offset": 4498596,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        },
+        {
+          "section": "2 BIOS region/4 4F1C52D3-D824-4D2A-A2F0-EC40C23C5916/5 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792/0 EE4E5898-3914-4259-9D6E-DC7BD79403CF/1 Volume image section/body.bin",
+          "sectionBytes": 7118848,
+          "sectionSha256": "5f58898692bcf95d3a0d33475543872cab735365b19833f183ebd8bfd06545d2",
+          "offset": 4498716,
+          "offsetBasis": "UEFIExtract decompressed body; original flash offset unknown"
+        }
+      ]
+    }
+  ]
+}
