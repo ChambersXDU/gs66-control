@@ -10,11 +10,25 @@ public sealed record ConsoleProfile(string Name, IReadOnlyList<CurvePoint> Cpu, 
 }
 public sealed record ConsoleSettings(int RefreshSeconds, bool CloseToTray, string Accent, IReadOnlyList<ConsoleProfile> Profiles)
 {
+    public IReadOnlyList<PersonalTuningPreset> CpuPresets { get; init; } = [];
+    public string? LastCpuPresetId { get; init; }
     public static ConsoleSettings Default => new(3, true, "#63D7C5", []);
 
     public IReadOnlyList<string> Validate()
     {
         var errors = new List<string>();
+        if (CpuPresets is null || CpuPresets.Count > 30) errors.Add("个人 CPU 方案数量必须为 0–30 个。");
+        else
+        {
+            var ids = new HashSet<string>(PersonalTuningPreset.BuiltIns.Select(p => p.Id), StringComparer.OrdinalIgnoreCase);
+            var cpuNames = new HashSet<string>(PersonalTuningPreset.BuiltIns.Select(p => p.Name), StringComparer.OrdinalIgnoreCase);
+            foreach (var preset in CpuPresets)
+            {
+                if (preset is null) { errors.Add("个人 CPU 方案缺失。"); continue; }
+                errors.AddRange(preset.Validate());
+                if (!ids.Add(preset.Id ?? "") || !cpuNames.Add(preset.Name?.Trim() ?? "")) errors.Add("个人 CPU 方案不能与现有方案重名或共用 ID。");
+            }
+        }
         if (RefreshSeconds is < 2 or > 30) errors.Add("刷新间隔必须为 2–30 秒。");
         if (Accent is not ("#63D7C5" or "#78A9FF" or "#C29CFF")) errors.Add("请选择可用的强调色。");
         if (Profiles is null || Profiles.Count > 30) return [.. errors, "方案数量必须为 0–30 个。"];

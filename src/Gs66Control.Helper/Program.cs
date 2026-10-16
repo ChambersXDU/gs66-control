@@ -16,6 +16,13 @@ internal static class Program
     {
         try
         {
+            if (args is ["cpu-policy-worker", var cpuRequest] && Guid.TryParseExact(cpuRequest, "N", out var cpuId) && OperatingSystem.IsWindows())
+                return CpuPolicyAction.Run(cpuId);
+            if (args is ["cpu-policy-preview"] && OperatingSystem.IsWindows())
+            {
+                Console.WriteLine(JsonSerializer.Serialize(new { Policy = new WindowsCpuPolicyBackend().Capture(), Vendor = WindowsVendorScenarioProbe.Capture(), ExplicitHardwareWrites = 0 }, Json));
+                return 0;
+            }
             if (args is ["fan-reader", var fanRequest] && OperatingSystem.IsWindows())
                 return await FanTelemetryCollector.Run(fanRequest);
             if (args is ["dry-run"] && OperatingSystem.IsWindows())

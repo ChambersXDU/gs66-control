@@ -25,6 +25,7 @@ public partial class MainWindow : Window
 {
     private readonly string? smokeOutput;
     private readonly SettingsStore store;
+    private readonly string settingsDirectory;
     private readonly DispatcherTimer timer = new();
     private readonly CancellationTokenSource lifetime = new();
     private readonly List<double> history = [];
@@ -47,6 +48,7 @@ public partial class MainWindow : Window
     private readonly DispatcherTimer curveHeartbeat = new() { Interval = TimeSpan.FromSeconds(2) };
     private string? activeCurveId;
     private bool profileActionBusy;
+    private bool powerPlanActionBusy;
     private WindowsPerformanceSnapshot? performanceSnapshot;
     private string? editingName;
     private int? balancePosition;
@@ -61,7 +63,7 @@ public partial class MainWindow : Window
         MinWidth = Math.Min(MinWidth, Width);
         MinHeight = Math.Min(MinHeight, Height);
         this.smokeOutput = smokeOutput;
-        var settingsDirectory = smokeOutput ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GS66Control");
+        settingsDirectory = smokeOutput ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GS66Control");
         Directory.CreateDirectory(settingsDirectory);
         store = new SettingsStore(Path.Combine(settingsDirectory, "settings.json"));
         try { settings = smokeOutput is null ? store.Load() : ConsoleSettings.Default; }
@@ -71,6 +73,7 @@ public partial class MainWindow : Window
         CreateEditor(CpuCurveEditor, cpuPoints);
         CreateEditor(GpuCurveEditor, gpuPoints);
         FillPreferences();
+        InitializePersonalTuning();
         NewProfile();
         ReloadProfiles();
         ProfilePerformanceChoice.SelectedIndex = 0;
@@ -109,7 +112,7 @@ public partial class MainWindow : Window
     private void PageChanged(object sender, SelectionChangedEventArgs e)
     {
         if (Pages is null || !ReferenceEquals(e.Source, Pages) || Pages.SelectedIndex < 0) return;
-        PageTitle.Text = new[] { "概览", "方案", "设置", "风扇" }[Pages.SelectedIndex];
+        PageTitle.Text = new[] { "概览", "方案", "设置", "风扇", "个人调优" }[Pages.SelectedIndex];
         UpdateDraftBadge();
         RefreshButton.Visibility = Pages.SelectedIndex == 0 ? Visibility.Visible : Visibility.Collapsed;
         RecordTuningButton.Visibility = Pages.SelectedIndex == 0 ? Visibility.Visible : Visibility.Collapsed;
@@ -118,6 +121,7 @@ public partial class MainWindow : Window
             if (item.Tag?.ToString() == Pages.SelectedIndex.ToString()) Navigation.SelectedItem = item;
         if (Pages.SelectedIndex == 3 && smokeOutput is null && identity is not null && !fanActionBusy)
         { RefreshPendingRecovery(); _ = PreviewFanAsync(); }
+        if (Pages.SelectedIndex == 4 && identity is not null) _ = RefreshPersonalTuningAsync();
     }
 
     private async Task StartAsync()
@@ -131,6 +135,7 @@ public partial class MainWindow : Window
             await RefreshAsync();
             await RefreshPerformanceAsync();
             await RefreshPowerPlansAsync();
+            await RefreshPersonalTuningAsync();
             RefreshPendingRecovery();
             if (smokeOutput is null)
             {
@@ -179,6 +184,8 @@ public partial class MainWindow : Window
                 HistoryEmptyText.Visibility = Visibility.Collapsed;
             }
             if (tray is not null) tray.Text = $"GS66 · CPU {CpuText.Text} · 风扇 {snapshot.CpuFanRpm?.ToString() ?? "N/A"} RPM";
+            if (Pages.SelectedIndex == 4 && DateTimeOffset.UtcNow - lastPersonalRefresh > TimeSpan.FromSeconds(10))
+                await RefreshPersonalTuningAsync();
         }
         catch (OperationCanceledException) { }
         catch (Exception ex)
@@ -205,6 +212,7 @@ public partial class MainWindow : Window
         menu.Items.Add("显示控制台", null, (_, _) => Dispatcher.Invoke(ShowWindow));
         menu.Items.Add("刷新读数", null, (_, _) => Dispatcher.Invoke(() => _ = RefreshAsync()));
         trayProfiles = new Forms.ToolStripMenuItem("方案"); menu.Items.Add(trayProfiles); RefreshTrayProfiles();
+        personalTray = new Forms.ToolStripMenuItem("个人调优"); menu.Items.Add(personalTray); RefreshPersonalTray();
         menu.Items.Add("原厂自动风扇模式…", null, (_, _) => Dispatcher.Invoke(() =>
         {
             ShowWindow();
@@ -235,6 +243,12 @@ public partial class MainWindow : Window
     private void Exit() { exiting = true; Close(); }
     private void OnClosing(object? sender, CancelEventArgs e)
     {
+        if (cpuPolicyBusy)
+        {
+            e.Cancel = true; exiting = false;
+            PersonalActionStatus.Text = "正在完成 CPU 参数回读，请稍后退出。";
+            return;
+        }
         if (!exiting && smokeOutput is null && settings.CloseToTray && tray is not null) { e.Cancel = true; Hide(); }
     }
 
@@ -496,7 +510,7 @@ public partial class MainWindow : Window
 
     private async void ApplyAutomaticClick(object sender, RoutedEventArgs e)
     {
-        if (fanActionBusy || profileActionBusy || smokeOutput is not null) return;
+        if (fanActionBusy || profileActionBusy || cpuPolicyBusy || powerPlanActionBusy || smokeOutput is not null) return;
         if (activeCurveId is not null)
         {
             profileActionBusy = true;
@@ -616,8 +630,23 @@ public partial class MainWindow : Window
                 throw new InvalidDataException("Read-only fan preview failed or hardware write authorization changed.");
             await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.Render);
             UpdateLayout(); SaveScreenshot("fan-preview.png");
+            Pages.SelectedIndex = 4;
+            await RefreshPersonalTuningAsync();
+            if (PersonalPresets.Length != 3 || string.IsNullOrWhiteSpace(PersonalHealthText.Text))
+                throw new InvalidDataException("Personal presets or policy diagnostics are missing.");
+            PersonalPresetName.Text = "只读界面验证";
+            await SavePersonalPresetAsync();
+            if (store.Load().CpuPresets.Count != 1 || PersonalPresets.Length != 4)
+                throw new InvalidDataException("Personal preset persistence failed.");
+            PersonalApplyButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            PersonalUndoButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            if (!WindowsCpuPolicyBackend.SamePolicy(cpuPolicyBeforeSmoke, new WindowsCpuPolicyBackend().Capture()) || cpuPolicyBusy)
+                throw new InvalidDataException("Read-only personal smoke changed the CPU policy.");
+            PersonalPresetChoice.SelectedItem = PersonalPresets.First(p => p.Id == "quiet");
+            await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.Render);
+            UpdateLayout(); SaveScreenshot("personal-tuning.png");
             File.WriteAllText(Path.Combine(smokeOutput!, "verification.json"), JsonSerializer.Serialize(new
-            { passed = true, identity = identity.Model, telemetry = latest, fanTelemetryPermissionRequired = latest!.FanReadRequiresElevation, autoFanPreview = fanPreview, deviceCurves, cpuPolicySnapshot, nativeCpuPolicyRead = true, deviceCurveImport = true, profilePersistence = true, balanceProfilePersistence = true, realRecordingPersistence = true, shortRecordingComparisonBlocked = true, nativePowerPlanRead = true, explicitHardwareWrites = 0, invalidCurveRejected = true, settingsPersistence = true, navigation = true, accessibleIconActions = true, historySamples = history.Count }, JsonOptions));
+            { passed = true, identity = identity.Model, telemetry = latest, fanTelemetryPermissionRequired = latest!.FanReadRequiresElevation, autoFanPreview = fanPreview, deviceCurves, cpuPolicySnapshot, savedVendorScenario, personalPresetPersistence = true, personalActionsReadOnly = true, nativeCpuPolicyRead = true, deviceCurveImport = true, profilePersistence = true, balanceProfilePersistence = true, realRecordingPersistence = true, shortRecordingComparisonBlocked = true, nativePowerPlanRead = true, explicitHardwareWrites = 0, invalidCurveRejected = true, settingsPersistence = true, navigation = true, accessibleIconActions = true, historySamples = history.Count }, JsonOptions));
             Exit();
         }
         catch (Exception ex) { FinishSmokeFailure(ex); }

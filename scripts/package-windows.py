@@ -36,6 +36,7 @@ def main():
     for name in ["verify-release.ps1", "install-release.ps1"]:
         shutil.copyfile(root / "scripts" / name, package / name)
     shutil.copyfile(root / "docs" / "desktop.md", package / "使用说明.md")
+    shutil.copyfile(root / "docs" / "personal-tuning.md", package / "personal-tuning.md")
     for name in ["Gs66Control.Desktop.exe", "helper/Gs66Control.Helper.exe"]:
         if not (package / name).is_file():
             raise RuntimeError(f"Missing published executable: {name}")

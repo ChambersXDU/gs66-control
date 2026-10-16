@@ -59,7 +59,7 @@ public partial class MainWindow
     private async void RecordTuningClick(object sender, RoutedEventArgs e)
     {
         if (tuningRecording is not null) { FinishTuningRecording(); return; }
-        if (profileActionBusy || fanActionBusy || tuningStartBusy) return;
+        if (profileActionBusy || fanActionBusy || cpuPolicyBusy || powerPlanActionBusy || tuningStartBusy) return;
         if (latest is not { IsSimulated: false } snapshot || DateTimeOffset.UtcNow - snapshot.CapturedAtUtc > TimeSpan.FromSeconds(35)) return;
         var startingProfile = activeProfile;
         tuningStartBusy = true;
@@ -71,7 +71,7 @@ public partial class MainWindow
         }
         catch (Exception ex) { recordedPowerPlan = null; ActionDiagnosticText.Text = ex.Message; }
         finally { RecordTuningButton.IsEnabled = true; tuningStartBusy = false; }
-        if (lifetime.IsCancellationRequested || !ReferenceEquals(startingProfile, activeProfile) || profileActionBusy || fanActionBusy) return;
+        if (lifetime.IsCancellationRequested || !ReferenceEquals(startingProfile, activeProfile) || profileActionBusy || fanActionBusy || cpuPolicyBusy || powerPlanActionBusy) return;
         snapshot = latest ?? snapshot;
         recordedProfile = activeProfile;
         tuningRecording = new(activeProfileName ?? "当前设备", false, snapshot.TemperatureSource + "; " + snapshot.FanSource + "; native Windows system metrics");
@@ -163,9 +163,9 @@ public partial class MainWindow
 
     private async void ApplyPowerPlanClick(object sender, RoutedEventArgs e)
     {
-        if (smokeOutput is not null || powerPlanSnapshot is null || PowerPlanChoice.SelectedValue is not Guid target || busy || profileActionBusy || fanActionBusy) return;
+        if (smokeOutput is not null || powerPlanSnapshot is null || PowerPlanChoice.SelectedValue is not Guid target || busy || profileActionBusy || fanActionBusy || cpuPolicyBusy || powerPlanActionBusy) return;
         var expected = powerPlanSnapshot.ActiveSchemeGuid;
-        ApplyPowerPlanButton.IsEnabled = false; FinishTuningRecording();
+        powerPlanActionBusy = true; ApplyPowerPlanButton.IsEnabled = false; FinishTuningRecording();
         try
         {
             var result = await Task.Run(() => new WindowsPowerPlanBackend().Activate(target, expected, lifetime.Token), lifetime.Token);
@@ -174,7 +174,7 @@ public partial class MainWindow
             if (powerPlanSnapshot?.ActiveSchemeGuid != target) throw new IOException("Windows 电源计划已被其他程序更改。");
         }
         catch (Exception ex) { ActionDiagnosticText.Text = ex.Message; }
-        finally { ApplyPowerPlanButton.IsEnabled = powerPlanSnapshot is not null; }
+        finally { powerPlanActionBusy = false; ApplyPowerPlanButton.IsEnabled = powerPlanSnapshot is not null; }
     }
 
     private void RefreshTrayProfiles()

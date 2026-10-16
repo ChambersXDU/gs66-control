@@ -8,6 +8,7 @@
       <StackPanel Margin="14,0,0,28"><TextBlock Text="GS66" FontSize="22" FontWeight="SemiBold"/><TextBlock Text="Stealth 10SE" Style="{StaticResource Muted}" Margin="0,5,0,0"/></StackPanel>
       <ListBox x:Name="Navigation" Grid.Row="1" Background="Transparent" BorderThickness="0" ItemContainerStyle="{StaticResource NavItem}" SelectionChanged="NavigationChanged" AutomationProperties.Name="导航">
         <ListBoxItem Tag="0"><StackPanel Orientation="Horizontal"><TextBlock Text="&#xE80F;" Style="{StaticResource Icon}" Margin="0,0,12,0"/><TextBlock Text="概览"/></StackPanel></ListBoxItem>
+        <ListBoxItem Tag="4"><StackPanel Orientation="Horizontal"><TextBlock Text="&#xE9E9;" Style="{StaticResource Icon}" Margin="0,0,12,0"/><TextBlock Text="个人调优"/></StackPanel></ListBoxItem>
         <ListBoxItem Tag="3"><StackPanel Orientation="Horizontal"><Viewbox Width="16" Height="16" Margin="0,0,12,0"><Canvas Width="24" Height="24"><Ellipse Width="22" Height="22" Canvas.Left="1" Canvas.Top="1" Stroke="#202020" StrokeThickness="1.3"/><Path Fill="#202020" Data="M12,10 C6,4 12,0 17,4 C22,8 16,12 12,10"/><Path Fill="#202020" Data="M12,10 C6,4 12,0 17,4 C22,8 16,12 12,10"><Path.RenderTransform><RotateTransform Angle="120" CenterX="12" CenterY="12"/></Path.RenderTransform></Path><Path Fill="#202020" Data="M12,10 C6,4 12,0 17,4 C22,8 16,12 12,10"><Path.RenderTransform><RotateTransform Angle="240" CenterX="12" CenterY="12"/></Path.RenderTransform></Path><Ellipse Width="4" Height="4" Canvas.Left="10" Canvas.Top="10" Fill="#F6F6F6" Stroke="#202020" StrokeThickness="1"/></Canvas></Viewbox><TextBlock Text="风扇"/></StackPanel></ListBoxItem>
         <ListBoxItem Tag="1"><StackPanel Orientation="Horizontal"><TextBlock Text="&#xE9E9;" Style="{StaticResource Icon}" Margin="0,0,12,0"/><TextBlock Text="方案"/></StackPanel></ListBoxItem>
         <ListBoxItem Tag="2"><StackPanel Orientation="Horizontal"><TextBlock Text="&#xE713;" Style="{StaticResource Icon}" Margin="0,0,12,0"/><TextBlock Text="设置"/></StackPanel></ListBoxItem>
@@ -20,6 +21,7 @@
       <TabControl x:Name="Pages" Grid.Row="1" Background="Transparent" BorderThickness="0" SelectionChanged="PageChanged" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
         <TabControl.Template><ControlTemplate TargetType="TabControl"><ContentPresenter ContentSource="SelectedContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/></ControlTemplate></TabControl.Template>
         <TabItem><ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel>
+          <Border Style="{StaticResource Card}" Margin="0,0,0,12" Padding="22,16"><DockPanel><Button Content="调优与切换" DockPanel.Dock="Right" Click="OpenPersonalTuningClick"/><StackPanel><TextBlock Text="个人方案" Style="{StaticResource Muted}"/><TextBlock x:Name="PersonalOverviewText" Text="读取中…" FontSize="20" Margin="0,6,0,0"/></StackPanel></DockPanel></Border>
           <UniformGrid Columns="2" Margin="0,0,0,12">
             <Border Style="{StaticResource Card}" Margin="0,0,6,0"><StackPanel><TextBlock Text="CPU" FontWeight="SemiBold"/><TextBlock x:Name="CpuTemperatureText" Text="—" FontSize="42" FontWeight="Light" Margin="0,18,0,0"/></StackPanel></Border>
             <Border Style="{StaticResource Card}" Margin="6,0,0,0"><StackPanel><TextBlock Text="GPU" FontWeight="SemiBold"/><TextBlock x:Name="GpuTemperatureText" Text="—" FontSize="42" FontWeight="Light" Margin="0,18,0,0"/></StackPanel></Border>
@@ -62,6 +64,44 @@
         </StackPanel></ScrollViewer></TabItem>
         <TabItem><ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel>
           <Border Style="{StaticResource Card}"><StackPanel><DockPanel><Button x:Name="FanPreviewButton" Style="{StaticResource IconButton}" Click="FanPreviewClick" DockPanel.Dock="Right" ToolTip="刷新风扇状态 (F5)" AutomationProperties.Name="刷新风扇状态"><TextBlock Text="&#xE72C;" Style="{StaticResource Icon}"/></Button><Button x:Name="RecoverCurveButton" Style="{StaticResource IconButton}" DockPanel.Dock="Right" Visibility="Collapsed" Click="RecoverCurveClick" ToolTip="恢复未完成方案的原曲线与自动模式" AutomationProperties.Name="恢复未完成方案"><TextBlock Text="&#xE7BA;" Style="{StaticResource Icon}" Foreground="#9A6700"/></Button><TextBlock x:Name="FanEnabledIcon" Text="&#xE73E;" Style="{StaticResource Icon}" DockPanel.Dock="Right" Foreground="#008573" Visibility="Collapsed" Margin="0,0,16,0" ToolTip="已启用" AutomationProperties.Name="自动模式已启用"/><StackPanel><TextBlock Text="自动模式" FontWeight="SemiBold"/><TextBlock x:Name="FanPreviewText" Text="未检查" Style="{StaticResource Muted}" Margin="0,10,0,0"/></StackPanel></DockPanel><Button x:Name="ApplyAutomaticButton" Content="启用" Click="ApplyAutomaticClick" Width="96" HorizontalAlignment="Left" Margin="0,24,0,0" ToolTip="切换至原厂自动模式"/><TextBlock x:Name="FanActionText" Style="{StaticResource Muted}" Margin="0,14,0,0"/></StackPanel></Border>
+        </StackPanel></ScrollViewer></TabItem>
+        <TabItem><ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel>
+          <Border Style="{StaticResource Card}" Margin="0,0,0,12"><StackPanel>
+            <DockPanel><Button Content="刷新检查" DockPanel.Dock="Right" Click="RefreshPersonalClick"/><TextBlock Text="我的 GS66" FontSize="22" FontWeight="SemiBold" VerticalAlignment="Center"/></DockPanel>
+            <TextBlock Text="先减少不必要的发热，再按需要调风扇。快捷方案调整插电 CPU 参数，保留睿频；风扇独立调节。" Style="{StaticResource Muted}" TextWrapping="Wrap" Margin="0,10,0,20"/>
+            <Grid>
+              <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+              <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+              <StackPanel Margin="0,0,20,14"><TextBlock Text="插电频率上限" Style="{StaticResource Muted}"/><TextBlock x:Name="PersonalFrequencyText" Text="—" FontSize="28" Margin="0,5,0,0"/></StackPanel>
+              <StackPanel Grid.Column="1" Margin="0,0,0,14"><TextBlock Text="生效能效偏好" Style="{StaticResource Muted}"/><TextBlock x:Name="PersonalEppText" Text="—" FontSize="28" Margin="0,5,0,0"/><TextBlock x:Name="PersonalEppDetail" Style="{StaticResource Muted}" FontSize="12"/></StackPanel>
+              <StackPanel Grid.Row="1"><TextBlock Text="微星保存的模式" Style="{StaticResource Muted}"/><TextBlock x:Name="PersonalVendorText" Text="未读取" FontSize="18" Margin="0,5,0,0"/></StackPanel>
+              <StackPanel Grid.Row="1" Grid.Column="1"><TextBlock Text="实时硬件性能档" Style="{StaticResource Muted}"/><TextBlock x:Name="PersonalFirmwareText" Text="待启用硬件读数" FontSize="18" Margin="0,5,0,0"/></StackPanel>
+            </Grid>
+            <TextBlock x:Name="PersonalHealthText" TextWrapping="Wrap" Margin="0,18,0,0" Style="{StaticResource Muted}"/>
+            <Button Content="打开 Dragon Center 检查保存模式" HorizontalAlignment="Left" Margin="0,12,0,0" Click="OpenVendorScenarioClick"/>
+          </StackPanel></Border>
+          <Border Style="{StaticResource Card}" Margin="0,0,0,12"><StackPanel>
+            <TextBlock Text="快捷切换" FontSize="18" FontWeight="SemiBold"/>
+            <ComboBox x:Name="PersonalPresetChoice" DisplayMemberPath="Name" SelectionChanged="PersonalPresetChanged" AutomationProperties.Name="个人 CPU 方案" Margin="0,16,0,10"/>
+            <TextBlock x:Name="PersonalPresetDescription" Style="{StaticResource Muted}" TextWrapping="Wrap"/>
+            <StackPanel Orientation="Horizontal" Margin="0,18,0,0">
+              <Button x:Name="PersonalApplyButton" Content="应用插电方案" Click="ApplyPersonalPresetClick" AutomationProperties.Name="应用个人 CPU 方案" ToolTip="同步基础计划和当前滑块的插电参数，独立回读后保存"/>
+              <Button x:Name="PersonalUndoButton" Content="恢复上次设置" Click="UndoPersonalClick" IsEnabled="False" AutomationProperties.Name="恢复上次 CPU 设置" ToolTip="核对设置仍属于本次修改后恢复；保留外部改动" Margin="10,0,0,0"/>
+              <Button Content="高级参数" Click="AdvancedPersonalClick" Margin="10,0,0,0"/>
+            </StackPanel>
+            <TextBlock x:Name="PersonalActionStatus" TextWrapping="Wrap" Style="{StaticResource Muted}" Margin="0,12,0,0"/>
+          </StackPanel></Border>
+          <Border Style="{StaticResource Card}" Margin="0,0,0,12"><StackPanel>
+            <TextBlock Text="保存自己的组合" FontSize="18" FontWeight="SemiBold"/>
+            <TextBlock Text="在高级参数中应用后，可把当前实际插电参数保存为个人方案，并从托盘切换。" Style="{StaticResource Muted}" TextWrapping="Wrap" Margin="0,8,0,14"/>
+            <DockPanel><Button Content="保存当前参数" DockPanel.Dock="Right" Click="SavePersonalPresetClick" Margin="10,0,0,0"/><TextBox x:Name="PersonalPresetName" Text="我的轻声方案" MaxLength="40" AutomationProperties.Name="个人 CPU 方案名称"/></DockPanel>
+            <Button x:Name="PersonalDeleteButton" Content="移除选中的自定义方案" HorizontalAlignment="Left" Click="DeletePersonalPresetClick" Margin="0,12,0,0" IsEnabled="False"/>
+          </StackPanel></Border>
+          <Border Style="{StaticResource Card}"><StackPanel>
+            <TextBlock Text="风扇单独调节" FontSize="18" FontWeight="SemiBold"/>
+            <TextBlock Text="频率和能效方案不会直接压低风扇。需要更安静时，可以从设备曲线生成一个略低速的草稿，核对后再应用；独立温度保护和恢复机制继续工作。" Style="{StaticResource Muted}" TextWrapping="Wrap" Margin="0,8,0,14"/>
+            <Button Content="准备更轻声的曲线草稿" HorizontalAlignment="Left" Click="PrepareQuietFanClick"/>
+          </StackPanel></Border>
         </StackPanel></ScrollViewer></TabItem>
       </TabControl>
     </Grid>

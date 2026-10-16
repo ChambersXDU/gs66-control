@@ -50,7 +50,7 @@ public partial class MainWindow
 
     private async void ApplyPerformanceClick(object sender, RoutedEventArgs e)
     {
-        if (smokeOutput is not null || profileActionBusy || fanActionBusy || activeCurveId is not null || SelectedShift(DevicePerformanceChoice) is not byte target) return;
+        if (smokeOutput is not null || profileActionBusy || fanActionBusy || cpuPolicyBusy || powerPlanActionBusy || activeCurveId is not null || SelectedShift(DevicePerformanceChoice) is not byte target) return;
         profileActionBusy = true; ApplyPerformanceButton.IsEnabled = false;
         var acquired = false;
         try
@@ -122,7 +122,7 @@ public partial class MainWindow
 
     private async Task ApplyProfileAsync(ConsoleProfile target)
     {
-        if (smokeOutput is not null || profileActionBusy || fanActionBusy) return;
+        if (smokeOutput is not null || profileActionBusy || fanActionBusy || cpuPolicyBusy || powerPlanActionBusy) return;
         profileActionBusy = true; ApplyProfileButton.IsEnabled = false;
         var launched = false;
         try
@@ -302,7 +302,7 @@ public partial class MainWindow
 
     private static string RequestDirectory(string kind, string id)
     {
-        if (kind is not ("curve" or "performance" or "fan") || !Guid.TryParseExact(id, "N", out _)) throw new ArgumentException("无效控制请求。");
+        if (kind is not ("curve" or "performance" or "fan" or "cpu-policy") || !Guid.TryParseExact(id, "N", out _)) throw new ArgumentException("无效控制请求。");
         var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GS66Control", kind + "-requests", id);
         Directory.CreateDirectory(path); return path;
     }
