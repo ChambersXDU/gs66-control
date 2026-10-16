@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <ApplicationIcon>../../assets/gs66-control.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="../../assets/gs66-control.ico" Link="Assets/gs66-control.ico" />
+    <ProjectReference Include="../Gs66Control.Core/Gs66Control.Core.csproj" />
+    <ProjectReference Include="../Gs66Control.Windows/Gs66Control.Windows.csproj" />
+  </ItemGroup>
+</Project>

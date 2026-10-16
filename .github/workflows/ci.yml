@@ -18,7 +18,18 @@ jobs:
           dotnet-version: 8.0.x
       - name: Build CLI
         run: dotnet build src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release
+      - name: Build desktop
+        if: runner.os == 'Windows'
+        run: dotnet build src/Gs66Control.Desktop/Gs66Control.Desktop.csproj --configuration Release
+      - name: Build restricted helper
+        run: dotnet build src/Gs66Control.Helper/Gs66Control.Helper.csproj --configuration Release
       - name: Unit tests (simulated hardware)
         run: dotnet test tests/Gs66Control.Tests/Gs66Control.Tests.csproj --configuration Release
       - name: Simulation smoke test
         run: dotnet run --project src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release -- simulate
+      - name: Independent recovery process simulation
+        run: dotnet run --project src/Gs66Control.Helper/Gs66Control.Helper.csproj --configuration Release --no-build -- simulate-suite recovery-simulation
+      - name: Curve transaction and recovery simulation
+        run: dotnet run --project src/Gs66Control.Helper/Gs66Control.Helper.csproj --configuration Release --no-build -- simulate-curves curve-simulation
+      - name: Curve parent failure process simulation
+        run: dotnet run --project src/Gs66Control.Helper/Gs66Control.Helper.csproj --configuration Release --no-build -- curve-cross-suite curve-process-simulation

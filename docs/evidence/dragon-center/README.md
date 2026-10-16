@@ -16,7 +16,7 @@
 
 ## 工具与复现边界
 
-本次实际使用 [morluto/rea](https://github.com/morluto/rea) 的 reverse-engineer-anything Skill v34、rea-agents 6.3.0，Skill 原件为 `/Users/cham/.npm/_npx/af752b90495482d7/node_modules/rea-agents/skills/reverse-engineer-anything/SKILL.md`。桌面会话未暴露预注册 REA MCP，研究客户端通过 stdio 直接连接该版本的 MCP server；这是实际 REA 工具调用而不是替代工具的改名。工具结果中的 provider 及 evidence ID 可核对这一点。
+本次实际使用 [morluto/rea](https://github.com/morluto/rea) 的 reverse-engineer-anything Skill v34、rea-agents 6.3.0，Skill 来自该版本包内的 `skills/reverse-engineer-anything/SKILL.md`。桌面会话未暴露预注册 REA MCP，研究客户端通过 stdio 直接连接该版本的 MCP server；这是实际 REA 工具调用而不是替代工具的改名。工具结果中的 provider 及 evidence ID 可核对这一点。
 
 REA 使用 Node 24.21.0；托管解码 ILSpy/ICSharpCode.Decompiler 11.1.0.9782；原生分析 Ghidra 12.1.4 + Temurin 21.0.12.1。7-Zip 26.04、InnoExtract 1.9 用于容器提取。macOS arm64 Ghidra 原生 decompiler 从该版本随包源码构建，命令如下；仅执行分析器，不执行被分析文件：
 

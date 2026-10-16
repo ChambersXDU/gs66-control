@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ApplicationIcon>../../assets/gs66-control.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Gs66Control.Core/Gs66Control.Core.csproj" />
+    <ProjectReference Include="../Gs66Control.Windows/Gs66Control.Windows.csproj" />
+  </ItemGroup>
+</Project>

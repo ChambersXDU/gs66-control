@@ -11,5 +11,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Gs66Control.Core/Gs66Control.Core.csproj" />
+    <ProjectReference Include="../../src/Gs66Control.Helper/Gs66Control.Helper.csproj" />
+    <ProjectReference Include="../../src/Gs66Control.Windows/Gs66Control.Windows.csproj" />
   </ItemGroup>
 </Project>

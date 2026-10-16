@@ -1,24 +1,25 @@
 # Hardware safety policy
 
-This is an experimental project. The current milestone is **read-only Windows WMI discovery** and an explicitly labelled simulation backend.
+Diagnostic and telemetry providers remain read-only. The user authorized implementation of restricted custom fan speeds, reviewed stock performance levels and supported charging controls, with bounded reversible validation after safety gates pass. The earlier approved five-second automatic-only trial completed; its approval is consumed and its old trial entry remains locked. On 2026-10-15 bounded physical-device validation observed a one-point CPU speed increase, a one-point GPU speed increase and C1 to C2/C0/C4 transitions, followed by independent full-baseline restoration checks. These results validate the reviewed field transactions, not sustained cooling or measured performance.
 
-## Prohibited at the scaffold stage
+## Restricted controls
 
-- BIOS/EC firmware flashing or modifying firmware configuration.
-- EC register writes, including guessed or copied fan-curve addresses.
-- Kernel driver installation, undervolting or power-limit writes.
-- Changing fan mode, stopping MSI services, disabling thermal safeguards.
-- Automatic stress testing or tests requiring administrator access.
+All hardware actions require the exact reviewed GS66 manufacturer/model, BIOS E16V1IMS.10C, EC 16V1EMS1.109/build 0311202011:16:49, installed vendor artifact SHA-256, verified WMI binding and fresh expected-state comparison. Writers are separated from diagnostics and share the hardware mutex. No arbitrary addresses, property names or raw values are accepted. Main UI runs without elevation; each explicit action starts its fixed independent helper with Windows elevation.
 
-The presence of an MSI WMI class is **not** proof that it can control GS66 10SE hardware. The actual EC revision must be collected on the target machine before adopting a register map.
+An optional separately elevated read-only collector supplies fixed fan-counter/temperature readings and nonce-correlated control snapshots when ordinary-user WMI access is denied. Its parent lease, two-second polling and bounded fresh-frame checks do not grant hardware-write permission. It exits on parent loss, stale heartbeat or stop and installs no service. Native AP access denial is cached for thirty seconds before retry; stale broker frames never substitute for current readings.
 
-## Requirements before future control features
+Automatic mode accepts only MSI_System index 9 = 0x0D. Curve transactions accept only six reviewed CPU/VGA speed slots, retain device temperature breakpoints, require monotonic 0–100 speeds and at least 80 at temperatures >=80°C, and enter only the reviewed custom mode 0x8D. Each mutation is journalled before attempting the update. Parent identity/heartbeat, fresh CPU/GPU admission temperatures, runtime temperature limits and external-state checks protect active sessions. Normal stop restores original speed values and optional performance byte while retaining automatic mode. Fault recovery attempts automatic mode before restoring curve values. The bounded normal five-second curve trial may restore its original mode; it does not unlock the completed automatic-only trial.
 
-1. Identify the exact model, BIOS and EC firmware version; use a device/firmware allowlist.
-2. Document provenance and independent validation for every supported write operation.
-3. Implement a separate, tested rollback path that works if the main process exits or hangs; do not rely solely on a timer inside that process.
-4. Fail safe when telemetry is unavailable, with temperature limits and verified fallback to the manufacturer's automatic cooling mode.
-5. Require explicit approval for first hardware writes, and exclude unknown registers from any automated optimization.
-6. Confirm changes work without disabling the manufacturer's thermal protections or demanding BIOS edits.
+Performance actions accept only reviewed Shift values C0/C1/C2/C4 through MSI_System index 7. Increasing performance requires fresh temperature admission and, in custom fan mode, the same safe-curve validation. Trial requests are fixed at five seconds, journal original state and independently read back restoration. Persistent user-requested performance actions do not imply automatic restoration on UI exit. Existing Windows power plans use documented PowrProf APIs, compare the previously active GUID before activation and read back the result; no plan contents are edited.
 
-No such safeguards or write operations are implemented yet; **do not assume this scaffold can safely control fans**.
+Independent recovery takes only a compact request GUID and a bounded fixed journal, validates its binding and ownership before taking the shared mutex, and never replays an arbitrary target from a request. Once recovery owns the mutex it has a separate bounded, uncancelled completion window. Unknown external mutations are preserved. A valid completed helper result still requires independent UI read-back; failed read-back remains visible as unconfirmed. Simulation output always declares its provenance.
+
+WMI has no atomic compare-and-swap; another actor may change state between a final check and Put. Provider hangs, OS failure or termination of the independent worker can prevent recovery. A mode-field read-back does not prove sustained cooling or physical fan response. No permanent administrator service, startup application or automatic stress workload is installed. Lower idle overhead is a design goal still requiring real measurement.
+
+## Read-only boundaries and unavailable controls
+
+Firmware static evidence established that MSI_AP index 1 reads write an EC protocol byte internally. Never enumerate MSI_AP instances: read only independently reviewed fan-counter indices 2–5. Unknown MSI classes stay schema-only until audited. ACPI table capture is bounded data acquisition; never execute AML or firmware code. Static evidence for a setter does not enable that control.
+
+Charging remains unavailable: the approved bounded Get_Data(0xD7) call returned NotSupported, and legacy physical-memory charging paths require private native I/O initialization. Do not repeat the consumed probe or use a native driver fallback. Temperature-breakpoint setters and a possible third-fan counter are research findings only, with no production write/read claim until separately validated.
+
+BIOS/EC flashing, guessed register pokes, new kernel drivers, undervolting/overvolting, arbitrary power-limit writes, stress tests and MSI service removal remain prohibited. Read-only nvidia-smi and the previously completed bounded ffmpeg wake workload do not authorize GPU clock, driver or power-limit changes. A pinned artifact hash change blocks use until reviewed. Never publish identifiable raw captures or report simulated measurements as hardware results.

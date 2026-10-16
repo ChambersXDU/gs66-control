@@ -15,6 +15,8 @@ public sealed class SimulatedHardwareProbeTests
         Assert.Contains(snapshot.Warnings, warning => warning.Contains("Simulated", StringComparison.OrdinalIgnoreCase));
         Assert.Null(snapshot.BiosVersion);
         Assert.Empty(snapshot.MsiWmiClasses);
+        Assert.Null(snapshot.EmbeddedControllerVersion);
+        Assert.Empty(snapshot.MsiWmiSchema);
     }
 
     [Fact]
