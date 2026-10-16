@@ -1,0 +1,93 @@
+// Class 0; decompressed source offset 0x14, bytes 0x100
+class WMIEvent : __ExtrinsicEvent {
+};
+// Class 1; decompressed source offset 0x114, bytes 0x454
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set Software"), guid("{24418D6A-0A79-524C-9AB1-18B78CA68CE7}")]
+class MSI_Software {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("Software")] uint8 Software;
+};
+// Class 2; decompressed source offset 0x568, bytes 0x444
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set Device"), guid("{4AFBD56B-9F91-8f49-81F5-995BA73822AF}")]
+class MSI_Device {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("Device")] uint8 Device;
+};
+// Class 3; decompressed source offset 0x9AC, bytes 0x438
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set Power"), guid("{2D3CBA6C-1C9C-7f41-B54C-F5D5D580D482}")]
+class MSI_Power {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("Power")] uint8 Power;
+};
+// Class 4; decompressed source offset 0xDE4, bytes 0x488
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set Master_Battery"), guid("{40BA026D-075D-cd4a-9710-F7C57347CAC9}")]
+class MSI_Master_Battery {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("Master_Battery")] sint16 Master_Battery;
+};
+// Class 5; decompressed source offset 0x126C, bytes 0x47C
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set Slave_Battery"), guid("{8DBCCF6E-9DB4-0e46-A3F2-99AFAAA77A7A}")]
+class MSI_Slave_Battery {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("Slave_Battery")] sint16 Slave_Battery;
+};
+// Class 6; decompressed source offset 0x16E8, bytes 0x428
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set CPU"), guid("{BD2A216F-2FB9-a640-B807-DDDBAD656891}")]
+class MSI_CPU {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("CPU")] uint8 CPU;
+};
+// Class 7; decompressed source offset 0x1B10, bytes 0x428
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set VGA"), guid("{1EC3EC7A-1E9B-e74a-9026-CF122B0BBD21}")]
+class MSI_VGA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("VGA")] uint8 VGA;
+};
+// Class 8; decompressed source offset 0x1F38, bytes 0x444
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set System"), guid("{A1753D7B-B621-de4a-B41A-55716A0ECE7A}")]
+class MSI_System {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("System")] uint8 System;
+};
+// Class 9; decompressed source offset 0x237C, bytes 0x424
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class to ECRam Query/Set AP"), guid("{A1753D7C-B621-de4a-B41A-55716A0ECE7A}")]
+class MSI_AP {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("AP")] uint8 AP;
+};
+// Class 10; decompressed source offset 0x27A0, bytes 0x48C
+[WMI, Dynamic, Provider("WmiProv"), Local("MS\\0x409"), Description("Event defined by MSI"), guid("{5B3CC38A-40D9-7245-8AE6-1145B751BE3F}")]
+class MSI_Event : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, write, Description("Event defined by MSI")] uint32 MSIEvt;
+};
+// Class 11; decompressed source offset 0x2C2C, bytes 0x340
+[WMI, Locale("MS\\0x409"), Description("This class contains the definition of the package used in other classes"), guid("{ABBC0F60-8EA1-11d1-00A0-C90629100000}")]
+class Package {
+  [WmiDataId(1), read, write, Description("16 bytes of data")] uint8 Bytes[16];
+};
+// Class 12; decompressed source offset 0x2F6C, bytes 0x340
+[WMI, Locale("MS\\0x409"), Description("This class contains the definition of the package used in other classes"), guid("{ABBC0F61-8EA1-11d1-00A0-C90629100000}")]
+class Package_1 {
+  [WmiDataId(1), read, write, Description("1 bytes of data")] uint8 Bytes[1];
+};
+// Class 13; decompressed source offset 0x32AC, bytes 0x348
+[WMI, Locale("MS\\0x409"), Description("This class contains the definition of the package used in other classes"), guid("{ABBC0F62-8EA1-11d1-00A0-C90629100000}")]
+class Package_10 {
+  [WmiDataId(1), read, write, Description("10 bytes of data")] uint8 Bytes[10];
+};
+// Class 14; decompressed source offset 0x35F4, bytes 0x348
+[WMI, Locale("MS\\0x409"), Description("This class contains the definition of the package used in other classes"), guid("{ABBC0F63-8EA1-11d1-00A0-C90629100000}")]
+class Package_32 {
+  [WmiDataId(1), read, write, Description("32 bytes of data")] uint8 Bytes[32];
+};

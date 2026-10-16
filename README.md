@@ -10,6 +10,8 @@
 
 Dragon Center 的离线静态研究已整理至 [逆向研究报告](docs/dragon-center-re.md)，包含官方安装包版本与哈希、UI 到后台及硬件访问边界的调用链、GS66 控制能力矩阵和后续只读验证方案。对应的 [证据索引](docs/evidence/dragon-center/README.md) 保存文件清单、REA/ILSpy/Ghidra 分析片段；当前官方通用包尚未确认为 2020 年预装版本，研究结论也不代表 GS66 实机验证成功。
 
+[官方 BIOS / EC 离线分析](docs/firmware-re.md) 保留公开固件样本的 WMI 和曲线候选映射；固件样本版本与当前实机允许版本不同，不能据此扩大写入绑定。此前 WinForms 诊断预览保留在 Git 历史和旧 Release，当前只维护 WPF 桌面界面。
+
 ## 结构
 
 - `src/Gs66Control.Core`：跨平台数据模型、硬件探针接口、模拟后端。

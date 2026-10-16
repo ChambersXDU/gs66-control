@@ -1,0 +1,32 @@
+File appears to be binary: found 89469 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file /workspace/gs66-firmware-research/acpi/DSDT-6677339abceb.aml, Length 0x40EA5 (265893) bytes
+ACPI: DSDT 0x0000000000000000 040EA5 (v02 MSI_NB MEGABOOK 01072009 INTL 20160527)
+Pass 1 parse of [DSDT]
+Pass 2 parse of [DSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+ Warning - Emitting ASL code "External (ESPC)"
+           This is a conflicting declaration with some other declaration within the ASL code.
+           This external declaration may need to be deleted in order to recompile the dsl file.
+
+ Warning - Emitting ASL code "External (PMBS)"
+           This is a conflicting declaration with some other declaration within the ASL code.
+           This external declaration may need to be deleted in order to recompile the dsl file.
+
+ Warning - Emitting ASL code "External (PSON)"
+           This is a conflicting declaration with some other declaration within the ASL code.
+           This external declaration may need to be deleted in order to recompile the dsl file.
+
+ Warning - Emitting ASL code "External (SSMP)"
+           This is a conflicting declaration with some other declaration within the ASL code.
+           This external declaration may need to be deleted in order to recompile the dsl file.
+
+Disassembly completed
+ASL Output:    /workspace/gs66-firmware-research/acpi/DSDT-6677339abceb.dsl - 1874676 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+

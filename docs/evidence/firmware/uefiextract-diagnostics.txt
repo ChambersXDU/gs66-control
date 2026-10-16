@@ -1,0 +1,192 @@
+parseIntelImage: unknown flash descriptor version 0.0
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+parseCpdRegion: CPD partition is compressed but doesn't have metadata, length adjusted
+checkProtectedRanges: AMI v2 protected range [4A0000h:FF941234h] hash mismatch, opened image may refuse to boot
+findFitRecursive: FIT table candidate found, but not referenced from the last VTF
+findFitRecursive: FIT table candidate found, but not referenced from the last VTF
+findFitRecursive: real FIT table found at physical address FFD02180h
+---------------------------------------------------------------------------
+     Address      |   Size    |  Ver  | CS  |          Type / Info          
+---------------------------------------------------------------------------
+_FIT_             | 00000060h | 0100h | 00h | FIT Header | 
+00000000FFCD0400h | 00018800h | 0100h | 00h | Microcode | CpuSignature: 000906EDh, Revision: 000000CCh, Date: 12.12.2019
+00000000FFCE8C00h | 00016C00h | 0100h | 00h | Microcode | CpuSignature: 000A0652h, Revision: 000000E2h, Date: 26.10.2020
+00000000FFF90000h | 00002000h | 0100h | 00h | Startup ACM | LocalOffset: 00000018h, EntryPoint: 00003BD1h, ACM SVN: 0002h, Date: 30.04.2019
+00000000FFFD5000h | 00000241h | 0100h | 00h | BootGuard Key Manifest | LocalOffset: 00000018h, Version: 10h, KM Version: 10h, KM SVN: 00h
+00000000FFFD4B00h | 000002D3h | 0100h | 00h | BootGuard Boot Policy | LocalOffset: 00000018h, Version: 10h, BP SVN: 00h, ACM SVN: 00h
+---------------------------------------------------------------------------
+Security Info
+---------------------------------------------------------------------------
+AMI v2 protected ranges hash file found at base 00FC71B0h
+Protected ranges:
+Address: FF4A0000h, Size: FF4A1234h
+Hash (SHA256): B2FE778907E3239174C065BD6E6C791BAA15106B1999EB3C6C056CA0260FEB8D
+Address: FFFFFFFFh, Size: FFFFFFFFh
+Hash (SHA256): 0000000034020000CC1529000000000000008DFF00180A00FFFFFFFFFFFFFFFF
+Computed IBB Hash (SHA1): FCE75C722BC4B3C70D154929601D3FDAD5CD99A8
+Computed IBB Hash (SHA256): 871A08A7D7AC4AB6559679F4FB6E12D2AE8D3F055FCE011BA933CEF9EA4D2E5A
+Computed IBB Hash (SHA384): F47142F7B588F4184C8B2DD6DD3F403B7D4F71BB5C7488CFE110C343426898E953E8AA053829085B6F8B8D72A18BDBBA
+Computed IBB Hash (SHA512): 4E296F301ECA9FE158CB7C03739FA39DF9013292D4A3E0A407E73CAD1470CAE23ABFDC65618E081DAB89D624485173BAA473E4D82AE8BFF8190888640DA24C9B
+Computed IBB Hash (SM3): B43BD61F2B38F375EC927FBD7A09F34DB45F9512C337BC73688197F834B202FD
+
+BootGuard ACM found at base F90000h
+ModuleType: 0002h
+ModuleSubtype: 0003h
+HeaderSize: 00000284h
+HeaderVersion: 00000000h
+ChipsetId: 0000h
+Flags: 0000h
+ModuleVendor: 8086h
+Date: 30.04.2019
+ModuleSize: 00008000h
+AcmSvn: 0002h
+SeSvn: 0002h
+CodeControlFlags: 00000000h
+ErrorEntryPoint: 00000000h
+GdtMax: 00000020h
+GdtBase: 00000598h
+SegmentSel: 00000008h
+EntryPoint: 00003BD1h
+KeySize: 00000100h
+ScratchSpaceSize: 0000023Ch
+ACM RSA Public Key Exponent: 11h
+ACM RSA Public Key:
+C71AC1E2A457E7FCAA585572AFE2BAABFCFC17BAFBC5EED971E12883A268F7EA
+6E2C9738F493D7F597144B1AF3F187156839783C503392C92088F89C75BDBC43
+0E9BA63DE6890CAC5F22177909D7C2CFCDA313F0C7E299932558B7403BD1D2DF
+B4874F4FC7DCE34524D896404B64FA1E88AF6349439827F139243F4BD63AE297
+E2353A5837F0ED05701F057E39BAF3BD8007F1A1AD52BAE40964465E1D04304B
+63221DC2FB5FD2A62D2AE7DB2FD47F62C993F490F5C7F43EABC6B45DB20ECC69
+863550D48BB390FD5EBF45AFC3A7AF051396121732CAF1328F79CBBD0C96FCEE
+819CDEB2E0E5B1E89A3B3BB79D7167DDEF31F663959564905EDD6A7FA7F75AEE
+ACM RSA Signature:
+250B985C69BB4D7B969A88441D735A510DBFC4CFADB038ECE0FBE4D6C9C5044F
+5A06093A6C6F718EE1CB6A8ABF097ABDF879719092A78BDA64D9A161D2358A93
+D54D09C01A7DAEDBBC0E3AAEED5E7994C51AEB727C5716546EC443EBAD4C9F4D
+91123F01B9658998A9519ACB516453F6D3575421B8E440BB6E38A695D58ABDCF
+48484FFBF14A5C1B8C579EA99BDF11C376D2F3996B189E2913E49D82B5920E9E
+9E859DE69A278818C4716315FD700BEFF57FF4575C0A3758B3163ECCB297F136
+7238F4F7379EC02B954CDF732A8E6194D4E0141D09F637FD0639B54419C5B546
+8F1D8A2F7BEEBFD4382DCA2CF8C2E06CE6B0A2ABAAFDF29985F8AADB0A705699
+
+Intel BootGuard Key manifest found at base FD5000h
+Tag: '__KEYM__'
+Version: 10h
+KmVersion: 10h
+KmSvn: 00h
+KmId: 01h
+KM Hash (SHA256): EC8994E328AB63EA3D5B2A9BE4834BFBB7D89CD264D222C5C188E844E5CC8F0E
+Key Manifest Key Signature:
+Version: 10h
+KeyId: 0001h
+SigScheme: 0014h
+Key Manifest Public Key Exponent: 10001h
+Key Manifest Public Key:
+49FB93535E76C88D0CBA2D3FE2C19F0E98CA5B828F4103806129117A1CE7C946
+C4C9240962821C67F874900C824CECDFB935A8A82B3A16CE525EADC69450D7F9
+D9A60BC05DDB92222BB831C48D27769339E80A6195FEC20A598A39F9D8329296
+510113CAFD9CCF5B23E08C51080F25F1BDE50C2F8CA60A22222CF90B97BD80A0
+5202685463F70300E3AE4C004E69D5BC054BCCC7A3096E0E8EB26D64C79F5C48
+770AA92287CA4AF259122071E79745756DA032A86E768B83627B4993492E8988
+0AACDC70BE77C32C4F5B6BFAAAA60B951D95B6D63D874F8DB19997D2F4E11505
+7B7A787C13E379A82DE9F4847FC01360C69E9B2315CB01736572A6DD2F0B299E
+Key Manifest Public Key Hash (Modulus Only, SHA256): 137526C0EBD7CAEEFD26E933CFC3C49BDE04EA1021056F8ECB8B4B101F852C94
+Key Manifest Public Key Hash (Modulus Only, SHA384): 7F1D27F23BC057BD1A8C6E5424BD7BEBCBFA2E0EFF4AC7DD9232745AD08A1A8874652DD86426228DDDB1F144F1245C36
+Key Manifest Public Key Hash (Modulus+Exponent, SHA256): 3C407389592A222A836AF668A51C65DFEB1E832E5236F53EAA6A348E8811EA24
+Key Manifest Public Key Hash (Modulus+Exponent, SHA384): D7B78509CC8CC730C46AE0E4DEFAB2209F92C9062DD9AF310B80CE6CCAF446AC38C82C482B1E03E6C3565B10A8711585
+Key Manifest Signature: 
+2DFC0EEC81865A43EAE304EC676F8F26DF8BBA7D9832F592B99970533B8ED594
+22B185C70AB9E9F9D99581353DE09A8BEA1D90EEE346D732C57A9E14D85D6714
+0112DA4B0D0642EBD079B954BA76B57527BE4D41BFFE9DF0F909C3450B424CAE
+003A2B2E4E27AD7F9992C8F57CA19F22A254C4555FB1F64052078FF02DD7E811
+F7B0A51B2DDBCCF335F4A0980465E52C32C19BD9815AEBBE6A1524858F21912A
+AFF4956B56F1DFF681978814D37930CB42D44206EFE6E68040C16AC6E4617DA1
+3559BADB30A7CE1A1E1CD0B0B83295DDBA61A5E372D9411C90EC06152C7599E3
+8F334BD4EB7F31EC06AFA45F5AC771213E17C4D388BCEC07E6C90EF90C8EDE9E
+
+Intel BootGuard Boot Policy Manifest found at base FD4B00h
+StructureId: '__ACBP__'
+Version: 10h
+BPMRevision: 10h
+BPSVN: 00h
+ACMSVN: 00h
+NEMDataSize: 0097h
+Boot Policy Elements:
+StructureId: '__IBBS__'
+Version: 10h
+Flags: 00000000h
+MchBar: 00000000FED10000h
+VtdBar: 00000000FED90000h
+DmaProtectionBase0: 00100000h
+DmaProtectionLimit0: 00F00000h
+DmaProtectionBase1: 0000000100000000h
+DmaProtectionLimit1: 0000000F00000000h
+IbbEntryPoint: FFFFFFF0h
+IbbSegmentsCount: 03h
+PostIBB Hash: N/A
+IBB Hash (SHA256): 871A08A7D7AC4AB6559679F4FB6E12D2AE8D3F055FCE011BA933CEF9EA4D2E5A
+IBB Segments:
+Flags: 0000h, Address: FFF18000h, Size: 00078000h
+Flags: 0000h, Address: FFF98000h, Size: 0003CB00h
+Flags: 0000h, Address: FFFD5400h, Size: 0002AC00h
+StructureId: '__PMSG__'
+Version: 10h
+Boot Policy Key Signature:
+Version: 10h
+KeyId: 0001h
+SigScheme: 0014h
+Boot Policy Public Key Exponent: 10001h
+Boot Policy Public Key:
+110F9FEA7D69133805AFCE3906757ABBF5889C8AB69E22B0BFEEDC3DA4479FE8
+97EC260FC3E8B6A47F21D0FDF16793996377FFD6400EDDDD484F7116E0627F93
+8E84230CC76C3C169FD9002EEB87F13C0E81E669FC5E3A596AE8A7B2D76F1535
+C8636AB1824DE669E41C7525ABBEC5F8795AC75325CE09E2A7B54CF9AF478592
+0FE6389A2F56AD618B6EC035E2F48F2D5E5EAEFC8BDC27FD187FD82F909B5127
+9CE654CF1EC6F34DB6564C6167DF689317A9F13C69BC64C045EC526B00BEF7E0
+47FD526B126FD00B63D375EDB4D1EA1A71723856C6A5ACC1A031CCD32DBFE56C
+5A968C05CCB7D594D38A5DDCBE700267B3E5CFDA2C80824930E2A9569619BAB6
+Boot Policy Public Key Hash (SHA256): EC8994E328AB63EA3D5B2A9BE4834BFBB7D89CD264D222C5C188E844E5CC8F0E
+Boot Policy Public Key Hash (SHA384): 8033A4F66B74D8D2D9D9835BDB16822662FFE14153AAA2701AB3C8BD0FDE0CF58FC93BFE63B9D8E848ED8D18FD99A0FB
+Boot Policy Signature: 
+85C6E70C9849B4BC45A44C245E9151A1275221899C5594D51A4A3F299A03A4C0
+E675F539D8224B34E1E4A7437D310C745D0D8CF8917637DD78F49948C2F55703
+F2B8614B95E2297BC890EA5A364B7EA602D9874A7D99CC909295A68D820C64E1
+DACF49EA4CAF8653BBCDF6754A2DEA086A5FD6278B3AD8C0965272B9C2C5AC03
+7946DE4A02BF1696EAFD1442D12BB717D17753DBA0361F8FFB2753EB2CC6A095
+11D841C62595693B8AD3EFE4C9DE2F88048710ECFA30860EC6E49CFB06F04CC1
+AA2DDF65A0DB83A2BD03474B59491154FDD6D2643915AACA96F0FCAECE76AA15
+4CD4FB0DDC0CBADEAAC8655081CF3178574925C9FA6EC4DA60BD4F20AB94B936
+
+

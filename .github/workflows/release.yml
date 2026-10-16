@@ -1,0 +1,66 @@
+name: Publish Windows preview
+
+on:
+  push:
+    tags:
+      - 'v*-preview.*'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build CLI
+        run: dotnet build src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release
+      - name: Test with simulated hardware
+        run: dotnet test tests/Gs66Control.Tests/Gs66Control.Tests.csproj --configuration Release
+      - name: Simulation smoke test
+        run: dotnet run --project src/Gs66Control.Cli/Gs66Control.Cli.csproj --configuration Release --no-build -- simulate
+      - name: Test offline ACPI parser
+        run: python -m unittest discover -s tests -p "test_*.py"
+      - name: Publish self-contained Windows app
+        run: python scripts/package-windows.py --output artifacts/release
+      - name: Checksum complete app package
+        shell: pwsh
+        run: |
+          $zip = Join-Path $PWD "artifacts/release/GS66Control-win-x64.zip"
+          $digest = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$digest  GS66Control-win-x64.zip" | Set-Content "$zip.sha256" -Encoding utf8
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GS66Control-win-x64
+          path: |
+            artifacts/release/GS66Control-win-x64.zip
+            artifacts/release/GS66Control-win-x64.zip.sha256
+            artifacts/release/GS66Control-source.zip
+            artifacts/release/package-report.json
+          if-no-files-found: error
+      - name: Publish preview release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          gh release view "$env:RELEASE_TAG" --repo "$env:GITHUB_REPOSITORY" *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create "$env:RELEASE_TAG" --repo "$env:GITHUB_REPOSITORY" `
+              --verify-tag --draft --prerelease --title "GS66 Control $env:RELEASE_TAG" `
+              --notes "Windows x64 原生 WPF 开发预览。解压完整包后运行 GS66Control/Gs66Control.Desktop.exe，无需预装 .NET。包含独立 helper、校验与安装脚本；实际功能验证边界及未解决问题见对应源码的 docs/development-status.md。"
+            if ($LASTEXITCODE -ne 0) { throw "Cannot create preview release." }
+          }
+          gh release upload "$env:RELEASE_TAG" artifacts/release/GS66Control-win-x64.zip `
+            artifacts/release/GS66Control-win-x64.zip.sha256 artifacts/release/GS66Control-source.zip `
+            artifacts/release/package-report.json --clobber --repo "$env:GITHUB_REPOSITORY"
+          if ($LASTEXITCODE -ne 0) { throw "Release asset upload failed." }
+          gh release edit "$env:RELEASE_TAG" --repo "$env:GITHUB_REPOSITORY" `
+            --target "$env:GITHUB_SHA" --draft=false --prerelease
+          if ($LASTEXITCODE -ne 0) { throw "Preview publication failed." }

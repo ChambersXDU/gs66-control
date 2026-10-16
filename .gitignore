@@ -12,6 +12,7 @@ __pycache__/
 # local captures may contain machine identifiers
 gs66-diagnostic*.json
 captures/
+artifacts/
 *.dmp
 
 # OS

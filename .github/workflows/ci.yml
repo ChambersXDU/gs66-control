@@ -33,3 +33,8 @@ jobs:
         run: dotnet run --project src/Gs66Control.Helper/Gs66Control.Helper.csproj --configuration Release --no-build -- simulate-curves curve-simulation
       - name: Curve parent failure process simulation
         run: dotnet run --project src/Gs66Control.Helper/Gs66Control.Helper.csproj --configuration Release --no-build -- curve-cross-suite curve-process-simulation
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline ACPI parser tests
+        run: python -m unittest discover -s tests -p "test_*.py"
